@@ -1,0 +1,133 @@
+# 11-11-2016 // 08:28:10 root /ha iniciado sesion
+# 11-11-2016 // 08:28:13 root /entro en mantenimientos
+# 11-11-2016 // 08:28:16 root /entro en transacciones
+# 11-11-2016 // 08:28:18 root /entro en administracion
+# 11-11-2016 // 08:28:20 root /entro en parametros
+# 11-11-2016 // 08:28:23 root /entro en transacciones
+# 11-11-2016 // 08:28:25 root /ingreso a cobros
+# 11-11-2016 // 08:28:41 root /entro a visualizar transacciones
+# 11-11-2016 // 08:28:43 root /salio de transacciones
+# 11-11-2016 // 08:28:45 root /ingreso a cobros
+# 11-11-2016 // 08:29:10 root /salio de cobros
+# 11-11-2016 // 08:29:11 root /salio de transacciones
+# 11-11-2016 // 08:29:14 root /cerro sesion correctamente
+# 11-11-2016 // 08:43:31 root /ha iniciado sesion
+# 11-11-2016 // 08:43:35 root /entro en mantenimiento de vehiculos
+# 11-11-2016 // 08:43:43 root /entro en mantenimiento de clientes
+# 11-11-2016 // 08:50:37 root /entro en mantenimiento de vehiculos
+# 11-11-2016 // 08:56:38 root /entro en mantenimiento de vehiculos
+# 11-11-2016 // 08:59:36 root /entro en mantenimiento de vehiculos
+# 11-11-2016 // 09:01:03 root /entro en mantenimiento de vehiculos
+# 11-11-2016 // 09:02:24 root /entro en mantenimiento de vehiculos
+# 11-11-2016 // 09:03:08 root /entro a modificar el vehiculo 'ABA1261'
+# 11-11-2016 // 09:03:13 root /entro en mantenimiento de vehiculos
+# 11-11-2016 // 09:09:35 root /entro en mantenimiento de vehiculos
+# 11-11-2016 // 09:13:11 root /entro en mantenimiento de vehiculos
+# 11-11-2016 // 09:13:13 root /entro a modificar el vehiculo 'ABA1261'
+# 11-11-2016 // 09:15:42 root /entro a modificar el vehiculo 'ABA1261'
+# 11-11-2016 // 09:16:18 root /entro en mantenimiento de vehiculos
+# 11-11-2016 // 09:16:33 root /entro en mantenimiento de clientes
+# 11-11-2016 // 09:23:21 root /entro en mantenimiento de clientes
+# 11-11-2016 // 09:25:39 root /entro en mantenimiento de clientes
+# 11-11-2016 // 09:29:44 root /entro en mantenimiento de clientes
+# 11-11-2016 // 09:34:08 root /entro en mantenimiento de clientes
+# 11-11-2016 // 09:38:24 root /entro en mantenimiento de clientes
+# 11-11-2016 // 09:41:45 root /entro en mantenimiento de clientes
+# 11-11-2016 // 09:41:46 root /entro a modificar el cliente '0100000553'
+# 11-11-2016 // 09:41:56 root /entro en mantenimiento de clientes
+# 11-11-2016 // 09:42:38 root /entro en mantenimiento de clientes
+# 11-11-2016 // 09:42:39 root /entro a modificar el cliente '0100000553'
+# 11-11-2016 // 09:42:53 root /entro en mantenimiento de clientes
+# 11-11-2016 // 09:43:15 root /entro a modificar el cliente '0100000553'
+# 11-11-2016 // 09:44:01 root /entro a modificar el cliente '0100000553'
+# 11-11-2016 // 09:44:08 root /entro en mantenimiento de clientes
+# 11-11-2016 // 09:44:19 root /entro en mantenimiento de vehiculos
+# 11-11-2016 // 09:44:27 root /entro en mantenimiento de clientes
+# 11-11-2016 // 09:44:33 root /entro a modificar el cliente '0100832591'
+# 11-11-2016 // 09:44:37 root /entro en mantenimiento de clientes
+# 11-11-2016 // 09:44:41 root /entro a modificar el cliente '0100832591'
+# 11-11-2016 // 10:15:39 root /entro en mantenimiento de clientes
+# 11-11-2016 // 10:15:42 root /entro a modificar el cliente '0100832591'
+# 11-11-2016 // 10:15:56 root /entro a modificar el cliente '0100832591'
+# 11-11-2016 // 10:16:11 root /entro en mantenimiento de clientes
+# 11-11-2016 // 10:16:16 root /entro a modificar el cliente '0100832591'
+# 11-11-2016 // 10:16:26 root /entro a modificar el cliente '0101005924'
+# 11-11-2016 // 10:16:30 root /entro en mantenimiento de clientes
+# 11-11-2016 // 10:16:35 root /entro a modificar el cliente '0100832591'
+# 11-11-2016 // 10:17:12 root /entro en mantenimiento de clientes
+# 11-11-2016 // 10:19:51 root /entro a modificar el cliente '0100000553'
+# 11-11-2016 // 10:19:54 root /entro en mantenimiento de clientes
+# 11-11-2016 // 10:19:56 root /entro a modificar el cliente '0100043009'
+# 11-11-2016 // 10:20:22 root /entro en mantenimiento de clientes
+# 11-11-2016 // 10:24:19 root /entro a modificar el cliente '0100000553'
+# 11-11-2016 // 10:24:29 root /entro a modificar el cliente '0100000553'
+# 11-11-2016 // 10:29:59 root /entro a modificar el cliente '0100832591'
+# 11-11-2016 // 10:30:19 root /modifico el cliente 0100832591
+# 11-11-2016 // 10:32:09 root /entro en mantenimiento de vehiculos
+# 11-11-2016 // 10:32:13 root /entro en mantenimiento de clientes
+# 11-11-2016 // 10:33:40 root /entro en mantenimiento de clientes
+# 11-11-2016 // 10:40:57 root /entro en mantenimiento de clientes
+# 11-11-2016 // 10:41:04 root /entro a modificar el cliente '0100832591'
+# 11-11-2016 // 10:41:14 root /modifico el cliente 0100832591
+# 11-11-2016 // 10:45:01 root /modifico el cliente 0100832591
+# 11-11-2016 // 10:45:10 root /entro a modificar el cliente '0100832591'
+# 11-11-2016 // 10:45:14 root /modifico el cliente 0100832591
+# 11-11-2016 // 10:46:12 root /entro a modificar el cliente '0100832591'
+# 11-11-2016 // 10:46:57 root /modifico el cliente 0100832591
+# 11-11-2016 // 10:47:49 root /modifico el cliente 0100832591
+# 11-11-2016 // 10:49:55 root /modifico el cliente 0100832591
+# 11-11-2016 // 10:50:34 root /modifico el cliente 0100832591
+# 11-11-2016 // 10:52:05 root /modifico el cliente 0100832591
+# 11-11-2016 // 10:54:55 root /entro en mantenimiento de clientes
+# 11-11-2016 // 10:55:19 root /entro a modificar el cliente '0100832591'
+# 11-11-2016 // 10:55:32 root /modifico el cliente 0100832591
+# 11-11-2016 // 10:58:35 root /entro en mantenimiento de clientes
+# 11-11-2016 // 10:58:40 root /entro a modificar el cliente '0100832591'
+# 11-11-2016 // 10:58:44 root /modifico el cliente 0100832591
+# 11-11-2016 // 10:59:21 root /modifico el cliente 0100832591
+# 11-11-2016 // 11:00:10 root /entro en mantenimiento de clientes
+# 11-11-2016 // 11:00:16 root /entro a modificar el cliente '0100832591'
+# 11-11-2016 // 11:00:22 root /modifico el cliente 0100832591
+# 11-11-2016 // 11:05:16 root /entro en mantenimiento de clientes
+# 11-11-2016 // 11:06:27 root /entro en mantenimiento de clientes
+# 11-11-2016 // 11:06:35 root /entro a modificar el cliente '0100832591'
+# 11-11-2016 // 11:06:50 root /modifico el cliente 0100832591
+# 11-11-2016 // 11:13:36 root /entro en mantenimiento de clientes
+# 11-11-2016 // 11:14:50 root /entro en mantenimiento de clientes
+# 11-11-2016 // 11:14:54 root /entro a modificar el cliente '0100832591'
+# 11-11-2016 // 11:14:58 root /modifico el cliente 0100832591
+# 11-11-2016 // 11:17:10 root /entro a modificar el cliente '0100832591'
+# 11-11-2016 // 11:17:16 root /modifico el cliente 0100832591
+# 11-11-2016 // 11:17:20 root /entro a modificar el cliente '0100832591'
+# 11-11-2016 // 11:17:22 root /modifico el cliente 0100832591
+# 11-11-2016 // 11:17:37 root /entro a modificar el cliente '0100832591'
+# 11-11-2016 // 11:17:59 root /modifico el cliente 0100832591
+# 11-11-2016 // 11:18:08 root /entro a modificar el cliente '0100832591'
+# 11-11-2016 // 11:18:15 root /modifico el cliente 0100832591
+# 11-11-2016 // 11:19:18 root /entro a visualizar transacciones
+# 11-11-2016 // 11:23:32 root /entro a visualizar transacciones
+# 11-11-2016 // 11:26:05 root /entro a visualizar transacciones
+# 11-11-2016 // 11:27:29 root /entro a visualizar transacciones
+# 11-11-2016 // 11:31:26 root /entro a visualizar transacciones
+# 11-11-2016 // 11:43:55 root /entro a tabla de amortización
+# 11-11-2016 // 11:44:54 root /entro a tabla de amortización
+# 11-11-2016 // 11:47:43 root /entro a tabla de amortización
+# 11-11-2016 // 12:57:15 root /entro en mantenimiento de clientes
+# 11-11-2016 // 12:57:24 root /entro a modificar el cliente '0102417417'
+# 11-11-2016 // 12:57:35 root /modifico el cliente 0102417417
+# 11-11-2016 // 12:57:58 root /entro en mantenimiento de clientes
+# 11-11-2016 // 12:58:02 root /entro a modificar el cliente '0102417417'
+# 11-11-2016 // 12:58:06 root /modifico el cliente 0102417417
+# 11-11-2016 // 13:14:05 root /entro en mantenimiento de vehiculos
+# 11-11-2016 // 13:14:08 root /entro en mantenimiento de clientes
+# 11-11-2016 // 13:14:10 root /entro a visualizar transacciones
+# 11-11-2016 // 13:14:43 root /entro a visualizar transacciones
+# 11-11-2016 // 13:33:37 root /entro a visualizar transacciones
+# 11-11-2016 // 13:44:04 root /entro a visualizar transacciones
+# 11-11-2016 // 13:44:35 root /entro a visualizar transacciones
+# 11-11-2016 // 13:45:34 root /entro a visualizar transacciones
+# 11-11-2016 // 13:45:48 root /entro en mantenimiento de vehiculos
+# 11-11-2016 // 13:46:11 root /entro en mantenimiento de clientes
+# 11-11-2016 // 13:46:23 root /entro a visualizar transacciones
+# 11-11-2016 // 14:05:18 root /ha iniciado sesion
+# 11-11-2016 // 14:05:22 root /entro en mantenimiento de clientes

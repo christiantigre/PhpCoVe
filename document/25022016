@@ -1,0 +1,185 @@
+# 25-02-2016 // 09:14:12 root /entro mantenimiento de usuarios
+# 25-02-2016 // 09:14:22 root /salio de administracion
+# 25-02-2016 // 09:14:54 root /entro mantenimiento de usuarios
+# 25-02-2016 // 09:15:05 root /salio de administracion
+# 25-02-2016 // 09:15:42 root /entro mantenimiento de usuarios
+# 25-02-2016 // 09:15:50 root /salio de administracion
+# 25-02-2016 // 09:16:08 root /entro mantenimiento de usuarios
+# 25-02-2016 // 09:16:11 root /salio de administracion
+# 25-02-2016 // 09:17:42 root /entro mantenimiento de usuarios
+# 25-02-2016 // 09:19:08 root /salio de administracion
+# 25-02-2016 // 09:21:46 root /entro mantenimiento de usuarios
+# 25-02-2016 // 09:21:59 root /salio de administracion
+# 25-02-2016 // 09:27:21 root /entro mantenimiento de usuarios
+# 25-02-2016 // 09:27:47 root /salio de administracion
+# 25-02-2016 // 10:04:09 root /cerro sesion correctamente
+# 25-02-2016 // 10:04:18 prueba /ha iniciado sesion
+# 25-02-2016 // 10:04:22 prueba /entro en mantenimientos
+# 25-02-2016 // 10:04:23 prueba /entro en mantenimiento de vehiculos
+# 25-02-2016 // 10:04:25 prueba /salio de mantenimientos
+# 25-02-2016 // 10:04:27 prueba /entro en mantenimiento de clientes
+# 25-02-2016 // 10:04:28 prueba /salio de mantenimientos
+# 25-02-2016 // 10:04:32 prueba /entro en parametros
+# 25-02-2016 // 10:05:08 prueba /salio de mantenimiento de usuarios
+# 25-02-2016 // 10:05:21 prueba /entro en mantenimientos
+# 25-02-2016 // 10:05:24 prueba /entro en parametros
+# 25-02-2016 // 10:05:32 prueba /salio de mantenimiento de usuarios
+# 25-02-2016 // 10:05:43 prueba /entro en parametros
+# 25-02-2016 // 10:05:44 prueba /salio de mantenimiento de usuarios
+# 25-02-2016 // 10:06:30 prueba /entro en parametros
+# 25-02-2016 // 10:06:31 prueba /salio de mantenimiento de usuarios
+# 25-02-2016 // 10:06:36 prueba /entro en parametros
+# 25-02-2016 // 10:08:01 prueba /salio de mantenimiento de usuarios
+# 25-02-2016 // 10:08:06 prueba /entro en parametros
+# 25-02-2016 // 10:08:09 prueba /entro en parametros
+# 25-02-2016 // 10:09:56 prueba /cerro sesion correctamente
+# 25-02-2016 // 10:16:04 root /ha iniciado sesion
+# 25-02-2016 // 10:16:11 root /entro en parametros
+# 25-02-2016 // 11:07:44 root /entro en administracion
+# 25-02-2016 // 11:07:45 root /entro mantenimiento de usuarios
+# 25-02-2016 // 11:15:24 root /entro en administracion
+# 25-02-2016 // 11:15:25 root /entro mantenimiento de usuarios
+# 25-02-2016 // 11:15:34 root /entro en administracion
+# 25-02-2016 // 11:15:36 root /entro mantenimiento de usuarios
+# 25-02-2016 // 11:16:42 root /salio de administracion
+# 25-02-2016 // 11:22:09 root /entro en administracion
+# 25-02-2016 // 11:22:10 root /entro mantenimiento de usuarios
+# 25-02-2016 // 11:22:18 root /entro en administracion
+# 25-02-2016 // 11:22:22 root /entro mantenimiento de usuarios
+# 25-02-2016 // 11:24:12 root /entro en administracion
+# 25-02-2016 // 11:24:13 root /entro mantenimiento de usuarios
+# 25-02-2016 // 11:24:46 root /entro en administracion
+# 25-02-2016 // 11:24:48 root /entro mantenimiento de usuarios
+# 25-02-2016 // 11:26:11 root /entro en administracion
+# 25-02-2016 // 11:26:12 root /entro mantenimiento de usuarios
+# 25-02-2016 // 11:29:03 root /entro en administracion
+# 25-02-2016 // 11:29:05 root /entro mantenimiento de usuarios
+# 25-02-2016 // 11:29:08 root /entro mantenimiento de usuarios
+# 25-02-2016 // 11:29:08 root /salio de mantenimiento de usuarios
+# 25-02-2016 // 11:34:59 root /salio de administracion
+# 25-02-2016 // 11:35:00 root /entro mantenimiento de usuarios
+# 25-02-2016 // 11:35:33 root /salio de administracion
+# 25-02-2016 // 11:38:52 root /entro mantenimiento de usuarios
+# 25-02-2016 // 11:38:58 root /entro mantenimiento de usuarios
+# 25-02-2016 // 11:38:58 root /salio de mantenimiento de usuarios
+# 25-02-2016 // 11:39:38 root /entro mantenimiento de usuarios
+# 25-02-2016 // 11:39:38 root /salio de mantenimiento de usuarios
+# 25-02-2016 // 11:42:54 root /entro mantenimiento de usuarios
+# 25-02-2016 // 11:42:54 root /salio de mantenimiento de usuarios
+# 25-02-2016 // 11:48:42 root /salio de administracion
+# 25-02-2016 // 11:49:58 root /entro mantenimiento de usuarios
+# 25-02-2016 // 11:50:05 root /salio de administracion
+# 25-02-2016 // 11:53:43 root /entro mantenimiento de usuarios
+# 25-02-2016 // 11:59:36 root /entro mantenimiento de usuarios
+# 25-02-2016 // 11:59:36 root /salio de mantenimiento de usuarios
+# 25-02-2016 // 12:23:56 root /entro mantenimiento de usuarios
+# 25-02-2016 // 12:24:13 root /entro mantenimiento de usuarios
+# 25-02-2016 // 12:24:13 root /creo el usuarioadmin
+# 25-02-2016 // 12:24:45 root /salio de administracion
+# 25-02-2016 // 12:24:50 root /entro mantenimiento de usuarios
+# 25-02-2016 // 12:25:18 root /entro mantenimiento de usuarios
+# 25-02-2016 // 12:25:18 root /creo el usuarioadmin
+# 25-02-2016 // 12:25:26 root /entro mantenimiento de usuarios
+# 25-02-2016 // 12:25:26 root /creo el usuarioadmin
+# 25-02-2016 // 12:27:46 root /entro mantenimiento de usuarios
+# 25-02-2016 // 12:27:46 root /creo el usuarioadmin
+# 25-02-2016 // 12:28:46 root /salio de administracion
+# 25-02-2016 // 12:32:16 root /cerro sesion correctamente
+# 25-02-2016 // 12:54:25 root /ha iniciado sesion
+# 25-02-2016 // 12:54:56 root /entro en administracion
+# 25-02-2016 // 12:54:58 root /entro mantenimiento de usuarios
+# 25-02-2016 // 12:55:09 root /entro mantenimiento de usuarios
+# 25-02-2016 // 12:55:09 root /creo el usuarioadmin
+# 25-02-2016 // 12:55:20 root /entro mantenimiento de usuarios
+# 25-02-2016 // 12:55:20 root /creo el usuarioadmin
+# 25-02-2016 // 12:55:24 root /salio de administracion
+# 25-02-2016 // 12:55:26 root /cerro sesion correctamente
+# 25-02-2016 // 12:57:14 root /ha iniciado sesion
+# 25-02-2016 // 12:57:16 root /entro en administracion
+# 25-02-2016 // 12:57:17 root /entro mantenimiento de usuarios
+# 25-02-2016 // 12:57:30 root /entro mantenimiento de usuarios
+# 25-02-2016 // 12:57:30 root /creo el usuarioadmin
+# 25-02-2016 // 12:57:35 root /salio de administracion
+# 25-02-2016 // 12:57:44 root /entro mantenimiento de usuarios
+# 25-02-2016 // 13:21:55 root /salio de administracion
+# 25-02-2016 // 13:22:03 root /cerro sesion correctamente
+# 25-02-2016 // 15:36:50 root /ha iniciado sesion
+# 25-02-2016 // 15:36:54 root /entro en administracion
+# 25-02-2016 // 15:36:56 root /entro mantenimiento de usuarios
+# 25-02-2016 // 15:42:06 root /entro mantenimiento de usuarios
+# 25-02-2016 // 15:42:06 root /creo el usuarioadmin
+# 25-02-2016 // 15:51:58 root /entro en administracion
+# 25-02-2016 // 15:51:59 root /entro mantenimiento de usuarios
+# 25-02-2016 // 15:53:17 root /entro en administracion
+# 25-02-2016 // 15:53:18 root /entro mantenimiento de usuarios
+# 25-02-2016 // 15:53:35 root /entro mantenimiento de usuarios
+# 25-02-2016 // 15:53:35 root /salio de mantenimiento de usuarios
+# 25-02-2016 // 16:04:01 root /entro mantenimiento de usuarios
+# 25-02-2016 // 16:04:01 root /salio de mantenimiento de usuarios
+# 25-02-2016 // 16:36:09 root /entro mantenimiento de usuarios
+# 25-02-2016 // 16:36:09 root /salio de mantenimiento de usuarios
+# 25-02-2016 // 16:38:24 root /entro mantenimiento de usuarios
+# 25-02-2016 // 16:38:24 root /salio de mantenimiento de usuarios
+# 25-02-2016 // 16:38:28 root /entro mantenimiento de usuarios
+# 25-02-2016 // 16:38:28 root /salio de mantenimiento de usuarios
+# 25-02-2016 // 16:39:32 root /salio de administracion
+# 25-02-2016 // 16:39:53 root /entro en administracion
+# 25-02-2016 // 16:39:54 root /entro mantenimiento de usuarios
+# 25-02-2016 // 16:39:58 root /salio de administracion
+# 25-02-2016 // 16:40:00 root /cerro sesion correctamente
+# 25-02-2016 // 17:25:25 root /ha iniciado sesion
+# 25-02-2016 // 17:25:30 root /entro en administracion
+# 25-02-2016 // 17:25:31 root /entro mantenimiento de usuarios
+# 25-02-2016 // 17:25:42 root /salio de administracion
+# 25-02-2016 // 17:25:46 root /cerro sesion correctamente
+# 25-02-2016 // 17:32:36 root /ha iniciado sesion
+# 25-02-2016 // 17:32:37 root /entro en administracion
+# 25-02-2016 // 17:32:38 root /entro mantenimiento de usuarios
+# 25-02-2016 // 17:32:52 root /entro mantenimiento de usuarios
+# 25-02-2016 // 17:32:52 root /creo el usuarioadmin
+# 25-02-2016 // 17:32:59 root /salio de administracion
+# 25-02-2016 // 17:33:03 root /cerro sesion correctamente
+# 25-02-2016 // 17:38:52 admin /ha iniciado sesion
+# 25-02-2016 // 17:39:01 admin /entro en mantenimientos
+# 25-02-2016 // 17:39:03 admin /entro en transacciones
+# 25-02-2016 // 17:39:05 admin /entro en parametros
+# 25-02-2016 // 17:39:10 admin /cerro sesion correctamente
+# 25-02-2016 // 22:18:45 root /ha iniciado sesion
+# 25-02-2016 // 22:18:57 root /entro en administracion
+# 25-02-2016 // 22:18:58 root /entro mantenimiento de usuarios
+# 25-02-2016 // 22:19:26 root /entro mantenimiento de usuarios
+# 25-02-2016 // 22:19:26 root /creo el usuarioadmin
+# 25-02-2016 // 22:19:29 root /salio de administracion
+# 25-02-2016 // 22:19:36 root /cerro sesion correctamente
+# 25-02-2016 // 22:22:32 root /ha iniciado sesion
+# 25-02-2016 // 22:22:33 root /entro en administracion
+# 25-02-2016 // 22:22:34 root /entro mantenimiento de usuarios
+# 25-02-2016 // 22:22:49 root /entro mantenimiento de usuarios
+# 25-02-2016 // 22:22:49 root /creo el usuarioprueba
+# 25-02-2016 // 22:22:55 root /salio de administracion
+# 25-02-2016 // 22:22:58 root /cerro sesion correctamente
+# 25-02-2016 // 22:23:47 prueba /ha iniciado sesion
+# 25-02-2016 // 22:23:50 prueba /cerro sesion correctamente
+# 25-02-2016 // 22:41:43 root /ha iniciado sesion
+# 25-02-2016 // 22:41:45 root /entro en administracion
+# 25-02-2016 // 22:41:46 root /entro mantenimiento de usuarios
+# 25-02-2016 // 22:42:47 root /entro mantenimiento de usuarios
+# 25-02-2016 // 22:42:47 root /creo el usuarioadmin
+# 25-02-2016 // 22:42:52 root /salio de administracion
+# 25-02-2016 // 22:42:55 root /cerro sesion correctamente
+# 25-02-2016 // 22:45:26 root /ha iniciado sesion
+# 25-02-2016 // 22:45:27 root /entro en administracion
+# 25-02-2016 // 22:45:28 root /entro mantenimiento de usuarios
+# 25-02-2016 // 22:45:38 root /entro mantenimiento de usuarios
+# 25-02-2016 // 22:45:38 root /creo el usuarioadmin
+# 25-02-2016 // 22:48:27 root /entro mantenimiento de usuarios
+# 25-02-2016 // 22:48:27 root /creo el usuarioadmin
+# 25-02-2016 // 22:48:35 root /salio de administracion
+# 25-02-2016 // 22:48:39 root /cerro sesion correctamente
+# 25-02-2016 // 23:06:04 root /ha iniciado sesion
+# 25-02-2016 // 23:06:06 root /entro en administracion
+# 25-02-2016 // 23:06:11 root /entro mantenimiento de usuarios
+# 25-02-2016 // 23:06:25 root /entro mantenimiento de usuarios
+# 25-02-2016 // 23:06:25 root /creo el usuarioadmin
+# 25-02-2016 // 23:08:26 root /salio de administracion
+# 25-02-2016 // 23:09:00 root /cerro sesion correctamente

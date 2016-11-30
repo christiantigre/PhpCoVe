@@ -1,0 +1,95 @@
+# 21-10-2016 // 11:39:33 secretaria /ha iniciado sesion
+# 21-10-2016 // 11:40:26 secretaria /entro en mantenimientos
+# 21-10-2016 // 11:40:27 secretaria /entro en mantenimiento de clientes
+# 21-10-2016 // 11:40:33 secretaria /salio de mantenimientos
+# 21-10-2016 // 11:40:34 secretaria /entro en mantenimiento de clientes
+# 21-10-2016 // 11:51:35 secretaria /entro en mantenimiento de clientes
+# 21-10-2016 // 12:28:39 secretaria /entro a visualizar transacciones
+# 21-10-2016 // 12:28:50 secretaria /entro a visualizar transacciones
+# 21-10-2016 // 12:29:12 secretaria /salio de transacciones
+# 21-10-2016 // 12:29:15 secretaria /cerro sesion correctamente
+# 21-10-2016 // 12:29:31 secretaria /ha iniciado sesion
+# 21-10-2016 // 12:29:33 secretaria /entro en mantenimientos
+# 21-10-2016 // 12:29:34 secretaria /entro en mantenimiento de vehiculos
+# 21-10-2016 // 12:29:37 secretaria /salio de mantenimientos
+# 21-10-2016 // 12:29:38 secretaria /entro en mantenimiento de clientes
+# 21-10-2016 // 12:29:49 secretaria /salio de mantenimientos
+# 21-10-2016 // 12:29:51 secretaria /entro en mantenimiento de clientes
+# 21-10-2016 // 12:29:53 secretaria /entro en mantenimiento de clientes
+# 21-10-2016 // 12:29:54 secretaria /salio de mantenimientos
+# 21-10-2016 // 12:29:57 secretaria /entro en transacciones
+# 21-10-2016 // 12:29:58 secretaria /entro a visualizar transacciones
+# 21-10-2016 // 12:31:51 secretaria /creo la transaccion 105
+# 21-10-2016 // 12:51:18 secretaria /entro a visualizar transacciones
+# 21-10-2016 // 12:51:20 secretaria /salio de transacciones
+# 21-10-2016 // 12:51:24 secretaria /entro en mantenimientos
+# 21-10-2016 // 12:51:26 secretaria /entro en mantenimiento de clientes
+# 21-10-2016 // 12:56:00 secretaria /creo el cliente 0103719829
+# 21-10-2016 // 12:56:00 secretaria /creo cuenta contable del cliente 0103719829
+# 21-10-2016 // 12:56:25 secretaria /entro en mantenimiento de clientes
+# 21-10-2016 // 12:56:28 secretaria /salio de mantenimientos
+# 21-10-2016 // 12:56:41 secretaria /entro en mantenimiento de vehiculos
+# 21-10-2016 // 12:58:43 secretaria /entro en mantenimientos
+# 21-10-2016 // 12:58:47 secretaria /entro en parametros
+# 21-10-2016 // 13:08:43 secretaria /creo el vehiculo PBE1083
+# 21-10-2016 // 13:08:43 secretaria /creo cuenta contable del vehiculo PBE1083
+# 21-10-2016 // 13:08:45 secretaria /entro en mantenimiento de vehiculos
+# 21-10-2016 // 13:08:46 secretaria /salio de mantenimientos
+# 21-10-2016 // 13:08:50 secretaria /entro en transacciones
+# 21-10-2016 // 13:08:53 secretaria /entro a visualizar transacciones
+# 21-10-2016 // 13:12:53 secretaria /creo la transaccion 106
+# 21-10-2016 // 13:20:23 secretaria /entro a visualizar transacciones
+# 21-10-2016 // 13:20:25 secretaria /salio de transacciones
+# 21-10-2016 // 13:20:28 secretaria /entro en mantenimientos
+# 21-10-2016 // 13:20:29 secretaria /entro en mantenimiento de vehiculos
+# 21-10-2016 // 13:20:30 secretaria /salio de mantenimientos
+# 21-10-2016 // 13:20:31 secretaria /entro en mantenimiento de clientes
+# 21-10-2016 // 13:25:20 secretaria /creo el cliente 0101053635
+# 21-10-2016 // 13:25:20 secretaria /creo cuenta contable del cliente 0101053635
+# 21-10-2016 // 13:25:23 secretaria /entro en mantenimiento de clientes
+# 21-10-2016 // 13:25:26 secretaria /salio de mantenimientos
+# 21-10-2016 // 13:25:43 secretaria /entro en mantenimientos
+# 21-10-2016 // 13:25:46 secretaria /entro en mantenimiento de clientes
+# 21-10-2016 // 13:25:48 secretaria /salio de mantenimientos
+# 21-10-2016 // 13:25:50 secretaria /entro en transacciones
+# 21-10-2016 // 13:25:51 secretaria /entro a visualizar transacciones
+# 21-10-2016 // 13:27:54 secretaria /creo la transaccion 107
+# 21-10-2016 // 15:34:33 secretaria /cerro sesion correctamente
+# 21-10-2016 // 15:49:28 secretaria /ha iniciado sesion
+# 21-10-2016 // 15:49:30 secretaria /entro en transacciones
+# 21-10-2016 // 15:49:33 secretaria /entro a visualizar transacciones
+# 21-10-2016 // 15:57:05 secretaria /entro a visualizar transacciones
+# 21-10-2016 // 16:00:32 secretaria /entro a visualizar transacciones
+# 21-10-2016 // 16:05:33 secretaria /entro a visualizar transacciones
+# 21-10-2016 // 16:05:35 secretaria /salio de transacciones
+# 21-10-2016 // 16:05:40 secretaria /entro en mantenimientos
+# 21-10-2016 // 16:05:42 secretaria /entro en mantenimiento de vehiculos
+# 21-10-2016 // 16:06:40 secretaria /salio de mantenimientos
+# 21-10-2016 // 16:06:56 secretaria /entro en transacciones
+# 21-10-2016 // 16:06:59 secretaria /entro a visualizar transacciones
+# 21-10-2016 // 16:07:09 secretaria /entro a visualizar transacciones
+# 21-10-2016 // 16:07:17 secretaria /entro a visualizar transacciones
+# 21-10-2016 // 16:07:22 secretaria /salio de transacciones
+# 21-10-2016 // 16:07:29 secretaria /ingreso a pagos
+# 21-10-2016 // 16:07:31 secretaria /salio de cobros
+# 21-10-2016 // 16:07:34 secretaria /salio de transacciones
+# 21-10-2016 // 16:07:35 secretaria /ingreso a cobros
+# 21-10-2016 // 16:07:45 secretaria /entro a visualizar transacciones
+# 21-10-2016 // 16:07:47 secretaria /salio de transacciones
+# 21-10-2016 // 16:07:49 secretaria /ingreso a cobros
+# 21-10-2016 // 16:08:02 secretaria /entro a visualizar transacciones
+# 21-10-2016 // 16:08:08 secretaria /entro a visualizar transacciones
+# 21-10-2016 // 16:08:15 secretaria /entro a visualizar transacciones
+# 21-10-2016 // 16:08:21 secretaria /entro a visualizar transacciones
+# 21-10-2016 // 16:26:42 secretaria /entro a visualizar transacciones
+# 21-10-2016 // 16:26:44 secretaria /salio de transacciones
+# 21-10-2016 // 16:26:48 secretaria /entro en mantenimientos
+# 21-10-2016 // 16:26:51 secretaria /entro en mantenimiento de vehiculos
+# 21-10-2016 // 16:35:27 secretaria /entro en mantenimiento de vehiculos
+# 21-10-2016 // 16:44:09 secretaria /entro en mantenimiento de vehiculos
+# 21-10-2016 // 16:44:11 secretaria /salio de mantenimientos
+# 21-10-2016 // 16:44:14 secretaria /entro en transacciones
+# 21-10-2016 // 16:44:15 secretaria /entro a visualizar transacciones
+# 21-10-2016 // 16:48:38 secretaria /entro a visualizar transacciones
+# 21-10-2016 // 17:14:04 secretaria /entro a visualizar transacciones
+# 21-10-2016 // 17:20:50 secretaria /entro a visualizar transacciones

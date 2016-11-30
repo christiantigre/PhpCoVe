@@ -1,0 +1,31 @@
+CREATE TABLE `iva` (
+  `idiva` int(11) NOT NULL,
+  `iva` double(4,2) NOT NULL,
+  `active` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `iva`
+--
+
+INSERT INTO `iva` (`idiva`, `iva`, `active`) VALUES
+(1, 0.00, 0),
+(2, 12.00, 0),
+(3, 14.00, 0),
+(4, 16.50, 0);
+
+CREATE TABLE `det_pag` (
+  `iddet_pag` int(11) NOT NULL,
+  `lis_pag_id_pag` char(45) DEFAULT NULL,
+  `cli_datos_idcli_ident` char(15) DEFAULT NULL,
+  `veh_datos_idveh_placa` char(8) DEFAULT NULL,
+  `fech_reg` date NOT NULL,
+  `monto` decimal(10,2) NOT NULL,
+  `tran_realiz` char(45) NOT NULL,
+  `user` char(45) NOT NULL,
+  `observ` char(255) DEFAULT NULL,
+  `clien` char(45) DEFAULT NULL,
+  `iva` char(11) NOT NULL,
+  `subtotal` int(11) NOT NULL,
+  `porcentaje` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;

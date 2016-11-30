@@ -1,0 +1,154 @@
+# 07-03-2016 // 15:42:16 root /ha iniciado sesion
+# 07-03-2016 // 15:42:45 root /entro en mantenimientos
+# 07-03-2016 // 15:43:01 root /entro en mantenimiento de vehiculos
+# 07-03-2016 // 15:45:09 root /entro en mantenimiento de vehiculos
+# 07-03-2016 // 15:45:24 root /entro en mantenimiento de vehiculos
+# 07-03-2016 // 15:45:54 root /entro en mantenimiento de vehiculos
+# 07-03-2016 // 15:54:17 root /salio de mantenimientos
+# 07-03-2016 // 15:54:18 root /entro en mantenimiento de clientes
+# 07-03-2016 // 15:54:26 root /entro en mantenimiento de clientes
+# 07-03-2016 // 15:58:36 root /salio de mantenimientos
+# 07-03-2016 // 16:14:59 root /cerro sesion correctamente
+# 07-03-2016 // 17:11:33 root /ha iniciado sesion
+# 07-03-2016 // 17:11:37 root /entro en mantenimientos
+# 07-03-2016 // 17:11:39 root /entro en transacciones
+# 07-03-2016 // 17:11:40 root /entro a visualizar transacciones
+# 07-03-2016 // 17:11:52 root /entro a visualizar transacciones
+# 07-03-2016 // 17:11:54 root /salio de transacciones
+# 07-03-2016 // 17:12:43 root /entro a visualizar transacciones
+# 07-03-2016 // 17:12:47 root /salio de transacciones
+# 07-03-2016 // 17:12:51 root /salio de transacciones
+# 07-03-2016 // 17:12:52 root /entro a visualizar transacciones
+# 07-03-2016 // 17:12:56 root /salio de transacciones
+# 07-03-2016 // 17:13:01 root /cerro sesion correctamente
+# 07-03-2016 // 17:13:32 root /ha iniciado sesion
+# 07-03-2016 // 17:13:34 root /entro en transacciones
+# 07-03-2016 // 17:13:35 root /entro a visualizar transacciones
+# 07-03-2016 // 17:13:44 root /salio de transacciones
+# 07-03-2016 // 17:15:43 root /salio de transacciones
+# 07-03-2016 // 17:15:45 root /entro a visualizar transacciones
+# 07-03-2016 // 17:16:47 root /entro a visualizar transacciones
+# 07-03-2016 // 17:16:51 root /entro a visualizar transacciones
+# 07-03-2016 // 17:16:55 root /salio de transacciones
+# 07-03-2016 // 17:20:36 root /entro a visualizar transacciones
+# 07-03-2016 // 17:20:41 root /ingreso a detalle de gastos de vehiculo
+# 07-03-2016 // 17:22:23 root /salio de cobros
+# 07-03-2016 // 17:28:30 root /salio de cobros
+# 07-03-2016 // 17:28:32 root /ingreso a detalle de gastos de vehiculo
+# 07-03-2016 // 17:28:39 root /salio de cobros
+# 07-03-2016 // 17:29:03 root /entro a visualizar transacciones
+# 07-03-2016 // 17:29:05 root /salio de transacciones
+# 07-03-2016 // 17:29:07 root /ingreso a cobros
+# 07-03-2016 // 17:29:32 root /salio de cobros
+# 07-03-2016 // 17:29:37 root /salio de transacciones
+# 07-03-2016 // 17:29:39 root /ingreso a cobros
+# 07-03-2016 // 17:30:01 root /salio de cobros
+# 07-03-2016 // 17:30:04 root /salio de transacciones
+# 07-03-2016 // 17:30:07 root /ingreso a pagos
+# 07-03-2016 // 17:30:12 root /salio de cobros
+# 07-03-2016 // 17:30:15 root /salio de transacciones
+# 07-03-2016 // 17:30:16 root /entro a documentos
+# 07-03-2016 // 17:30:56 root /salio de transacciones
+# 07-03-2016 // 17:31:08 root /entro a visualizar transacciones
+# 07-03-2016 // 17:36:21 root /entro a visualizar transacciones
+# 07-03-2016 // 17:56:57 root /entro a visualizar transacciones
+# 07-03-2016 // 17:59:09 root /creo la transaccion 36
+# 07-03-2016 // 18:16:00  /entro a visualizar transacciones
+# 07-03-2016 // 18:16:41  /salio de transacciones
+# 07-03-2016 // 18:16:48  /cerro sesion correctamente
+# 07-03-2016 // 18:16:55 root /ha iniciado sesion
+# 07-03-2016 // 18:17:07 root /entro en transacciones
+# 07-03-2016 // 18:17:08 root /entro a visualizar transacciones
+# 07-03-2016 // 18:21:08 root /creo la transaccion 37
+# 07-03-2016 // 18:26:41 root /salio de transacciones
+# 07-03-2016 // 18:26:44 root /entro en administracion
+# 07-03-2016 // 18:26:45 root /entro mantenimiento de usuarios
+# 07-03-2016 // 18:26:57 root /entro mantenimiento de usuarios
+# 07-03-2016 // 18:26:57 root /creo el usuarioadmin
+# 07-03-2016 // 18:27:03 root /salio de administracion
+# 07-03-2016 // 18:27:05 root /cerro sesion correctamente
+# 07-03-2016 // 18:27:11 admin /ha iniciado sesion
+# 07-03-2016 // 18:27:14 admin /entro en mantenimientos
+# 07-03-2016 // 18:27:15 admin /entro en mantenimiento de vehiculos
+# 07-03-2016 // 18:27:19 admin /salio de mantenimientos
+# 07-03-2016 // 18:27:57 admin /cerro sesion correctamente
+# 07-03-2016 // 18:28:03 admin /ha iniciado sesion
+# 07-03-2016 // 18:28:05 admin /entro en mantenimientos
+# 07-03-2016 // 18:28:06 admin /entro en mantenimiento de vehiculos
+# 07-03-2016 // 18:28:08 admin /salio de mantenimientos
+# 07-03-2016 // 18:28:25 admin /cerro sesion correctamente
+# 07-03-2016 // 18:29:58 admin /ha iniciado sesion
+# 07-03-2016 // 18:30:00 admin /entro en mantenimientos
+# 07-03-2016 // 18:30:01 admin /entro en mantenimiento de vehiculos
+# 07-03-2016 // 18:30:03 admin /salio de mantenimientos
+# 07-03-2016 // 18:30:30 admin /cerro sesion correctamente
+# 07-03-2016 // 18:30:35 admin /ha iniciado sesion
+# 07-03-2016 // 18:30:38 admin /entro en mantenimientos
+# 07-03-2016 // 18:30:39 admin /entro en mantenimiento de vehiculos
+# 07-03-2016 // 18:48:29 admin /salio de mantenimientos
+# 07-03-2016 // 18:48:30 admin /entro en mantenimiento de vehiculos
+# 07-03-2016 // 18:48:31 admin /salio de mantenimientos
+# 07-03-2016 // 18:48:32 admin /entro en mantenimiento de clientes
+# 07-03-2016 // 18:48:34 admin /salio de mantenimientos
+# 07-03-2016 // 18:48:40 admin /entro en mantenimientos
+# 07-03-2016 // 18:48:49 admin /entro en mantenimiento de vehiculos
+# 07-03-2016 // 18:49:01 admin /entro en mantenimiento de vehiculos
+# 07-03-2016 // 18:49:03 admin /salio de mantenimientos
+# 07-03-2016 // 18:49:04 admin /entro en mantenimiento de clientes
+# 07-03-2016 // 18:49:14 admin /salio de mantenimientos
+# 07-03-2016 // 18:49:33 admin /entro en mantenimientos
+# 07-03-2016 // 18:49:34 admin /entro en mantenimiento de vehiculos
+# 07-03-2016 // 18:49:38 admin /entro en mantenimiento de vehiculos
+# 07-03-2016 // 18:49:41 admin /salio de mantenimientos
+# 07-03-2016 // 18:59:27 admin /cerro sesion correctamente
+# 07-03-2016 // 19:02:04 root /ha iniciado sesion
+# 07-03-2016 // 19:02:08 root /entro en mantenimientos
+# 07-03-2016 // 19:02:09 root /entro en mantenimiento de clientes
+# 07-03-2016 // 19:05:00 root /salio de mantenimientos
+# 07-03-2016 // 19:05:45 root /entro en mantenimiento de clientes
+# 07-03-2016 // 19:05:48 root /salio de mantenimientos
+# 07-03-2016 // 19:05:50 root /salio de mantenimientos
+# 07-03-2016 // 19:05:51 root /entro en mantenimiento de clientes
+# 07-03-2016 // 19:05:53 root /salio de mantenimientos
+# 07-03-2016 // 19:05:55 root /entro en mantenimiento de clientes
+# 07-03-2016 // 19:05:59 root /entro en mantenimiento de clientes
+# 07-03-2016 // 19:06:05 root /salio de mantenimientos
+# 07-03-2016 // 19:26:32 root /entro en mantenimiento de clientes
+# 07-03-2016 // 19:26:36 root /salio de mantenimientos
+# 07-03-2016 // 19:26:37 root /entro en mantenimiento de vehiculos
+# 07-03-2016 // 19:26:41 root /salio de mantenimientos
+# 07-03-2016 // 19:26:46 root /entro en transacciones
+# 07-03-2016 // 19:26:47 root /entro a visualizar transacciones
+# 07-03-2016 // 19:26:59 root /entro a visualizar transacciones
+# 07-03-2016 // 19:27:07 root /entro a visualizar transacciones
+# 07-03-2016 // 19:50:17 root /salio de transacciones
+# 07-03-2016 // 19:50:19 root /cerro sesion correctamente
+# 07-03-2016 // 23:08:56 root /ha iniciado sesion
+# 07-03-2016 // 23:18:48 root /cerro sesion correctamente
+# 07-03-2016 // 12:36:40 secretaria /creo la transaccion 48
+# 07-03-2016 // 12:37:40 secretaria /entro a visualizar transacciones
+# 07-03-2016 // 12:37:49 secretaria /entro a visualizar transacciones
+# 07-03-2016 // 12:40:08 secretaria /entro a visualizar transacciones
+# 07-03-2016 // 12:44:40 secretaria /entro a visualizar transacciones
+# 07-03-2016 // 12:44:53 secretaria /entro a visualizar transacciones
+# 07-03-2016 // 12:45:27 secretaria /entro a visualizar transacciones
+# 07-03-2016 // 12:46:42 secretaria /entro a visualizar transacciones
+# 07-03-2016 // 12:46:54 secretaria /entro a visualizar transacciones
+# 07-03-2016 // 12:47:04 secretaria /entro a visualizar transacciones
+# 07-03-2016 // 12:47:14 secretaria /entro a visualizar transacciones
+# 07-03-2016 // 12:47:24 secretaria /entro a visualizar transacciones
+# 07-03-2016 // 12:47:37 secretaria /salio de transacciones
+# 07-03-2016 // 12:47:43 secretaria /entro en mantenimientos
+# 07-03-2016 // 12:47:46 secretaria /entro en mantenimiento de clientes
+# 07-03-2016 // 12:48:28 secretaria /entro en mantenimiento de clientes
+# 07-03-2016 // 12:51:18 secretaria /entro en mantenimiento de clientes
+# 07-03-2016 // 12:51:20 secretaria /salio de mantenimientos
+# 07-03-2016 // 12:52:52 secretaria /entro en mantenimientos
+# 07-03-2016 // 12:52:54 secretaria /entro en mantenimiento de vehiculos
+# 07-03-2016 // 12:53:45 secretaria /entro en mantenimiento de vehiculos
+# 07-03-2016 // 12:53:48 secretaria /salio de mantenimientos
+# 07-03-2016 // 12:53:50 secretaria /entro en mantenimiento de clientes
+# 07-03-2016 // 12:53:59 secretaria /salio de mantenimientos
+# 07-03-2016 // 12:54:02 secretaria /entro en transacciones
+# 07-03-2016 // 12:54:04 secretaria /entro a visualizar transacciones
+# 07-03-2016 // 12:54:08 secretaria /entro a visualizar transacciones

@@ -1,0 +1,22 @@
+# 14-03-2016 // 13:24:23 root /ha iniciado sesion
+# 14-03-2016 // 13:24:41 root /entro en mantenimientos
+# 14-03-2016 // 13:24:42 root /entro en mantenimiento de clientes
+# 14-03-2016 // 14:07:41 root /entro en mantenimiento de clientes
+# 14-03-2016 // 14:07:43 root /salio de mantenimientos
+# 14-03-2016 // 14:07:49 root /cerro sesion correctamente
+# 14-03-2016 // 16:38:34 secretaria /creo la transaccion 38
+# 14-03-2016 // 16:41:37 secretaria /salio de transacciones
+# 14-03-2016 // 16:41:44 secretaria /entro en mantenimientos
+# 14-03-2016 // 16:41:46 secretaria /entro en mantenimiento de clientes
+# 14-03-2016 // 16:44:56 secretaria /creo el cliente 0103433488
+# 14-03-2016 // 16:44:57 secretaria /creo cuenta contable del cliente 0103433488
+# 14-03-2016 // 16:45:23 secretaria /entro en mantenimiento de clientes
+# 14-03-2016 // 16:45:26 secretaria /salio de mantenimientos
+# 14-03-2016 // 16:45:28 secretaria /entro en mantenimiento de vehiculos
+# 14-03-2016 // 16:47:23 secretaria /creo el vehiculo PBB0010
+# 14-03-2016 // 16:47:23 secretaria /creo cuenta contable del vehiculo PBB0010
+# 14-03-2016 // 16:47:30 secretaria /entro en mantenimiento de vehiculos
+# 14-03-2016 // 16:48:39 secretaria /salio de mantenimientos
+# 14-03-2016 // 16:48:42 secretaria /entro en transacciones
+# 14-03-2016 // 16:48:45 secretaria /entro a visualizar transacciones
+# 14-03-2016 // 18:14:34 secretaria /creo la transaccion 45

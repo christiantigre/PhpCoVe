@@ -1,0 +1,115 @@
+# 24-09-2016 // 09:35:43 secretaria /salio de transacciones
+# 24-09-2016 // 09:35:52 secretaria /entro a visualizar transacciones
+# 24-09-2016 // 09:36:17 secretaria /entro a visualizar transacciones
+# 24-09-2016 // 09:40:28 secretaria /salio de transacciones
+# 24-09-2016 // 09:40:35 secretaria /cerro sesion correctamente
+# 24-09-2016 // 09:40:43 root /ha iniciado sesion
+# 24-09-2016 // 09:40:45 root /entro en administracion
+# 24-09-2016 // 09:40:46 root /entro a visualizar el historial
+# 24-09-2016 // 09:43:59 root /salio de administracion
+# 24-09-2016 // 09:44:53 root /entro en transacciones
+# 24-09-2016 // 09:44:56 root /entro a visualizar transacciones
+# 24-09-2016 // 09:46:38 root /salio de transacciones
+# 24-09-2016 // 09:46:40 root /entro en mantenimientos
+# 24-09-2016 // 09:46:41 root /entro en mantenimiento de vehiculos
+# 24-09-2016 // 09:47:04 root /salio de mantenimientos
+# 24-09-2016 // 09:47:56 root /cerro sesion correctamente
+# 24-09-2016 // 09:48:20 root /ha iniciado sesion
+# 24-09-2016 // 09:48:27 root /entro en administracion
+# 24-09-2016 // 09:48:48 root /entro a visualizar el historial
+# 24-09-2016 // 09:50:28 root /salio de administracion
+# 24-09-2016 // 09:50:30 root /cerro sesion correctamente
+# 24-09-2016 // 09:50:52 secretaria /ha iniciado sesion
+# 24-09-2016 // 09:51:48 secretaria /ha iniciado sesion
+# 24-09-2016 // 09:52:29 secretaria /entro en transacciones
+# 24-09-2016 // 09:52:30 secretaria /entro a visualizar transacciones
+# 24-09-2016 // 09:59:55 secretaria /entro a visualizar transacciones
+# 24-09-2016 // 09:59:59 secretaria /salio de transacciones
+# 24-09-2016 // 10:00:04 secretaria /entro en mantenimientos
+# 24-09-2016 // 10:00:05 secretaria /entro en mantenimiento de clientes
+# 24-09-2016 // 10:01:13 secretaria /salio de mantenimientos
+# 24-09-2016 // 10:04:10 secretaria /salio de mantenimientos
+# 24-09-2016 // 10:04:11 secretaria /entro en mantenimiento de clientes
+# 24-09-2016 // 10:04:31 secretaria /salio de mantenimientos
+# 24-09-2016 // 10:05:59 secretaria /salio de mantenimientos
+# 24-09-2016 // 10:06:00 secretaria /entro en mantenimiento de vehiculos
+# 24-09-2016 // 10:06:08 secretaria /salio de mantenimientos
+# 24-09-2016 // 10:06:09 secretaria /entro en mantenimiento de clientes
+# 24-09-2016 // 10:08:26 secretaria /salio de mantenimientos
+# 24-09-2016 // 10:08:38 secretaria /cerro sesion correctamente
+# 24-09-2016 // 10:10:28 secretaria /ha iniciado sesion
+# 24-09-2016 // 10:10:31 secretaria /entro en mantenimientos
+# 24-09-2016 // 10:10:32 secretaria /entro en mantenimiento de clientes
+# 24-09-2016 // 10:11:29 secretaria /salio de mantenimientos
+# 24-09-2016 // 10:13:47 secretaria /salio de mantenimientos
+# 24-09-2016 // 10:13:48 secretaria /entro en mantenimiento de clientes
+# 24-09-2016 // 10:14:00 secretaria /salio de mantenimientos
+# 24-09-2016 // 10:14:36 secretaria /salio de mantenimientos
+# 24-09-2016 // 10:14:37 secretaria /entro en mantenimiento de vehiculos
+# 24-09-2016 // 10:14:40 secretaria /salio de mantenimientos
+# 24-09-2016 // 10:14:41 secretaria /entro en mantenimiento de clientes
+# 24-09-2016 // 10:15:08 secretaria /salio de mantenimientos
+# 24-09-2016 // 10:16:50 secretaria /salio de mantenimientos
+# 24-09-2016 // 10:16:51 secretaria /entro en mantenimiento de clientes
+# 24-09-2016 // 10:17:06 secretaria /salio de mantenimientos
+# 24-09-2016 // 10:18:37 secretaria /entro en mantenimiento de clientes
+# 24-09-2016 // 10:18:58 secretaria /salio de mantenimientos
+# 24-09-2016 // 10:19:32 secretaria /salio de mantenimientos
+# 24-09-2016 // 10:19:34 secretaria /entro en mantenimiento de clientes
+# 24-09-2016 // 10:20:13 secretaria /salio de mantenimientos
+# 24-09-2016 // 10:20:15 secretaria /entro en transacciones
+# 24-09-2016 // 10:20:18 secretaria /entro a visualizar transacciones
+# 24-09-2016 // 10:20:35 secretaria /entro a visualizar transacciones
+# 24-09-2016 // 10:21:35 secretaria /entro a visualizar transacciones
+# 24-09-2016 // 10:21:37 secretaria /salio de transacciones
+# 24-09-2016 // 10:21:42 secretaria /entro en mantenimientos
+# 24-09-2016 // 10:21:43 secretaria /entro en mantenimiento de clientes
+# 24-09-2016 // 10:22:38 secretaria /entro en mantenimiento de clientes
+# 24-09-2016 // 10:25:41 secretaria /salio de mantenimientos
+# 24-09-2016 // 10:25:43 secretaria /entro en parametros
+# 24-09-2016 // 10:26:24 secretaria /entro en mantenimientos
+# 24-09-2016 // 10:26:25 secretaria /entro en mantenimiento de clientes
+# 24-09-2016 // 10:28:44 secretaria /salio de mantenimientos
+# 24-09-2016 // 10:28:48 secretaria /entro en transacciones
+# 24-09-2016 // 10:28:51 secretaria /entro a visualizar transacciones
+# 24-09-2016 // 10:30:52 secretaria /creo la transaccion 89
+# 24-09-2016 // 10:31:00 secretaria /entro a visualizar transacciones
+# 24-09-2016 // 10:48:29 secretaria /entro a visualizar transacciones
+# 24-09-2016 // 10:48:30 secretaria /salio de transacciones
+# 24-09-2016 // 10:48:34 secretaria /entro en mantenimientos
+# 24-09-2016 // 10:48:36 secretaria /entro en mantenimiento de vehiculos
+# 24-09-2016 // 10:48:52 secretaria /salio de mantenimientos
+# 24-09-2016 // 10:50:45 secretaria /entro en mantenimiento de clientes
+# 24-09-2016 // 10:53:46 secretaria /creo el cliente 01012918935
+# 24-09-2016 // 10:53:46 secretaria /creo cuenta contable del cliente 01012918935
+# 24-09-2016 // 10:53:49 secretaria /entro en mantenimiento de clientes
+# 24-09-2016 // 10:53:52 secretaria /salio de mantenimientos
+# 24-09-2016 // 10:54:00 secretaria /entro en mantenimiento de vehiculos
+# 24-09-2016 // 10:54:20 secretaria /entro en mantenimientos
+# 24-09-2016 // 10:54:21 secretaria /entro en mantenimiento de vehiculos
+# 24-09-2016 // 10:54:26 secretaria /salio de mantenimientos
+# 24-09-2016 // 10:54:28 secretaria /entro en parametros
+# 24-09-2016 // 10:59:12 secretaria /creo el vehiculo ABC7378
+# 24-09-2016 // 10:59:12 secretaria /creo cuenta contable del vehiculo ABC7378
+# 24-09-2016 // 10:59:15 secretaria /entro en mantenimiento de vehiculos
+# 24-09-2016 // 10:59:21 secretaria /salio de mantenimientos
+# 24-09-2016 // 10:59:25 secretaria /entro en transacciones
+# 24-09-2016 // 10:59:26 secretaria /entro a visualizar transacciones
+# 24-09-2016 // 11:00:11 secretaria /entro en mantenimientos
+# 24-09-2016 // 11:00:12 secretaria /entro en mantenimiento de clientes
+# 24-09-2016 // 11:03:12 secretaria /creo la transaccion 90
+# 24-09-2016 // 11:06:55 secretaria /entro a visualizar transacciones
+# 24-09-2016 // 11:06:57 secretaria /salio de transacciones
+# 24-09-2016 // 11:06:58 secretaria /entro a documentos
+# 24-09-2016 // 11:21:51 secretaria /salio de transacciones
+# 24-09-2016 // 11:21:55 secretaria /entro a documentos
+# 24-09-2016 // 11:22:36 secretaria /salio de transacciones
+# 24-09-2016 // 11:22:51 secretaria /entro a visualizar transacciones
+# 24-09-2016 // 11:22:57 secretaria /salio de transacciones
+# 24-09-2016 // 11:22:59 secretaria /entro a documentos
+# 24-09-2016 // 11:23:50 secretaria /salio de transacciones
+# 24-09-2016 // 11:23:52 secretaria /entro a documentos
+# 24-09-2016 // 11:49:13 secretaria /salio de transacciones
+# 24-09-2016 // 11:49:15 secretaria /entro a visualizar transacciones
+# 24-09-2016 // 12:23:30 secretaria /entro a visualizar transacciones
+# 24-09-2016 // 12:23:33 secretaria /salio de transacciones

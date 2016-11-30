@@ -1,0 +1,74 @@
+# 23-03-2016 // 16:12:40 secretaria /creo el cliente 0103088613
+# 23-03-2016 // 16:12:40 secretaria /creo cuenta contable del cliente 0103088613
+# 23-03-2016 // 16:12:50 secretaria /entro en mantenimiento de clientes
+# 23-03-2016 // 16:12:59 secretaria /salio de mantenimientos
+# 23-03-2016 // 16:13:01 secretaria /entro en mantenimiento de vehiculos
+# 23-03-2016 // 16:13:12 secretaria /entro en mantenimiento de vehiculos
+# 23-03-2016 // 16:14:00 secretaria /entro en mantenimiento de vehiculos
+# 23-03-2016 // 16:16:10 secretaria /creo el vehiculo AGA0099
+# 23-03-2016 // 16:16:10 secretaria /creo cuenta contable del vehiculo AGA0099
+# 23-03-2016 // 16:16:13 secretaria /entro en mantenimiento de vehiculos
+# 23-03-2016 // 16:16:15 secretaria /salio de mantenimientos
+# 23-03-2016 // 16:16:17 secretaria /entro en transacciones
+# 23-03-2016 // 16:16:18 secretaria /entro a visualizar transacciones
+# 23-03-2016 // 16:17:55 secretaria /entro a visualizar transacciones
+# 23-03-2016 // 16:28:58 secretaria /entro a visualizar transacciones
+# 23-03-2016 // 16:29:00 secretaria /salio de transacciones
+# 23-03-2016 // 16:29:05 secretaria /entro en mantenimientos
+# 23-03-2016 // 16:29:07 secretaria /entro en mantenimiento de vehiculos
+# 23-03-2016 // 16:30:06 secretaria /entro en mantenimiento de vehiculos
+# 23-03-2016 // 16:35:23 secretaria /salio de mantenimientos
+# 23-03-2016 // 16:35:54 secretaria /cerro sesion correctamente
+# 23-03-2016 // 16:51:00 secretaria /ha iniciado sesion
+# 23-03-2016 // 16:51:02 secretaria /entro en transacciones
+# 23-03-2016 // 16:51:04 secretaria /entro a visualizar transacciones
+# 23-03-2016 // 16:53:01 secretaria /entro a visualizar transacciones
+# 23-03-2016 // 16:54:43 secretaria /entro a visualizar transacciones
+# 23-03-2016 // 17:07:58 secretaria /entro a visualizar transacciones
+# 23-03-2016 // 17:09:48 secretaria /entro a visualizar transacciones
+# 23-03-2016 // 17:10:13 secretaria /salio de transacciones
+# 23-03-2016 // 17:10:17 secretaria /entro en mantenimientos
+# 23-03-2016 // 17:10:18 secretaria /entro en mantenimiento de clientes
+# 23-03-2016 // 17:13:02 secretaria /creo el cliente 1400457923
+# 23-03-2016 // 17:13:03 secretaria /creo cuenta contable del cliente 1400457923
+# 23-03-2016 // 17:13:05 secretaria /entro en mantenimiento de clientes
+# 23-03-2016 // 17:13:07 secretaria /salio de mantenimientos
+# 23-03-2016 // 17:13:08 secretaria /entro en mantenimiento de vehiculos
+# 23-03-2016 // 17:13:46 secretaria /entro en mantenimientos
+# 23-03-2016 // 17:13:48 secretaria /entro en mantenimiento de vehiculos
+# 23-03-2016 // 17:13:49 secretaria /salio de mantenimientos
+# 23-03-2016 // 17:13:51 secretaria /entro en parametros
+# 23-03-2016 // 17:16:49 secretaria /creo el vehiculo ABE2319
+# 23-03-2016 // 17:16:49 secretaria /creo cuenta contable del vehiculo ABE2319
+# 23-03-2016 // 17:16:52 secretaria /entro en mantenimiento de vehiculos
+# 23-03-2016 // 17:17:06 secretaria /salio de mantenimientos
+# 23-03-2016 // 17:17:22 secretaria /entro en transacciones
+# 23-03-2016 // 17:17:23 secretaria /entro a visualizar transacciones
+# 23-03-2016 // 12:21:12 secretaria /creo la transaccion 46
+# 23-03-2016 // 13:05:29 secretaria /creo la transaccion 49
+# 23-03-2016 // 15:31:58 secretaria /salio de transacciones
+# 23-03-2016 // 15:32:04 secretaria /entro en mantenimientos
+# 23-03-2016 // 15:32:06 secretaria /entro en mantenimiento de vehiculos
+# 23-03-2016 // 15:33:15 secretaria /salio de mantenimientos
+# 23-03-2016 // 15:33:16 secretaria /entro en mantenimiento de clientes
+# 23-03-2016 // 15:33:49 secretaria /salio de mantenimientos
+# 23-03-2016 // 15:34:07 secretaria /entro en mantenimiento de vehiculos
+# 23-03-2016 // 15:34:18 secretaria /salio de mantenimientos
+# 23-03-2016 // 15:34:25 secretaria /entro en parametros
+# 23-03-2016 // 15:34:29 secretaria /entro en mantenimientos
+# 23-03-2016 // 15:34:31 secretaria /entro en mantenimiento de vehiculos
+# 23-03-2016 // 15:37:54 secretaria /entro en mantenimientos
+# 23-03-2016 // 15:37:56 secretaria /entro en mantenimiento de clientes
+# 23-03-2016 // 15:38:00 secretaria /salio de mantenimientos
+# 23-03-2016 // 15:38:01 secretaria /entro en mantenimiento de vehiculos
+# 23-03-2016 // 15:38:12 secretaria /entro en mantenimiento de vehiculos
+# 23-03-2016 // 15:38:14 secretaria /salio de mantenimientos
+# 23-03-2016 // 15:38:19 secretaria /entro en parametros
+# 23-03-2016 // 15:39:20 secretaria /entro en parametros
+# 23-03-2016 // 15:40:46 secretaria /creo el vehiculo PBQ9183
+# 23-03-2016 // 15:40:46 secretaria /creo cuenta contable del vehiculo PBQ9183
+# 23-03-2016 // 15:40:49 secretaria /entro en mantenimiento de vehiculos
+# 23-03-2016 // 15:40:51 secretaria /salio de mantenimientos
+# 23-03-2016 // 15:41:12 secretaria /entro en mantenimientos
+# 23-03-2016 // 15:41:15 secretaria /entro en transacciones
+# 23-03-2016 // 15:41:16 secretaria /entro a visualizar transacciones

@@ -1,0 +1,66 @@
+# 01-03-2016 // 13:04:13 root /ha iniciado sesion
+# 01-03-2016 // 13:04:29 root /entro en administracion
+# 01-03-2016 // 13:04:30 root /entro mantenimiento de usuarios
+# 01-03-2016 // 13:05:00 root /entro mantenimiento de usuarios
+# 01-03-2016 // 13:05:00 root /creo el usuarioadmin
+# 01-03-2016 // 13:05:08 root /salio de administracion
+# 01-03-2016 // 13:05:10 root /cerro sesion correctamente
+# 01-03-2016 // 13:05:17 admin /ha iniciado sesion
+# 01-03-2016 // 13:05:20 admin /entro en parametros
+# 01-03-2016 // 13:06:37 admin /cerro sesion correctamente
+# 01-03-2016 // 13:06:46 root /ha iniciado sesion
+# 01-03-2016 // 13:06:50 root /entro en administracion
+# 01-03-2016 // 13:06:51 root /entro mantenimiento de usuarios
+# 01-03-2016 // 13:07:03 root /entro mantenimiento de usuarios
+# 01-03-2016 // 13:07:03 root /salio de mantenimiento de usuarios
+# 01-03-2016 // 13:09:26 root /salio de administracion
+# 01-03-2016 // 14:05:37 root /entro en administracion
+# 01-03-2016 // 14:05:44 root /entro mantenimiento de usuarios
+# 01-03-2016 // 14:06:27 root /entro mantenimiento de usuarios
+# 01-03-2016 // 14:07:08 root /creo el usuarioprueba
+# 01-03-2016 // 14:08:01 root /salio de administracion
+# 01-03-2016 // 14:08:11 root /cerro sesion correctamente
+# 01-03-2016 // 15:28:34  /entro mantenimiento de usuarios
+# 01-03-2016 // 15:28:38  /salio de administracion
+# 01-03-2016 // 15:28:42  /cerro sesion correctamente
+# 01-03-2016 // 15:15:33 secretaria /creo la transaccion 31
+# 01-03-2016 // 12:22:43 secretaria /salio de transacciones
+# 01-03-2016 // 12:22:46 secretaria /entro en mantenimientos
+# 01-03-2016 // 12:22:46 secretaria /entro en mantenimiento de vehiculos
+# 01-03-2016 // 12:22:55 secretaria /salio de mantenimientos
+# 01-03-2016 // 12:22:59 secretaria /entro en mantenimiento de vehiculos
+# 01-03-2016 // 12:25:19 secretaria /creo el vehiculo ABC5922
+# 01-03-2016 // 12:25:19 secretaria /creo cuenta contable del vehiculo ABC5922
+# 01-03-2016 // 12:25:25 secretaria /entro en mantenimiento de vehiculos
+# 01-03-2016 // 12:25:27 secretaria /salio de mantenimientos
+# 01-03-2016 // 12:25:28 secretaria /entro en mantenimiento de clientes
+# 01-03-2016 // 12:25:52 secretaria /salio de mantenimientos
+# 01-03-2016 // 12:25:54 secretaria /entro en mantenimiento de vehiculos
+# 01-03-2016 // 12:25:57 secretaria /salio de mantenimientos
+# 01-03-2016 // 12:26:01 secretaria /entro en transacciones
+# 01-03-2016 // 12:26:06 secretaria /entro en mantenimientos
+# 01-03-2016 // 12:26:07 secretaria /entro en mantenimiento de vehiculos
+# 01-03-2016 // 12:26:10 secretaria /salio de mantenimientos
+# 01-03-2016 // 12:26:16 secretaria /entro en mantenimientos
+# 01-03-2016 // 12:26:19 secretaria /entro en transacciones
+# 01-03-2016 // 12:26:25 secretaria /entro en parametros
+# 01-03-2016 // 12:26:30 secretaria /entro en mantenimientos
+# 01-03-2016 // 12:26:31 secretaria /entro en mantenimiento de vehiculos
+# 01-03-2016 // 12:26:36 secretaria /salio de mantenimientos
+# 01-03-2016 // 12:26:57 secretaria /entro en mantenimientos
+# 01-03-2016 // 12:26:58 secretaria /entro en mantenimiento de clientes
+# 01-03-2016 // 12:27:06 secretaria /salio de mantenimientos
+# 01-03-2016 // 12:27:08 secretaria /entro en transacciones
+# 01-03-2016 // 12:27:09 secretaria /entro a visualizar transacciones
+# 01-03-2016 // 12:28:59 secretaria /creo la transaccion 47
+# 01-03-2016 // 12:30:27 secretaria /salio de transacciones
+# 01-03-2016 // 12:30:31 secretaria /entro en mantenimientos
+# 01-03-2016 // 12:30:33 secretaria /entro en mantenimiento de vehiculos
+# 01-03-2016 // 12:33:21 secretaria /salio de mantenimientos
+# 01-03-2016 // 12:33:22 secretaria /entro en mantenimiento de vehiculos
+# 01-03-2016 // 12:34:59 secretaria /creo el vehiculo UBA1566
+# 01-03-2016 // 12:34:59 secretaria /creo cuenta contable del vehiculo UBA1566
+# 01-03-2016 // 12:35:03 secretaria /entro en mantenimiento de vehiculos
+# 01-03-2016 // 12:35:10 secretaria /salio de mantenimientos
+# 01-03-2016 // 12:35:13 secretaria /entro en transacciones
+# 01-03-2016 // 12:35:14 secretaria /entro a visualizar transacciones

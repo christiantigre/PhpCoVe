@@ -1,0 +1,58 @@
+# 20-04-2016 // 23:30:24  /cerro sesion correctamente
+# 20-04-2016 // 23:34:57 root /ha iniciado sesion
+# 20-04-2016 // 23:35:56 root /entro en mantenimientos
+# 20-04-2016 // 23:35:59 root /entro en mantenimiento de vehiculos
+# 20-04-2016 // 23:38:08 root /salio de mantenimientos
+# 20-04-2016 // 15:57:11 secretaria /creo la transaccion 51
+# 20-04-2016 // 16:42:38 secretaria /creo la transaccion 52
+# 20-04-2016 // 16:44:18 secretaria /entro en mantenimientos
+# 20-04-2016 // 16:44:19 secretaria /entro en mantenimiento de vehiculos
+# 20-04-2016 // 16:44:55 secretaria /entro en mantenimiento de vehiculos
+# 20-04-2016 // 16:44:57 secretaria /salio de mantenimientos
+# 20-04-2016 // 16:45:01 secretaria /entro en parametros
+# 20-04-2016 // 16:46:07 secretaria /entro en parametros
+# 20-04-2016 // 16:47:43 secretaria /entro en parametros
+# 20-04-2016 // 16:47:46 secretaria /entro en mantenimientos
+# 20-04-2016 // 16:47:47 secretaria /entro en mantenimiento de clientes
+# 20-04-2016 // 16:50:01 secretaria /creo el cliente 0301998753
+# 20-04-2016 // 16:50:01 secretaria /creo cuenta contable del cliente 0301998753
+# 20-04-2016 // 16:50:03 secretaria /entro en mantenimiento de clientes
+# 20-04-2016 // 16:50:05 secretaria /salio de mantenimientos
+# 20-04-2016 // 16:50:08 secretaria /entro en mantenimiento de vehiculos
+# 20-04-2016 // 16:51:09 secretaria /entro en mantenimiento de vehiculos
+# 20-04-2016 // 16:53:55 secretaria /creo el vehiculo PBH5791
+# 20-04-2016 // 16:53:55 secretaria /creo cuenta contable del vehiculo PBH5791
+# 20-04-2016 // 17:32:22 secretaria /entro en mantenimientos
+# 20-04-2016 // 17:32:24 secretaria /entro en mantenimiento de clientes
+# 20-04-2016 // 17:34:59 secretaria /creo el cliente 0103667655
+# 20-04-2016 // 17:34:59 secretaria /creo cuenta contable del cliente 0103667655
+# 20-04-2016 // 17:35:02 secretaria /entro en mantenimiento de clientes
+# 20-04-2016 // 17:35:04 secretaria /salio de mantenimientos
+# 20-04-2016 // 17:35:05 secretaria /entro en mantenimiento de vehiculos
+# 20-04-2016 // 17:36:30 secretaria /creo el vehiculo PBM3395
+# 20-04-2016 // 17:36:30 secretaria /creo cuenta contable del vehiculo PBM3395
+# 20-04-2016 // 17:36:33 secretaria /entro en mantenimiento de vehiculos
+# 20-04-2016 // 17:43:07 secretaria /creo la transaccion 56
+# 20-04-2016 // 18:07:22 secretaria /salio de transacciones
+# 20-04-2016 // 18:07:26 secretaria /entro en transacciones
+# 20-04-2016 // 18:08:00 secretaria /entro a visualizar transacciones
+# 20-04-2016 // 18:14:22 secretaria /salio de transacciones
+# 20-04-2016 // 18:14:26 secretaria /entro en mantenimientos
+# 20-04-2016 // 18:14:28 secretaria /entro en mantenimiento de vehiculos
+# 20-04-2016 // 18:21:25 secretaria /salio de mantenimientos
+# 20-04-2016 // 18:21:29 secretaria /entro en mantenimientos
+# 20-04-2016 // 18:21:30 secretaria /entro en mantenimiento de vehiculos
+# 20-04-2016 // 18:21:35 secretaria /entro en mantenimiento de vehiculos
+# 20-04-2016 // 18:21:37 secretaria /salio de mantenimientos
+# 20-04-2016 // 18:21:40 secretaria /entro en parametros
+# 20-04-2016 // 18:23:51 secretaria /creo el vehiculo PBT8648
+# 20-04-2016 // 18:23:51 secretaria /creo cuenta contable del vehiculo PBT8648
+# 20-04-2016 // 18:23:59 secretaria /entro en mantenimientos
+# 20-04-2016 // 18:24:00 secretaria /entro en mantenimiento de clientes
+# 20-04-2016 // 18:26:57 secretaria /creo el cliente 1708453319
+# 20-04-2016 // 18:26:57 secretaria /creo cuenta contable del cliente 1708453319
+# 20-04-2016 // 18:27:04 secretaria /entro en mantenimiento de vehiculos
+# 20-04-2016 // 18:27:06 secretaria /salio de mantenimientos
+# 20-04-2016 // 18:27:08 secretaria /entro en transacciones
+# 20-04-2016 // 18:27:10 secretaria /entro a visualizar transacciones
+# 20-04-2016 // 12:42:44 secretaria /creo la transaccion 104

@@ -1,0 +1,13 @@
+# 29-06-2016 // 12:31:13 secretaria /salio de transacciones
+# 29-06-2016 // 12:31:20 secretaria /entro en mantenimientos
+# 29-06-2016 // 12:31:21 secretaria /entro en mantenimiento de vehiculos
+# 29-06-2016 // 12:34:14 secretaria /creo el vehiculo PBZ6345
+# 29-06-2016 // 12:34:14 secretaria /creo cuenta contable del vehiculo PBZ6345
+# 29-06-2016 // 12:34:17 secretaria /entro en mantenimiento de vehiculos
+# 29-06-2016 // 12:34:19 secretaria /salio de mantenimientos
+# 29-06-2016 // 12:34:20 secretaria /entro en mantenimiento de clientes
+# 29-06-2016 // 12:36:59 secretaria /creo el cliente 0102175783
+# 29-06-2016 // 12:36:59 secretaria /creo cuenta contable del cliente 0102175783
+# 29-06-2016 // 12:37:07 secretaria /entro en mantenimiento de clientes
+# 29-06-2016 // 12:37:09 secretaria /entro a visualizar transacciones
+# 29-06-2016 // 12:38:30 secretaria /creo la transaccion 66

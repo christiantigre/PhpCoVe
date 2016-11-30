@@ -1,0 +1,23 @@
+# 18-12-2015 // 08:35:00 root /ha iniciado sesion
+# 18-12-2015 // 10:55:08  /entro en transacciones
+# 18-12-2015 // 10:55:10  /entro a visualizar transacciones
+# 18-12-2015 // 10:55:15  /salio de transacciones
+# 18-12-2015 // 10:55:16  /entro a visualizar transacciones
+# 18-12-2015 // 10:55:31  /salio de transacciones
+# 18-12-2015 // 10:55:36  /entro en mantenimientos
+# 18-12-2015 // 10:55:39  /entro en mantenimiento de vehiculos
+# 18-12-2015 // 10:55:42  /salio de mantenimientos
+# 18-12-2015 // 10:55:51  /cerro sesion correctamente
+# 18-12-2015 // 10:55:59 root /ha iniciado sesion
+# 18-12-2015 // 10:56:01 root /entro en mantenimientos
+# 18-12-2015 // 10:56:03 root /entro en mantenimiento de vehiculos
+# 18-12-2015 // 10:56:05 root /salio de mantenimientos
+# 18-12-2015 // 10:56:09 root /entro en transacciones
+# 18-12-2015 // 10:56:10 root /entro a visualizar transacciones
+# 18-12-2015 // 10:57:04 root /entro a visualizar transacciones
+# 18-12-2015 // 10:57:05 root /salio de transacciones
+# 18-12-2015 // 10:57:08 root /cerro sesion correctamente
+# 18-12-2015 // 11:21:29 root /ha iniciado sesion
+# 18-12-2015 // 11:23:09 root /cerro sesion correctamente
+# 18-12-2015 // 11:23:49 root /ha iniciado sesion
+# 18-12-2015 // 11:28:52 root /cerro sesion correctamente

@@ -1,0 +1,177 @@
+# 28-12-2015 // 08:16:34 root /ha iniciado sesion
+# 28-12-2015 // 08:16:35 root /entro en transacciones
+# 28-12-2015 // 08:16:36 root /entro a visualizar transacciones
+# 28-12-2015 // 08:18:40 root /creo la transaccion 7
+# 28-12-2015 // 08:18:54 root /salio de transacciones
+# 28-12-2015 // 08:34:59 root /entro a visualizar transacciones
+# 28-12-2015 // 08:35:40 root /creo la transaccion 8
+# 28-12-2015 // 08:36:28 root /salio de transacciones
+# 28-12-2015 // 08:37:09 root /entro a visualizar transacciones
+# 28-12-2015 // 08:38:23 root /creo la transaccion 9
+# 28-12-2015 // 08:38:28 root /salio de transacciones
+# 28-12-2015 // 08:39:00 root /entro en transacciones
+# 28-12-2015 // 08:39:10 root /entro a visualizar transacciones
+# 28-12-2015 // 08:42:43 root /creo la transaccion 10
+# 28-12-2015 // 08:42:53 root /salio de transacciones
+# 28-12-2015 // 08:48:50 root /entro a visualizar transacciones
+# 28-12-2015 // 08:49:28 root /creo la transaccion 11
+# 28-12-2015 // 08:53:35 root /salio de transacciones
+# 28-12-2015 // 08:53:36 root /entro a visualizar transacciones
+# 28-12-2015 // 08:54:25 root /entro a visualizar transacciones
+# 28-12-2015 // 08:55:38 root /creo la transaccion 12
+# 28-12-2015 // 08:55:55 root /entro a visualizar transacciones
+# 28-12-2015 // 08:56:01 root /entro a visualizar transacciones
+# 28-12-2015 // 08:56:07 root /entro a visualizar transacciones
+# 28-12-2015 // 08:56:17 root /entro a visualizar transacciones
+# 28-12-2015 // 09:00:37 root /entro a visualizar transacciones
+# 28-12-2015 // 09:01:16 root /entro a visualizar transacciones
+# 28-12-2015 // 09:03:39 root /creo la transaccion 13
+# 28-12-2015 // 09:06:18 root /creo la transaccion 14
+# 28-12-2015 // 09:06:31 root /salio de transacciones
+# 28-12-2015 // 09:06:57 root /entro en transacciones
+# 28-12-2015 // 09:07:01 root /entro a visualizar transacciones
+# 28-12-2015 // 09:19:33 root /entro en mantenimientos
+# 28-12-2015 // 09:19:35 root /entro en mantenimiento de vehiculos
+# 28-12-2015 // 09:19:38 root /entro en mantenimiento de vehiculos
+# 28-12-2015 // 09:19:40 root /salio de mantenimientos
+# 28-12-2015 // 09:19:41 root /entro en mantenimiento de clientes
+# 28-12-2015 // 09:19:44 root /entro en mantenimiento de clientes
+# 28-12-2015 // 09:19:45 root /salio de mantenimientos
+# 28-12-2015 // 09:19:47 root /entro en transacciones
+# 28-12-2015 // 09:19:59 root /entro a visualizar transacciones
+# 28-12-2015 // 09:20:06 root /entro a visualizar transacciones
+# 28-12-2015 // 09:20:11 root /entro a visualizar transacciones
+# 28-12-2015 // 09:20:59 root /entro a visualizar transacciones
+# 28-12-2015 // 09:21:03 root /salio de transacciones
+# 28-12-2015 // 09:21:16 root /cerro sesion correctamente
+# 28-12-2015 // 09:21:29 root /ha iniciado sesion
+# 28-12-2015 // 09:21:31 root /entro en transacciones
+# 28-12-2015 // 09:21:32 root /entro a visualizar transacciones
+# 28-12-2015 // 09:21:49 root /entro a visualizar transacciones
+# 28-12-2015 // 09:21:52 root /salio de transacciones
+# 28-12-2015 // 09:21:59 root /entro a visualizar transacciones
+# 28-12-2015 // 09:23:59 root /entro a visualizar transacciones
+# 28-12-2015 // 09:24:01 root /salio de transacciones
+# 28-12-2015 // 09:24:33 root /entro en mantenimientos
+# 28-12-2015 // 09:24:36 root /entro en transacciones
+# 28-12-2015 // 09:24:38 root /entro a visualizar transacciones
+# 28-12-2015 // 09:26:51 root /entro a visualizar transacciones
+# 28-12-2015 // 09:28:14 root /salio de transacciones
+# 28-12-2015 // 09:28:56 root /entro a visualizar transacciones
+# 28-12-2015 // 09:30:49 root /entro a visualizar transacciones
+# 28-12-2015 // 09:30:51 root /salio de transacciones
+# 28-12-2015 // 09:30:54 root /entro en mantenimientos
+# 28-12-2015 // 09:30:55 root /entro en mantenimiento de vehiculos
+# 28-12-2015 // 09:31:03 root /salio de mantenimientos
+# 28-12-2015 // 09:31:10 root /entro en administracion
+# 28-12-2015 // 09:31:15 root /entro en transacciones
+# 28-12-2015 // 09:32:11 root /entro a visualizar transacciones
+# 28-12-2015 // 09:38:00 root /entro a visualizar transacciones
+# 28-12-2015 // 09:41:26 root /entro a visualizar transacciones
+# 28-12-2015 // 09:41:28 root /salio de transacciones
+# 28-12-2015 // 09:41:31 root /entro en administracion
+# 28-12-2015 // 09:41:33 root /entro en mantenimiento de empresa
+# 28-12-2015 // 09:42:24 root /salio de administracion
+# 28-12-2015 // 09:42:38 root /cerro sesion correctamente
+# 28-12-2015 // 09:42:50 root /ha iniciado sesion
+# 28-12-2015 // 09:42:53 root /entro en transacciones
+# 28-12-2015 // 09:43:01 root /entro a visualizar transacciones
+# 28-12-2015 // 09:43:38 root /entro a visualizar transacciones
+# 28-12-2015 // 09:45:05 root /salio de transacciones
+# 28-12-2015 // 10:11:48 root /entro a visualizar transacciones
+# 28-12-2015 // 10:12:31 root /creo la transaccion 16
+# 28-12-2015 // 10:13:53 root /creo la transaccion 17
+# 28-12-2015 // 10:14:11 root /salio de transacciones
+# 28-12-2015 // 10:14:13 root /entro a visualizar transacciones
+# 28-12-2015 // 10:57:59 root /creo la transaccion 18
+# 28-12-2015 // 10:58:36 root /creo la transaccion 18
+# 28-12-2015 // 10:59:02 root /salio de transacciones
+# 28-12-2015 // 10:59:16 root /entro en transacciones
+# 28-12-2015 // 11:03:37 root /entro a visualizar transacciones
+# 28-12-2015 // 11:04:34 root /creo la transaccion 19
+# 28-12-2015 // 11:07:36 root /creo la transaccion 20
+# 28-12-2015 // 11:13:16 root /creo la transaccion 21
+# 28-12-2015 // 11:20:22 root /salio de transacciones
+# 28-12-2015 // 11:31:26 root /entro en mantenimientos
+# 28-12-2015 // 11:31:27 root /entro en mantenimiento de vehiculos
+# 28-12-2015 // 11:31:38 root /salio de mantenimientos
+# 28-12-2015 // 11:40:52 root /entro en transacciones
+# 28-12-2015 // 11:40:56 root /entro a visualizar transacciones
+# 28-12-2015 // 11:46:53 root /creo la transaccion 22
+# 28-12-2015 // 11:57:35 root /entro en transacciones
+# 28-12-2015 // 11:57:36 root /entro a visualizar transacciones
+# 28-12-2015 // 11:58:47 root /creo la transaccion 23
+# 28-12-2015 // 12:03:48 root /creo la transaccion 24
+# 28-12-2015 // 12:07:17 root /creo la transaccion 25
+# 28-12-2015 // 12:07:42 root /salio de transacciones
+# 28-12-2015 // 12:07:45 root /entro a visualizar transacciones
+# 28-12-2015 // 12:08:21 root /creo la transaccion 26
+# 28-12-2015 // 12:09:09 root /salio de transacciones
+# 28-12-2015 // 12:09:15 root /entro a visualizar transacciones
+# 28-12-2015 // 12:09:48 root /creo la transaccion 26
+# 28-12-2015 // 12:33:55 root /creo la transaccion 27
+# 28-12-2015 // 12:39:04 root /creo la transaccion 28
+# 28-12-2015 // 12:57:22 root /creo la transaccion 29
+# 28-12-2015 // 13:04:22 root /entro a visualizar transacciones
+# 28-12-2015 // 13:06:22 root /salio de transacciones
+# 28-12-2015 // 13:06:24 root /entro a visualizar transacciones
+# 28-12-2015 // 13:08:21 root /entro a visualizar transacciones
+# 28-12-2015 // 13:12:35 root /salio de transacciones
+# 28-12-2015 // 13:12:37 root /cerro sesion correctamente
+# 28-12-2015 // 14:49:21 root /ha iniciado sesion
+# 28-12-2015 // 14:49:30 root /entro en transacciones
+# 28-12-2015 // 14:49:37 root /entro a visualizar transacciones
+# 28-12-2015 // 15:20:00 root /entro a visualizar transacciones
+# 28-12-2015 // 15:20:04 root /salio de transacciones
+# 28-12-2015 // 15:20:05 root /entro a visualizar transacciones
+# 28-12-2015 // 15:21:11 root /creo la transaccion 30
+# 28-12-2015 // 15:22:54 root /entro a visualizar transacciones
+# 28-12-2015 // 15:24:24 root /creo la transaccion 31
+# 28-12-2015 // 15:46:11 root /entro a visualizar transacciones
+# 28-12-2015 // 15:46:20 root /entro a visualizar transacciones
+# 28-12-2015 // 15:46:25 root /entro a visualizar transacciones
+# 28-12-2015 // 15:46:48 root /entro a visualizar transacciones
+# 28-12-2015 // 15:51:48 root /entro a visualizar transacciones
+# 28-12-2015 // 16:20:04 root /entro a visualizar transacciones
+# 28-12-2015 // 16:20:18 root /salio de transacciones
+# 28-12-2015 // 16:20:21 root /cerro sesion correctamente
+# 28-12-2015 // 16:54:44 root /ha iniciado sesion
+# 28-12-2015 // 16:54:48 root /entro en transacciones
+# 28-12-2015 // 16:54:49 root /entro a visualizar transacciones
+# 28-12-2015 // 16:56:19 root /entro a visualizar transacciones
+# 28-12-2015 // 17:35:23 root /entro a visualizar transacciones
+# 28-12-2015 // 17:35:58 root /entro a visualizar transacciones
+# 28-12-2015 // 17:36:07 root /entro a visualizar transacciones
+# 28-12-2015 // 17:37:32 root /entro a visualizar transacciones
+# 28-12-2015 // 17:37:42 root /entro a visualizar transacciones
+# 28-12-2015 // 17:39:28 root /entro a visualizar transacciones
+# 28-12-2015 // 18:02:59 root /entro a visualizar transacciones
+# 28-12-2015 // 18:05:05 root /entro en transacciones
+# 28-12-2015 // 18:05:09 root /entro a visualizar transacciones
+# 28-12-2015 // 18:26:47 root /entro en transacciones
+# 28-12-2015 // 18:26:51 root /entro a visualizar transacciones
+# 28-12-2015 // 18:29:14 root /entro en transacciones
+# 28-12-2015 // 18:29:18 root /entro a visualizar transacciones
+# 28-12-2015 // 18:33:01 root /entro en transacciones
+# 28-12-2015 // 18:33:05 root /entro a visualizar transacciones
+# 28-12-2015 // 18:47:40 root /entro a visualizar transacciones
+# 28-12-2015 // 18:47:57 root /entro a visualizar transacciones
+# 28-12-2015 // 18:53:17 root /entro a visualizar transacciones
+# 28-12-2015 // 18:53:34 root /entro a visualizar transacciones
+# 28-12-2015 // 18:53:40 root /salio de transacciones
+# 28-12-2015 // 18:57:08 root /entro a visualizar transacciones
+# 28-12-2015 // 18:57:23 root /entro a visualizar transacciones
+# 28-12-2015 // 18:59:01 root /salio de transacciones
+# 28-12-2015 // 18:59:04 root /cerro sesion correctamente
+# 28-12-2015 // 19:00:18 root /ha iniciado sesion
+# 28-12-2015 // 19:00:30 root /entro en transacciones
+# 28-12-2015 // 19:00:31 root /entro a visualizar transacciones
+# 28-12-2015 // 19:00:58 root /entro a visualizar transacciones
+# 28-12-2015 // 19:00:59 root /salio de transacciones
+# 28-12-2015 // 19:01:10 root /cerro sesion correctamente
+# 28-12-2015 // 23:17:49 root /ha iniciado sesion
+# 28-12-2015 // 23:17:53 root /entro en transacciones
+# 28-12-2015 // 23:17:54 root /entro a visualizar transacciones
+# 28-12-2015 // 23:18:37 root /entro a visualizar transacciones
+# 28-12-2015 // 23:20:05 root /entro a visualizar transacciones
+# 28-12-2015 // 23:23:52 root /entro a visualizar transacciones

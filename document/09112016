@@ -1,0 +1,226 @@
+# 09-11-2016 // 07:51:21 root /entro en transacciones
+# 09-11-2016 // 07:51:26 root /entro a visualizar transacciones
+# 09-11-2016 // 07:52:51 root /entro a visualizar transacciones
+# 09-11-2016 // 07:55:25 root /entro a visualizar transacciones
+# 09-11-2016 // 07:55:37 root /salio de transacciones
+# 09-11-2016 // 07:55:39 root /ingreso a pagos
+# 09-11-2016 // 07:56:07 root /entro a visualizar transacciones
+# 09-11-2016 // 07:56:09 root /salio de transacciones
+# 09-11-2016 // 07:56:11 root /ingreso a pagos
+# 09-11-2016 // 07:56:31 root /salio de cobros
+# 09-11-2016 // 07:56:37 root /salio de transacciones
+# 09-11-2016 // 07:56:39 root /ingreso a pagos
+# 09-11-2016 // 07:58:14 root /salio de cobros
+# 09-11-2016 // 11:47:20 root /entro a visualizar transacciones
+# 09-11-2016 // 11:47:21 root /salio de transacciones
+# 09-11-2016 // 11:47:23 root /ingreso a pagos
+# 09-11-2016 // 11:48:38 root /salio de cobros
+# 09-11-2016 // 11:48:40 root /salio de transacciones
+# 09-11-2016 // 11:48:41 root /entro a visualizar transacciones
+# 09-11-2016 // 11:48:55 root /salio de transacciones
+# 09-11-2016 // 11:48:56 root /ingreso a pagos
+# 09-11-2016 // 11:49:30 root /salio de cobros
+# 09-11-2016 // 11:49:31 root /salio de transacciones
+# 09-11-2016 // 11:49:32 root /entro a visualizar transacciones
+# 09-11-2016 // 11:50:23 root /entro a visualizar transacciones
+# 09-11-2016 // 11:50:27 root /salio de transacciones
+# 09-11-2016 // 11:56:45 root /entro en mantenimientos
+# 09-11-2016 // 11:56:47 root /entro en mantenimiento de vehiculos
+# 09-11-2016 // 11:58:17 root /entro en mantenimiento de vehiculos
+# 09-11-2016 // 11:59:30 root /entro en mantenimiento de vehiculos
+# 09-11-2016 // 11:59:44 root /entro en mantenimiento de vehiculos
+# 09-11-2016 // 12:11:48 root /entro en mantenimiento de vehiculos
+# 09-11-2016 // 12:12:56 root /salio de mantenimientos
+# 09-11-2016 // 12:12:58 root /entro en parametros
+# 09-11-2016 // 12:13:03 root /entro en administracion
+# 09-11-2016 // 12:13:04 root /entro a visualizar el historial
+# 09-11-2016 // 12:14:35 root /entro en mantenimientos
+# 09-11-2016 // 12:14:36 root /entro en mantenimiento de vehiculos
+# 09-11-2016 // 12:17:20 root /actualizó datos vehículo PBI7326
+# 09-11-2016 // 12:18:20 root /actualizó datos vehículo PBI7326
+# 09-11-2016 // 12:21:50 root /actualizó datos vehículo PBI7326
+# 09-11-2016 // 12:22:07 root /actualizó datos vehículo PBI7326
+# 09-11-2016 // 12:33:34 root /actualizó datos vehículo ABA1262
+# 09-11-2016 // 12:34:15 root /actualizó datos vehículo ABA1262
+# 09-11-2016 // 12:34:26 root /actualizó datos vehículo PBI7327
+# 09-11-2016 // 12:35:17 root /actualizó datos vehículo PBI7327
+# 09-11-2016 // 12:36:42 root /actualizó datos vehículo PBI7327
+# 09-11-2016 // 12:37:59 root /actualizó datos vehículo PBI7327
+# 09-11-2016 // 12:51:56 root /salio de mantenimientos
+# 09-11-2016 // 12:52:31 root /entro en mantenimiento de vehiculos
+# 09-11-2016 // 12:52:49 root /actualizó datos vehículo PBI7327
+# 09-11-2016 // 12:53:06 root /salio de mantenimientos
+# 09-11-2016 // 12:53:07 root /entro en mantenimiento de clientes
+# 09-11-2016 // 13:04:30 root /salio de mantenimientos
+# 09-11-2016 // 13:04:31 root /entro en mantenimiento de clientes
+# 09-11-2016 // 15:09:52 root /salio de administracion
+# 09-11-2016 // 15:09:54 root /entro mantenimiento de usuarios
+# 09-11-2016 // 15:10:48 root /salio de administracion
+# 09-11-2016 // 15:10:56 root /entro en mantenimientos
+# 09-11-2016 // 15:10:58 root /entro en mantenimiento de clientes
+# 09-11-2016 // 15:30:52 root /salio de mantenimientos
+# 09-11-2016 // 15:30:55 root /entro en mantenimiento de clientes
+# 09-11-2016 // 15:30:59 root /salio de mantenimientos
+# 09-11-2016 // 15:31:00 root /entro en mantenimiento de vehiculos
+# 09-11-2016 // 15:31:04 root /salio de mantenimientos
+# 09-11-2016 // 15:31:05 root /entro en mantenimiento de clientes
+# 09-11-2016 // 15:34:00 root /entro en mantenimiento de clientes
+# 09-11-2016 // 15:39:54 root /salio de mantenimientos
+# 09-11-2016 // 15:39:55 root /entro en mantenimiento de vehiculos
+# 09-11-2016 // 15:42:19 root /actualizó datos vehículo PBI7326
+# 09-11-2016 // 15:47:10 root /entro en mantenimiento de vehiculos
+# 09-11-2016 // 15:47:34 root /entro en mantenimiento de vehiculos
+# 09-11-2016 // 15:48:02 root /actualizó datos vehículo PBI7326
+# 09-11-2016 // 15:53:59 root /actualizó datos vehículo PBI7326
+# 09-11-2016 // 15:54:58 root /actualizó datos vehículo PBI7326
+# 09-11-2016 // 15:55:52 root /entro en mantenimiento de vehiculos
+# 09-11-2016 // 16:03:36 root /entro en mantenimiento de vehiculos
+# 09-11-2016 // 16:04:00 root /actualizó datos vehículo PBI7326
+# 09-11-2016 // 16:12:38 root /actualizó datos vehículo PBI7326
+# 09-11-2016 // 16:16:30 root /actualizó datos vehículo PBI7326
+# 09-11-2016 // 16:19:37 root /actualizó datos vehículo PBI7326
+# 09-11-2016 // 16:20:58 root /actualizó datos vehículo PBI7326
+# 09-11-2016 // 16:23:26 root /actualizó datos vehículo PBI7326
+# 09-11-2016 // 16:23:47 root /actualizó datos vehículo PBI7326
+# 09-11-2016 // 16:26:46 root /actualizó datos vehículo PBI7326
+# 09-11-2016 // 16:27:08 root /actualizó datos vehículo PBI7326
+# 09-11-2016 // 16:28:54 root /actualizó datos vehículo PBI7326
+# 09-11-2016 // 16:29:34 root /salio de mantenimientos
+# 09-11-2016 // 16:29:36 root /entro en mantenimiento de clientes
+# 09-11-2016 // 16:30:06 root /entro en mantenimiento de clientes
+# 09-11-2016 // 16:30:23 root /salio de mantenimientos
+# 09-11-2016 // 16:30:25 root /entro en mantenimiento de vehiculos
+# 09-11-2016 // 16:30:36 root /actualizó datos vehículo PBI7326
+# 09-11-2016 // 16:32:23 root /actualizó datos vehículo PBI7326
+# 09-11-2016 // 16:32:35 root /salio de mantenimientos
+# 09-11-2016 // 16:32:36 root /entro en mantenimiento de clientes
+# 09-11-2016 // 16:32:41 root /salio de mantenimientos
+# 09-11-2016 // 16:32:42 root /entro en mantenimiento de clientes
+# 09-11-2016 // 16:40:26 root /entro en mantenimientos
+# 09-11-2016 // 16:40:27 root /entro en mantenimiento de clientes
+# 09-11-2016 // 16:51:05 root /editó datos cliente 0100000553
+# 09-11-2016 // 16:51:08 root /salio de mantenimientos
+# 09-11-2016 // 16:51:11 root /entro en parametros
+# 09-11-2016 // 16:51:14 root /entro en administracion
+# 09-11-2016 // 16:51:15 root /entro a visualizar el historial
+# 09-11-2016 // 16:51:35 root /salio de administracion
+# 09-11-2016 // 17:00:35 root /entro en mantenimiento de clientes
+# 09-11-2016 // 17:03:02 root /entro en mantenimiento de clientes
+# 09-11-2016 // 17:04:33 root /creo el cliente 0105118509
+# 09-11-2016 // 17:04:33 root /creo cuenta contable del cliente 0105118509
+# 09-11-2016 // 17:05:01 root /entro en mantenimiento de clientes
+# 09-11-2016 // 17:11:15 root /entro en mantenimiento de clientes
+# 09-11-2016 // 17:11:45 root /entro en mantenimiento de clientes
+# 09-11-2016 // 17:12:48 root /entro en mantenimiento de clientes
+# 09-11-2016 // 17:13:05 root /entro en mantenimiento de clientes
+# 09-11-2016 // 17:13:11 root /entro en transacciones
+# 09-11-2016 // 17:13:13 root /entro a visualizar transacciones
+# 09-11-2016 // 17:13:53 root /entro a visualizar transacciones
+# 09-11-2016 // 17:14:14 root /entro a visualizar transacciones
+# 09-11-2016 // 17:14:16 root /salio de transacciones
+# 09-11-2016 // 17:14:17 root /entro a documentos
+# 09-11-2016 // 18:14:20 root /entro a documentos
+# 09-11-2016 // 18:18:12 root /entro a documentos
+# 09-11-2016 // 18:43:03 root /salio de transacciones
+# 09-11-2016 // 18:43:08 root /entro en mantenimientos
+# 09-11-2016 // 18:43:10 root /entro en mantenimiento de clientes
+# 09-11-2016 // 18:44:44 root /editó datos cliente 0102417417
+# 09-11-2016 // 18:47:45 root /editó datos cliente 0102417417
+# 09-11-2016 // 18:47:58 root /editó datos cliente 0102417417
+# 09-11-2016 // 18:48:29 root /editó datos cliente 0102417417
+# 09-11-2016 // 18:48:44 root /editó datos cliente 0102417417
+# 09-11-2016 // 18:49:09 root /salio de mantenimientos
+# 09-11-2016 // 18:49:14 root /entro en transacciones
+# 09-11-2016 // 18:49:50 root /entro a visualizar transacciones
+# 09-11-2016 // 18:49:53 root /ingreso a detalle de gastos de vehiculo
+# 09-11-2016 // 18:49:57 root /salio de cobros
+# 09-11-2016 // 18:50:01 root /ingreso a detalle de gastos de vehiculo
+# 09-11-2016 // 18:50:06 root /salio de cobros
+# 09-11-2016 // 18:50:09 root /ingreso a detalle de gastos de vehiculo
+# 09-11-2016 // 18:50:11 root /salio de cobros
+# 09-11-2016 // 18:50:12 root /ingreso a detalle de gastos de vehiculo
+# 09-11-2016 // 18:50:33 root /salio de cobros
+# 09-11-2016 // 18:50:35 root /ingreso a detalle de gastos de vehiculo
+# 09-11-2016 // 18:50:37 root /salio de cobros
+# 09-11-2016 // 18:50:38 root /ingreso a detalle de gastos de vehiculo
+# 09-11-2016 // 18:50:40 root /salio de cobros
+# 09-11-2016 // 18:50:41 root /ingreso a detalle de gastos de vehiculo
+# 09-11-2016 // 18:50:43 root /salio de cobros
+# 09-11-2016 // 18:50:44 root /ingreso a detalle de gastos de vehiculo
+# 09-11-2016 // 18:50:46 root /salio de cobros
+# 09-11-2016 // 18:50:48 root /ingreso a detalle de gastos de vehiculo
+# 09-11-2016 // 18:50:49 root /salio de cobros
+# 09-11-2016 // 18:50:51 root /ingreso a detalle de gastos de vehiculo
+# 09-11-2016 // 18:50:52 root /salio de cobros
+# 09-11-2016 // 18:51:00 root /ingreso a detalle de gastos de vehiculo
+# 09-11-2016 // 18:51:02 root /salio de cobros
+# 09-11-2016 // 18:51:07 root /ingreso a detalle de gastos de vehiculo
+# 09-11-2016 // 18:51:09 root /salio de cobros
+# 09-11-2016 // 18:56:07 root /entro a visualizar transacciones
+# 09-11-2016 // 18:57:10 root /entro a visualizar transacciones
+# 09-11-2016 // 18:57:24 root /salio de transacciones
+# 09-11-2016 // 19:05:54 root /salio de transacciones
+# 09-11-2016 // 19:06:10 root /salio de transacciones
+# 09-11-2016 // 19:06:53 root /salio de transacciones
+# 09-11-2016 // 19:07:04 root /salio de transacciones
+# 09-11-2016 // 19:07:44 root /salio de transacciones
+# 09-11-2016 // 19:07:51 root /salio de transacciones
+# 09-11-2016 // 19:08:24 root /salio de transacciones
+# 09-11-2016 // 19:09:27 root /salio de transacciones
+# 09-11-2016 // 19:11:31 root /salio de transacciones
+# 09-11-2016 // 19:11:41 root /entro a visualizar transacciones
+# 09-11-2016 // 19:11:44 root /salio de transacciones
+# 09-11-2016 // 19:12:03 root /entro a visualizar transacciones
+# 09-11-2016 // 19:12:06 root /salio de transacciones
+# 09-11-2016 // 19:12:29 root /entro a visualizar transacciones
+# 09-11-2016 // 19:12:38 root /entro a visualizar transacciones
+# 09-11-2016 // 19:12:45 root /entro a visualizar transacciones
+# 09-11-2016 // 19:12:47 root /salio de transacciones
+# 09-11-2016 // 19:13:04 root /entro a visualizar transacciones
+# 09-11-2016 // 19:13:43 root /entro en transacciones
+# 09-11-2016 // 19:13:45 root /entro a visualizar transacciones
+# 09-11-2016 // 20:57:39 root /entro a visualizar transacciones
+# 09-11-2016 // 20:57:52 root /entro a visualizar transacciones
+# 09-11-2016 // 20:57:59 root /entro a visualizar transacciones
+# 09-11-2016 // 20:58:28 root /entro a visualizar transacciones
+# 09-11-2016 // 20:58:41 root /Ingreso a ver abono
+# 09-11-2016 // 20:58:45 root /entro a visualizar transacciones
+# 09-11-2016 // 21:18:51 root /registro un abono de 75 en la carpeta 75 cuota 2
+# 09-11-2016 // 21:19:26 root /registro un abono de 55 en la carpeta 75 cuota 2
+# 09-11-2016 // 21:20:22 root /registro un abono de 33 en la carpeta 75 cuota 2
+# 09-11-2016 // 21:28:05 root /entro a visualizar transacciones
+# 09-11-2016 // 21:32:29 root /entro a visualizar transacciones
+# 09-11-2016 // 21:33:25 root /entro a visualizar transacciones
+# 09-11-2016 // 21:36:24 root /entro a visualizar transacciones
+# 09-11-2016 // 21:36:34 root /entro a visualizar transacciones
+# 09-11-2016 // 21:37:23 root /entro a visualizar transacciones
+# 09-11-2016 // 21:38:23 root /entro a visualizar transacciones
+# 09-11-2016 // 21:40:20 root /entro a visualizar transacciones
+# 09-11-2016 // 21:40:57 root /entro a visualizar transacciones
+# 09-11-2016 // 21:41:38 root /entro a visualizar transacciones
+# 09-11-2016 // 21:48:17 root /salio de transacciones
+# 09-11-2016 // 21:48:36 root /entro en mantenimientos
+# 09-11-2016 // 21:48:38 root /entro en mantenimiento de vehiculos
+# 09-11-2016 // 21:49:06 root /actualizó datos vehículo ABD4127
+# 09-11-2016 // 21:51:03 root /entro en mantenimiento de vehiculos
+# 09-11-2016 // 21:51:05 root /salio de mantenimientos
+# 09-11-2016 // 21:51:07 root /entro en mantenimiento de clientes
+# 09-11-2016 // 21:52:18 root /salio de mantenimientos
+# 09-11-2016 // 21:52:30 root /entro en administracion
+# 09-11-2016 // 21:52:46 root /entro en transacciones
+# 09-11-2016 // 21:52:49 root /ingreso a cobros
+# 09-11-2016 // 21:53:17 root /salio de cobros
+# 09-11-2016 // 21:53:20 root /salio de transacciones
+# 09-11-2016 // 21:53:22 root /ingreso a pagos
+# 09-11-2016 // 21:55:11 root /salio de cobros
+# 09-11-2016 // 21:55:13 root /salio de transacciones
+# 09-11-2016 // 21:55:20 root /entro a documentos
+# 09-11-2016 // 21:55:22 root /salio de transacciones
+# 09-11-2016 // 21:55:24 root /entro a visualizar transacciones
+# 09-11-2016 // 22:00:34 root /entro en transacciones
+# 09-11-2016 // 22:01:20 root /ingreso a cobros
+# 09-11-2016 // 22:01:29 root /entro a visualizar transacciones
+# 09-11-2016 // 22:01:40 root /entro a visualizar transacciones
+# 09-11-2016 // 22:07:56 root /entro a visualizar transacciones
+# 09-11-2016 // 22:08:51 root /salio de transacciones
+# 09-11-2016 // 22:08:53 root /cerro sesion correctamente

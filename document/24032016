@@ -1,0 +1,27 @@
+# 24-03-2016 // 12:03:43 secretaria /ha iniciado sesion
+# 24-03-2016 // 12:03:47 secretaria /entro en transacciones
+# 24-03-2016 // 12:03:54 secretaria /cerro sesion correctamente
+# 24-03-2016 // 12:04:06 secretaria /ha iniciado sesion
+# 24-03-2016 // 12:04:08 secretaria /entro en mantenimientos
+# 24-03-2016 // 12:04:10 secretaria /entro en mantenimiento de vehiculos
+# 24-03-2016 // 12:04:12 secretaria /salio de mantenimientos
+# 24-03-2016 // 12:04:15 secretaria /entro en mantenimiento de clientes
+# 24-03-2016 // 12:04:37 secretaria /salio de mantenimientos
+# 24-03-2016 // 12:04:40 secretaria /entro en mantenimiento de clientes
+# 24-03-2016 // 12:07:33 secretaria /creo el cliente 1400369037
+# 24-03-2016 // 12:08:26 root /ha iniciado sesion
+# 24-03-2016 // 12:08:32 root /entro en mantenimientos
+# 24-03-2016 // 12:08:34 root /entro en mantenimiento de clientes
+# 24-03-2016 // 12:11:01 secretaria /creo el cliente 1400369037
+# 24-03-2016 // 12:11:01 secretaria /creo cuenta contable del cliente 1400369037
+# 24-03-2016 // 12:14:16 secretaria /entro en mantenimiento de clientes
+# 24-03-2016 // 12:14:36 secretaria /salio de mantenimientos
+# 24-03-2016 // 12:14:38 secretaria /entro en mantenimiento de clientes
+# 24-03-2016 // 12:15:07 root /entro en mantenimiento de clientes
+# 24-03-2016 // 12:19:32 root /salio de mantenimientos
+# 24-03-2016 // 12:19:38 root /entro en administracion
+# 24-03-2016 // 12:19:40 root /entro a visualizar el historial
+# 24-03-2016 // 12:25:38 root /salio de administracion
+# 24-03-2016 // 12:25:42 root /entro en mantenimientos
+# 24-03-2016 // 12:25:43 root /entro en mantenimiento de clientes
+# 24-03-2016 // 18:20:11 root /ha iniciado sesion

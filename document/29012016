@@ -1,0 +1,31 @@
+# 29-01-2016 // 10:47:15 root /ha iniciado sesion
+# 29-01-2016 // 10:47:19 root /entro en transacciones
+# 29-01-2016 // 10:47:20 root /entro a documentos
+# 29-01-2016 // 10:47:21 root /salio de documentos
+# 29-01-2016 // 10:47:26 root /entro a visualizar transacciones
+# 29-01-2016 // 10:47:36 root /salio de transacciones
+# 29-01-2016 // 10:49:25 root /entro a visualizar transacciones
+# 29-01-2016 // 10:50:18 root /salio de transacciones
+# 29-01-2016 // 10:51:21 root /ingreso a cobros
+# 29-01-2016 // 10:51:26 root /salio de cobros
+# 29-01-2016 // 10:51:28 root /salio de transacciones
+# 29-01-2016 // 10:51:29 root /ingreso a pagos
+# 29-01-2016 // 10:51:41 root /salio de cobros
+# 29-01-2016 // 12:15:41  /entro a visualizar transacciones
+# 29-01-2016 // 12:15:43  /salio de transacciones
+# 29-01-2016 // 12:15:45  /cerro sesion correctamente
+# 29-01-2016 // 12:15:59 root /ha iniciado sesion
+# 29-01-2016 // 12:16:01 root /entro en transacciones
+# 29-01-2016 // 12:16:05 root /entro a documentos
+# 29-01-2016 // 12:16:09 root /salio de documentos
+# 29-01-2016 // 12:27:21 root /cerro sesion correctamente
+# 29-01-2016 // 17:25:30 root /ha iniciado sesion
+# 29-01-2016 // 17:25:32 root /entro en mantenimientos
+# 29-01-2016 // 17:25:34 root /entro en mantenimiento de clientes
+# 29-01-2016 // 17:26:28 root /entro en mantenimiento de clientes
+# 29-01-2016 // 17:27:59 root /entro en mantenimiento de clientes
+# 29-01-2016 // 17:28:40 root /salio de mantenimientos
+# 29-01-2016 // 17:36:43 root /entro en mantenimientos
+# 29-01-2016 // 17:36:46 root /entro en mantenimiento de clientes
+# 29-01-2016 // 17:38:03 root /salio de mantenimientos
+# 29-01-2016 // 18:35:22 root /cerro sesion correctamente

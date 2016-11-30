@@ -1,0 +1,16 @@
+# 08-07-2016 // 11:30:44 secretaria /salio de transacciones
+# 08-07-2016 // 11:30:54 secretaria /entro en mantenimientos
+# 08-07-2016 // 11:30:56 secretaria /entro en mantenimiento de vehiculos
+# 08-07-2016 // 11:33:40 secretaria /creo el vehiculo ABB5616
+# 08-07-2016 // 11:33:40 secretaria /creo cuenta contable del vehiculo ABB5616
+# 08-07-2016 // 11:33:43 secretaria /entro en mantenimiento de vehiculos
+# 08-07-2016 // 11:33:45 secretaria /salio de mantenimientos
+# 08-07-2016 // 11:33:46 secretaria /entro en mantenimiento de clientes
+# 08-07-2016 // 11:36:45 secretaria /creo el cliente 0104305826
+# 08-07-2016 // 11:36:45 secretaria /creo cuenta contable del cliente 0104305826
+# 08-07-2016 // 11:36:50 secretaria /entro en mantenimiento de clientes
+# 08-07-2016 // 11:36:52 secretaria /salio de mantenimientos
+# 08-07-2016 // 11:36:54 secretaria /entro en transacciones
+# 08-07-2016 // 11:36:55 secretaria /entro a visualizar transacciones
+# 08-07-2016 // 11:40:08 secretaria /creo la transaccion 84
+# 08-07-2016 // 12:44:07 secretaria /creo la transaccion 85

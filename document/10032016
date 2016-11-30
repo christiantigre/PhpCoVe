@@ -1,0 +1,42 @@
+# 10-03-2016 // 10:10:53 root /ha iniciado sesion
+# 10-03-2016 // 10:10:55 root /entro en mantenimientos
+# 10-03-2016 // 10:10:56 root /entro en mantenimiento de vehiculos
+# 10-03-2016 // 10:11:02 root /entro en mantenimiento de vehiculos
+# 10-03-2016 // 10:26:59 root /salio de mantenimientos
+# 10-03-2016 // 10:27:00 root /entro en mantenimiento de clientes
+# 10-03-2016 // 10:27:10 root /entro en mantenimiento de clientes
+# 10-03-2016 // 10:27:17 root /salio de mantenimientos
+# 10-03-2016 // 10:27:32 root /entro en transacciones
+# 10-03-2016 // 10:27:33 root /entro a visualizar transacciones
+# 10-03-2016 // 10:27:36 root /salio de transacciones
+# 10-03-2016 // 10:27:38 root /ingreso a cobros
+# 10-03-2016 // 10:27:43 root /salio de cobros
+# 10-03-2016 // 10:32:28 root /entro a visualizar transacciones
+# 10-03-2016 // 10:32:41 root /entro a visualizar transacciones
+# 10-03-2016 // 10:32:45 root /salio de transacciones
+# 10-03-2016 // 10:33:01 root /ingreso a pagos
+# 10-03-2016 // 10:33:03 root /salio de cobros
+# 10-03-2016 // 10:33:06 root /salio de transacciones
+# 10-03-2016 // 10:35:50 root /entro a documentos
+# 10-03-2016 // 10:36:02 root /salio de transacciones
+# 10-03-2016 // 10:36:24 root /entro en administracion
+# 10-03-2016 // 10:36:26 root /entro en mantenimiento de empresa
+# 10-03-2016 // 10:36:28 root /salio de administracion
+# 10-03-2016 // 10:36:29 root /entro mantenimiento de usuarios
+# 10-03-2016 // 10:36:34 root /salio de administracion
+# 10-03-2016 // 10:36:35 root /entro a visualizar el historial
+# 10-03-2016 // 10:36:43 root /salio de administracion
+# 10-03-2016 // 10:36:46 root /entro en parametros
+# 10-03-2016 // 10:37:47 root /cerro sesion correctamente
+# 10-03-2016 // 17:36:47 secretaria /creo la transaccion 44
+# 10-03-2016 // 17:38:16 secretaria /salio de transacciones
+# 10-03-2016 // 17:40:15 secretaria /entro a visualizar transacciones
+# 10-03-2016 // 17:42:16 secretaria /salio de transacciones
+# 10-03-2016 // 17:42:18 secretaria /entro a visualizar transacciones
+# 10-03-2016 // 17:42:23 secretaria /salio de transacciones
+# 10-03-2016 // 17:42:36 secretaria /entro en mantenimientos
+# 10-03-2016 // 17:42:41 secretaria /entro en mantenimiento de clientes
+# 10-03-2016 // 17:43:05 secretaria /entro en mantenimiento de clientes
+# 10-03-2016 // 17:43:19 secretaria /salio de mantenimientos
+# 10-03-2016 // 17:43:22 secretaria /entro en transacciones
+# 10-03-2016 // 17:43:23 secretaria /entro a visualizar transacciones

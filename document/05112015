@@ -1,0 +1,141 @@
+# 05-11-2015 // 00:00:08 admin /creo la transaccion 11
+# 05-11-2015 // 00:01:49 admin /creo la transaccion 12
+# 05-11-2015 // 00:02:08 admin /entro a visualizar transacciones
+# 05-11-2015 // 00:02:12 admin /entro a visualizar transacciones
+# 05-11-2015 // 00:02:18 admin /entro a visualizar transacciones
+# 05-11-2015 // 00:03:10 admin /entro a visualizar transacciones
+# 05-11-2015 // 00:03:22 admin /entro a visualizar transacciones
+# 05-11-2015 // 00:03:25 admin /salio de transacciones
+# 05-11-2015 // 00:03:35 admin /cerro sesion correctamente
+# 05-11-2015 // 00:03:39 root /ha iniciado sesion
+# 05-11-2015 // 00:03:42 root /entro en administracion
+# 05-11-2015 // 00:03:43 root /entro a visualizar el historial
+# 05-11-2015 // 00:04:43 root /salio de administracion
+# 05-11-2015 // 00:04:47 root /cerro sesion correctamente
+# 05-11-2015 // 08:34:17 root /ha iniciado sesion
+# 05-11-2015 // 08:34:21 root /entro en mantenimientos
+# 05-11-2015 // 08:34:22 root /entro en mantenimiento de vehiculos
+# 05-11-2015 // 08:34:26 root /entro en mantenimientos
+# 05-11-2015 // 08:34:28 root /entro en mantenimiento de vehiculos
+# 05-11-2015 // 08:34:32 root /salio de mantenimientos
+# 05-11-2015 // 08:34:33 root /entro en mantenimiento de clientes
+# 05-11-2015 // 08:34:41 root /salio de mantenimientos
+# 05-11-2015 // 08:34:44 root /entro en transacciones
+# 05-11-2015 // 08:34:46 root /entro a visualizar transacciones
+# 05-11-2015 // 08:35:04 root /entro a visualizar transacciones
+# 05-11-2015 // 08:35:34 root /entro a visualizar transacciones
+# 05-11-2015 // 08:38:31 root /entro a visualizar transacciones
+# 05-11-2015 // 08:38:32 root /salio de transacciones
+# 05-11-2015 // 08:38:39 root /entro en mantenimientos
+# 05-11-2015 // 08:38:40 root /entro en mantenimiento de vehiculos
+# 05-11-2015 // 08:39:47 root /entro en mantenimiento de vehiculos
+# 05-11-2015 // 08:40:02 root /salio de mantenimientos
+# 05-11-2015 // 08:40:06 root /entro en transacciones
+# 05-11-2015 // 08:40:07 root /entro a visualizar transacciones
+# 05-11-2015 // 08:41:36 root /entro a visualizar transacciones
+# 05-11-2015 // 08:45:53 root /entro a visualizar transacciones
+# 05-11-2015 // 08:46:56 root /creo la transaccion 13
+# 05-11-2015 // 08:47:17 root /entro a visualizar transacciones
+# 05-11-2015 // 08:56:21 root /entro a visualizar transacciones
+# 05-11-2015 // 09:08:24 root /salio de transacciones
+# 05-11-2015 // 09:08:26 root /cerro sesion correctamente
+# 05-11-2015 // 10:02:38 root /ha iniciado sesion
+# 05-11-2015 // 10:02:48 root /entro en administracion
+# 05-11-2015 // 10:03:00 root /entro a visualizar el historial
+# 05-11-2015 // 10:03:52 root /salio de administracion
+# 05-11-2015 // 10:03:58 root /entro en mantenimientos
+# 05-11-2015 // 10:03:59 root /entro en mantenimiento de vehiculos
+# 05-11-2015 // 10:04:04 root /salio de mantenimientos
+# 05-11-2015 // 10:04:05 root /entro en mantenimiento de clientes
+# 05-11-2015 // 10:04:09 root /salio de mantenimientos
+# 05-11-2015 // 10:04:12 root /entro en transacciones
+# 05-11-2015 // 10:04:57 root /entro a visualizar transacciones
+# 05-11-2015 // 10:05:58 root /entro a visualizar transacciones
+# 05-11-2015 // 10:08:24 root /entro a visualizar transacciones
+# 05-11-2015 // 10:09:11 root /entro a visualizar transacciones
+# 05-11-2015 // 10:10:57 root /entro a visualizar transacciones
+# 05-11-2015 // 10:10:59 root /salio de transacciones
+# 05-11-2015 // 10:11:07 root /entro en mantenimientos
+# 05-11-2015 // 10:11:08 root /entro en mantenimiento de clientes
+# 05-11-2015 // 10:13:32 root /entro en mantenimiento de clientes
+# 05-11-2015 // 10:13:34 root /salio de mantenimientos
+# 05-11-2015 // 10:13:35 root /entro en mantenimiento de vehiculos
+# 05-11-2015 // 10:14:16 root /entro en mantenimiento de vehiculos
+# 05-11-2015 // 10:14:18 root /salio de mantenimientos
+# 05-11-2015 // 10:14:20 root /entro en parametros
+# 05-11-2015 // 10:16:42 root /entro en transacciones
+# 05-11-2015 // 10:16:43 root /entro a visualizar transacciones
+# 05-11-2015 // 10:21:25 root /salio de transacciones
+# 05-11-2015 // 10:21:28 root /entro en mantenimientos
+# 05-11-2015 // 10:21:29 root /entro en mantenimiento de clientes
+# 05-11-2015 // 10:21:44 root /salio de mantenimientos
+# 05-11-2015 // 10:21:48 root /entro en transacciones
+# 05-11-2015 // 10:23:59 root /entro en transacciones
+# 05-11-2015 // 10:24:00 root /entro a visualizar transacciones
+# 05-11-2015 // 10:31:35 root /entro a visualizar transacciones
+# 05-11-2015 // 10:41:37 root /entro a visualizar transacciones
+# 05-11-2015 // 11:07:53 root /entro a visualizar transacciones
+# 05-11-2015 // 11:10:15 root /entro a visualizar transacciones
+# 05-11-2015 // 11:11:48 root /entro a visualizar transacciones
+# 05-11-2015 // 11:11:49 root /salio de transacciones
+# 05-11-2015 // 11:14:40 root /entro en mantenimientos
+# 05-11-2015 // 11:14:41 root /entro en mantenimiento de vehiculos
+# 05-11-2015 // 11:16:41 root /entro en mantenimiento de vehiculos
+# 05-11-2015 // 11:18:38 root /salio de mantenimientos
+# 05-11-2015 // 11:18:40 root /entro en transacciones
+# 05-11-2015 // 11:18:42 root /entro a visualizar transacciones
+# 05-11-2015 // 11:36:16 root /entro a visualizar transacciones
+# 05-11-2015 // 11:36:18 root /salio de transacciones
+# 05-11-2015 // 11:36:21 root /entro en mantenimientos
+# 05-11-2015 // 11:36:22 root /entro en mantenimiento de vehiculos
+# 05-11-2015 // 11:37:46 root /entro en mantenimiento de vehiculos
+# 05-11-2015 // 11:38:23 root /salio de mantenimientos
+# 05-11-2015 // 11:38:38 root /entro en transacciones
+# 05-11-2015 // 11:38:39 root /entro a visualizar transacciones
+# 05-11-2015 // 11:42:37 root /entro a visualizar transacciones
+# 05-11-2015 // 11:43:30 root /entro a visualizar transacciones
+# 05-11-2015 // 11:54:09 root /entro a visualizar transacciones
+# 05-11-2015 // 11:54:12 root /salio de transacciones
+# 05-11-2015 // 11:55:52 root /entro a visualizar transacciones
+# 05-11-2015 // 11:57:22 root /entro a visualizar transacciones
+# 05-11-2015 // 11:57:24 root /salio de transacciones
+# 05-11-2015 // 11:57:33 root /entro en administracion
+# 05-11-2015 // 11:59:12 root /cerro sesion correctamente
+# 05-11-2015 // 21:30:48 root /ha iniciado sesion
+# 05-11-2015 // 21:30:52 root /entro en mantenimientos
+# 05-11-2015 // 21:30:54 root /entro en mantenimiento de clientes
+# 05-11-2015 // 21:31:24 root /salio de mantenimientos
+# 05-11-2015 // 21:31:27 root /entro en mantenimiento de clientes
+# 05-11-2015 // 21:32:58 root /entro en mantenimiento de clientes
+# 05-11-2015 // 21:33:00 root /salio de mantenimientos
+# 05-11-2015 // 21:33:02 root /cerro sesion correctamente
+# 05-11-2015 // 21:33:29  /cerro sesion correctamente
+# 05-11-2015 // 21:49:15  /cerro sesion correctamente
+# 05-11-2015 // 21:49:30 root /ha iniciado sesion
+# 05-11-2015 // 21:50:07 root /entro en mantenimientos
+# 05-11-2015 // 21:50:08 root /entro en mantenimiento de clientes
+# 05-11-2015 // 21:50:21 root /entro en mantenimiento de clientes
+# 05-11-2015 // 21:51:06 root /entro en mantenimientos
+# 05-11-2015 // 21:51:09 root /entro en mantenimiento de clientes
+# 05-11-2015 // 21:51:18 root /entro en mantenimiento de clientes
+# 05-11-2015 // 21:51:55 root /entro en mantenimiento de clientes
+# 05-11-2015 // 21:54:42 root /entro en mantenimiento de clientes
+# 05-11-2015 // 22:02:26 root /entro en mantenimiento de clientes
+# 05-11-2015 // 22:50:04 root /creo el cliente 0123456789
+# 05-11-2015 // 22:50:07 root /entro en mantenimiento de clientes
+# 05-11-2015 // 23:03:34 root /entro en mantenimiento de clientes
+# 05-11-2015 // 23:03:36 root /salio de mantenimientos
+# 05-11-2015 // 23:03:41 root /entro en parametros
+# 05-11-2015 // 23:04:35 root /entro en mantenimientos
+# 05-11-2015 // 23:04:36 root /entro en mantenimiento de clientes
+# 05-11-2015 // 23:07:45 root /entro en mantenimiento de clientes
+# 05-11-2015 // 23:23:09 root /entro en mantenimiento de clientes
+# 05-11-2015 // 23:23:41 root /entro en mantenimiento de clientes
+# 05-11-2015 // 23:25:10 root /entro en mantenimiento de clientes
+# 05-11-2015 // 23:28:11 root /entro en mantenimiento de clientes
+# 05-11-2015 // 23:28:40 root /salio de mantenimientos
+# 05-11-2015 // 23:33:54 root /entro en mantenimientos
+# 05-11-2015 // 23:33:55 root /entro en mantenimiento de vehiculos
+# 05-11-2015 // 23:34:13 root /salio de mantenimientos
+# 05-11-2015 // 23:34:16 root /entro en parametros
+# 05-11-2015 // 23:35:13 root /cerro sesion correctamente

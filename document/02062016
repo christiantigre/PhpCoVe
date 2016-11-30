@@ -1,0 +1,156 @@
+# 02-06-2016 // 00:41:32 root /entro en transacciones
+# 02-06-2016 // 00:41:50 root /entro a visualizar transacciones
+# 02-06-2016 // 08:11:41 root /entro a visualizar transacciones
+# 02-06-2016 // 08:13:17 root /salio de transacciones
+# 02-06-2016 // 08:13:20 root /ingreso a cobros
+# 02-06-2016 // 08:13:45 root /entro a visualizar transacciones
+# 02-06-2016 // 08:24:26 root /entro a visualizar transacciones
+# 02-06-2016 // 08:24:37 root /entro a visualizar transacciones
+# 02-06-2016 // 08:29:35 root /entro a visualizar transacciones
+# 02-06-2016 // 08:33:26 root /entro a visualizar transacciones
+# 02-06-2016 // 08:36:23 root /creo la transaccion 14
+# 02-06-2016 // 08:37:47 root /entro a visualizar transacciones
+# 02-06-2016 // 08:56:43 root /creo el vehiculo PKW0833
+# 02-06-2016 // 08:56:44 root /creo cuenta contable del vehiculo PKW0833
+# 02-06-2016 // 09:00:36 root /creo la transaccion 15
+# 02-06-2016 // 09:06:31 root /creo el vehiculo PKW0834
+# 02-06-2016 // 09:06:31 root /creo cuenta contable del vehiculo PKW0834
+# 02-06-2016 // 09:08:20 root /entro a visualizar transacciones
+# 02-06-2016 // 09:09:36 root /entro a visualizar transacciones
+# 02-06-2016 // 09:11:17 root /creo la transaccion 16
+# 02-06-2016 // 09:24:43 root /creo la transaccion 17
+# 02-06-2016 // 09:29:16 root /creo la transaccion 18
+# 02-06-2016 // 09:31:59 root /creo la transaccion 19
+# 02-06-2016 // 09:33:10 root /creo la transaccion 20
+# 02-06-2016 // 09:35:34 root /entro a visualizar transacciones
+# 02-06-2016 // 09:36:24 root /creo la transaccion 21
+# 02-06-2016 // 09:55:08 root /entro a visualizar transacciones
+# 02-06-2016 // 09:57:00 root /creo la transaccion 22
+# 02-06-2016 // 10:03:03 root /entro a visualizar transacciones
+# 02-06-2016 // 10:04:18 root /creo la transaccion 23
+# 02-06-2016 // 10:07:10 root /creo la transaccion 24
+# 02-06-2016 // 10:09:30 root /creo la transaccion 25
+# 02-06-2016 // 10:12:26 root /creo la transaccion 26
+# 02-06-2016 // 10:14:24 root /creo la transaccion 27
+# 02-06-2016 // 10:17:42 root /entro a visualizar transacciones
+# 02-06-2016 // 10:18:47 root /creo la transaccion 28
+# 02-06-2016 // 10:22:20 root /creo la transaccion 29
+# 02-06-2016 // 10:28:45 root /creo la transaccion 30
+# 02-06-2016 // 10:31:19 root /creo la transaccion 31
+# 02-06-2016 // 10:40:44 root /creo la transaccion 32
+# 02-06-2016 // 10:49:35 root /entro a visualizar transacciones
+# 02-06-2016 // 10:54:45 root /entro a visualizar transacciones
+# 02-06-2016 // 10:55:27 root /entro a visualizar transacciones
+# 02-06-2016 // 10:55:54 root /entro a visualizar transacciones
+# 02-06-2016 // 10:56:00 root /entro a visualizar transacciones
+# 02-06-2016 // 10:56:05 root /entro a visualizar transacciones
+# 02-06-2016 // 11:15:48 root /entro a visualizar transacciones
+# 02-06-2016 // 11:16:57 root /creo la transaccion 33
+# 02-06-2016 // 11:19:25 root /creo la transaccion 34
+# 02-06-2016 // 11:33:11 root /entro a visualizar transacciones
+# 02-06-2016 // 11:35:40 root /creo la transaccion 35
+# 02-06-2016 // 11:39:14 root /creo la transaccion 36
+# 02-06-2016 // 11:40:57 root /creo la transaccion 37
+# 02-06-2016 // 11:44:36 root /entro a visualizar transacciones
+# 02-06-2016 // 11:45:49 root /creo el vehiculo PKW0835
+# 02-06-2016 // 11:45:49 root /creo cuenta contable del vehiculo PKW0835
+# 02-06-2016 // 11:46:58 root /creo la transaccion 38
+# 02-06-2016 // 11:49:46 root /creo el vehiculo PKW0836
+# 02-06-2016 // 11:49:46 root /creo cuenta contable del vehiculo PKW0836
+# 02-06-2016 // 11:50:17 root /creo la transaccion 39
+# 02-06-2016 // 11:55:13 root /creo el vehiculo PW0836
+# 02-06-2016 // 11:55:13 root /creo cuenta contable del vehiculo PW0836
+# 02-06-2016 // 11:55:45 root /creo la transaccion 40
+# 02-06-2016 // 11:58:34 root /creo el vehiculo PKW0837
+# 02-06-2016 // 11:58:34 root /creo cuenta contable del vehiculo PKW0837
+# 02-06-2016 // 11:59:04 root /creo la transaccion 41
+# 02-06-2016 // 12:14:45 root /creo el vehiculo PKW0839
+# 02-06-2016 // 12:14:45 root /creo cuenta contable del vehiculo PKW0839
+# 02-06-2016 // 12:15:32 root /creo la transaccion 42
+# 02-06-2016 // 12:17:28 root /creo la transaccion 43
+# 02-06-2016 // 12:28:57 root /creo la transaccion 44
+# 02-06-2016 // 12:30:13 root /creo el vehiculo PKW0840
+# 02-06-2016 // 12:30:14 root /creo cuenta contable del vehiculo PKW0840
+# 02-06-2016 // 12:30:47 root /creo la transaccion 45
+# 02-06-2016 // 12:33:48 root /creo la transaccion 46
+# 02-06-2016 // 12:40:20 root /entro a visualizar transacciones
+# 02-06-2016 // 12:40:54 root /creo el vehiculo PKWO841
+# 02-06-2016 // 12:40:54 root /creo cuenta contable del vehiculo PKWO841
+# 02-06-2016 // 12:41:58 root /creo la transaccion 47
+# 02-06-2016 // 12:44:13 root /creo la transaccion 48
+# 02-06-2016 // 12:48:29 root /entro a visualizar transacciones
+# 02-06-2016 // 12:49:03 root /creo el vehiculo PKW0842
+# 02-06-2016 // 12:49:03 root /creo cuenta contable del vehiculo PKW0842
+# 02-06-2016 // 12:50:07 root /creo la transaccion 49
+# 02-06-2016 // 12:52:07 root /creo la transaccion 50
+# 02-06-2016 // 12:57:56 root /entro a visualizar transacciones
+# 02-06-2016 // 12:58:27 root /creo el vehiculo PKW0843
+# 02-06-2016 // 12:58:27 root /creo cuenta contable del vehiculo PKW0843
+# 02-06-2016 // 12:59:02 root /creo la transaccion 51
+# 02-06-2016 // 13:00:55 root /creo la transaccion 52
+# 02-06-2016 // 13:13:54 root /entro a visualizar transacciones
+# 02-06-2016 // 13:14:26 root /creo el vehiculo PKW0844
+# 02-06-2016 // 13:14:26 root /creo cuenta contable del vehiculo PKW0844
+# 02-06-2016 // 13:14:57 root /creo la transaccion 53
+# 02-06-2016 // 13:59:18 root /creo el vehiculo PKW0844
+# 02-06-2016 // 13:59:19 root /creo cuenta contable del vehiculo PKW0844
+# 02-06-2016 // 14:01:29 root /creo el vehiculo PKW0846
+# 02-06-2016 // 14:01:29 root /creo cuenta contable del vehiculo PKW0846
+# 02-06-2016 // 14:02:05 root /creo la transaccion 54
+# 02-06-2016 // 14:04:22 root /creo el vehiculo PKW0846
+# 02-06-2016 // 14:04:22 root /creo cuenta contable del vehiculo PKW0846
+# 02-06-2016 // 14:05:08 root /creo el vehiculo PKW0847
+# 02-06-2016 // 14:05:08 root /creo cuenta contable del vehiculo PKW0847
+# 02-06-2016 // 14:05:42 root /creo la transaccion 55
+# 02-06-2016 // 14:06:57 root /entro a visualizar transacciones
+# 02-06-2016 // 14:07:02 root /entro a visualizar transacciones
+# 02-06-2016 // 14:07:25 root /entro a visualizar transacciones
+# 02-06-2016 // 14:07:59 root /creo el vehiculo PKW0848
+# 02-06-2016 // 14:07:59 root /creo cuenta contable del vehiculo PKW0848
+# 02-06-2016 // 14:08:38 root /creo la transaccion 56
+# 02-06-2016 // 14:10:31 root /creo la transaccion 57
+# 02-06-2016 // 14:18:02 root /entro a visualizar transacciones
+# 02-06-2016 // 14:19:41 root /creo la transaccion 58
+# 02-06-2016 // 14:30:27 root /creo el vehiculo PKW0849
+# 02-06-2016 // 14:30:27 root /creo cuenta contable del vehiculo PKW0849
+# 02-06-2016 // 14:31:11 root /creo la transaccion 59
+# 02-06-2016 // 14:32:30 root /creo el vehiculo PKW0850
+# 02-06-2016 // 14:32:30 root /creo cuenta contable del vehiculo PKW0850
+# 02-06-2016 // 14:33:01 root /creo la transaccion 60
+# 02-06-2016 // 14:35:24 root /creo la transaccion 61
+# 02-06-2016 // 14:39:43 root /entro a visualizar transacciones
+# 02-06-2016 // 14:40:25 root /creo el vehiculo PKW0851
+# 02-06-2016 // 14:40:25 root /creo cuenta contable del vehiculo PKW0851
+# 02-06-2016 // 14:40:57 root /creo la transaccion 62
+# 02-06-2016 // 14:41:05 root /entro a visualizar transacciones
+# 02-06-2016 // 14:42:28 root /entro a visualizar transacciones
+# 02-06-2016 // 14:43:34 root /creo la transaccion 63
+# 02-06-2016 // 16:17:51 root /entro a visualizar transacciones
+# 02-06-2016 // 16:18:58 root /creo el vehiculo PKW0855
+# 02-06-2016 // 16:18:58 root /creo cuenta contable del vehiculo PKW0855
+# 02-06-2016 // 16:19:42 root /creo la transaccion 64
+# 02-06-2016 // 16:22:25 root /creo la transaccion 65
+# 02-06-2016 // 16:48:01 root /entro a visualizar transacciones
+# 02-06-2016 // 16:55:38 root /creo la transaccion 66
+# 02-06-2016 // 16:58:31 root /entro a visualizar transacciones
+# 02-06-2016 // 17:00:42 root /creo la transaccion 67
+# 02-06-2016 // 17:04:30 root /entro a visualizar transacciones
+# 02-06-2016 // 17:06:22 root /creo la transaccion 68
+# 02-06-2016 // 17:07:18 root /entro a visualizar transacciones
+# 02-06-2016 // 17:08:04 root /creo el vehiculo PKW0999
+# 02-06-2016 // 17:08:04 root /creo cuenta contable del vehiculo PKW0999
+# 02-06-2016 // 17:08:44 root /creo la transaccion 69
+# 02-06-2016 // 17:13:43 root /creo el vehiculo PKW0998
+# 02-06-2016 // 17:13:44 root /creo cuenta contable del vehiculo PKW0998
+# 02-06-2016 // 17:14:18 root /creo la transaccion 70
+# 02-06-2016 // 17:19:36 root /creo la transaccion 71
+# 02-06-2016 // 17:21:00 root /entro a visualizar transacciones
+# 02-06-2016 // 17:22:20 root /entro a visualizar transacciones
+# 02-06-2016 // 17:24:51 root /entro a visualizar transacciones
+# 02-06-2016 // 17:25:32 root /creo el vehiculo PKW0899
+# 02-06-2016 // 17:25:32 root /creo cuenta contable del vehiculo PKW0899
+# 02-06-2016 // 17:26:14 root /creo la transaccion 72
+# 02-06-2016 // 17:28:32 root /creo la transaccion 73
+# 02-06-2016 // 18:01:24  /entro a visualizar transacciones
+# 02-06-2016 // 18:01:26  /salio de transacciones
+# 02-06-2016 // 18:01:31  /cerro sesion correctamente

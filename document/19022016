@@ -1,0 +1,89 @@
+# 19-02-2016 // 00:20:55 root /entro a visualizar transacciones
+# 19-02-2016 // 00:43:18 root /entro a visualizar transacciones
+# 19-02-2016 // 01:57:17 root /entro a visualizar transacciones
+# 19-02-2016 // 01:57:19 root /salio de transacciones
+# 19-02-2016 // 01:57:21 root /cerro sesion correctamente
+# 19-02-2016 // 08:58:18 root /ha iniciado sesion
+# 19-02-2016 // 08:58:30 root /entro en transacciones
+# 19-02-2016 // 08:58:31 root /entro a visualizar transacciones
+# 19-02-2016 // 09:56:16 root /entro a visualizar transacciones
+# 19-02-2016 // 09:56:44 root /entro a visualizar transacciones
+# 19-02-2016 // 10:06:52 root /entro a visualizar transacciones
+# 19-02-2016 // 10:07:51 root /entro a visualizar transacciones
+# 19-02-2016 // 10:07:59 root /entro a visualizar transacciones
+# 19-02-2016 // 10:12:53 root /entro a visualizar transacciones
+# 19-02-2016 // 10:13:17 root /entro a visualizar transacciones
+# 19-02-2016 // 10:13:19 root /salio de transacciones
+# 19-02-2016 // 10:13:22 root /cerro sesion correctamente
+# 19-02-2016 // 12:44:32 root /ha iniciado sesion
+# 19-02-2016 // 12:49:36 root /entro en transacciones
+# 19-02-2016 // 12:49:38 root /entro a visualizar transacciones
+# 19-02-2016 // 13:01:36 root /entro a visualizar transacciones
+# 19-02-2016 // 13:42:37 root /entro a visualizar transacciones
+# 19-02-2016 // 13:43:01 root /salio de transacciones
+# 19-02-2016 // 13:43:07 root /cerro sesion correctamente
+# 19-02-2016 // 13:51:38 root /ha iniciado sesion
+# 19-02-2016 // 13:51:43 root /entro en mantenimientos
+# 19-02-2016 // 13:51:44 root /entro en mantenimiento de vehiculos
+# 19-02-2016 // 13:53:09 root /creo el vehiculo UBD1234
+# 19-02-2016 // 13:53:09 root /creo cuenta contable del vehiculo UBD1234
+# 19-02-2016 // 13:53:15 root /entro en mantenimiento de vehiculos
+# 19-02-2016 // 13:55:59 root /entro en mantenimiento de vehiculos
+# 19-02-2016 // 13:56:56 root /entro en mantenimiento de vehiculos
+# 19-02-2016 // 14:18:46 root /salio de mantenimientos
+# 19-02-2016 // 14:18:48 root /cerro sesion correctamente
+# 19-02-2016 // 18:59:00 root /ha iniciado sesion
+# 19-02-2016 // 18:59:07 root /entro en mantenimientos
+# 19-02-2016 // 18:59:08 root /entro en mantenimiento de vehiculos
+# 19-02-2016 // 18:59:14 root /salio de mantenimientos
+# 19-02-2016 // 18:59:15 root /entro en mantenimiento de clientes
+# 19-02-2016 // 18:59:18 root /salio de mantenimientos
+# 19-02-2016 // 18:59:19 root /entro en mantenimiento de vehiculos
+# 19-02-2016 // 18:59:52 root /entro en mantenimiento de vehiculos
+# 19-02-2016 // 18:59:56 root /salio de mantenimientos
+# 19-02-2016 // 19:00:03 root /entro en transacciones
+# 19-02-2016 // 19:00:04 root /entro a visualizar transacciones
+# 19-02-2016 // 19:00:05 root /salio de transacciones
+# 19-02-2016 // 19:00:06 root /ingreso a cobros
+# 19-02-2016 // 19:00:09 root /salio de cobros
+# 19-02-2016 // 19:00:10 root /salio de transacciones
+# 19-02-2016 // 19:00:11 root /ingreso a pagos
+# 19-02-2016 // 19:00:12 root /salio de cobros
+# 19-02-2016 // 19:00:13 root /salio de transacciones
+# 19-02-2016 // 19:00:14 root /entro a documentos
+# 19-02-2016 // 19:00:16 root /salio de documentos
+# 19-02-2016 // 19:00:24 root /entro en administracion
+# 19-02-2016 // 19:00:44 root /entro en mantenimiento de empresa
+# 19-02-2016 // 19:00:53 root /salio de administracion
+# 19-02-2016 // 19:00:59 root /entro en administracion
+# 19-02-2016 // 19:01:00 root /entro a visualizar el historial
+# 19-02-2016 // 19:01:02 root /salio de administracion
+# 19-02-2016 // 19:01:07 root /entro en parametros
+# 19-02-2016 // 22:14:04 root /entro en mantenimientos
+# 19-02-2016 // 22:14:05 root /entro en mantenimiento de vehiculos
+# 19-02-2016 // 22:14:10 root /salio de mantenimientos
+# 19-02-2016 // 22:14:11 root /entro en mantenimiento de clientes
+# 19-02-2016 // 22:14:16 root /salio de mantenimientos
+# 19-02-2016 // 23:08:16 root /entro en mantenimientos
+# 19-02-2016 // 23:08:17 root /entro en mantenimiento de vehiculos
+# 19-02-2016 // 23:08:31 root /entro en mantenimiento de vehiculos
+# 19-02-2016 // 23:08:33 root /salio de mantenimientos
+# 19-02-2016 // 23:08:53 root /entro en parametros
+# 19-02-2016 // 23:18:01 root /entro en mantenimientos
+# 19-02-2016 // 23:18:02 root /entro en mantenimiento de vehiculos
+# 19-02-2016 // 23:19:17 root /creo el vehiculo AFB5623
+# 19-02-2016 // 23:19:17 root /creo cuenta contable del vehiculo AFB5623
+# 19-02-2016 // 23:36:41 root /entro en mantenimiento de vehiculos
+# 19-02-2016 // 23:36:43 root /salio de mantenimientos
+# 19-02-2016 // 23:36:47 root /entro en mantenimientos
+# 19-02-2016 // 23:36:48 root /entro en mantenimiento de vehiculos
+# 19-02-2016 // 23:36:51 root /salio de mantenimientos
+# 19-02-2016 // 23:36:53 root /entro en parametros
+# 19-02-2016 // 23:37:20 root /entro en mantenimientos
+# 19-02-2016 // 23:37:21 root /entro en mantenimiento de vehiculos
+# 19-02-2016 // 23:38:11 root /creo el vehiculo AFB5623
+# 19-02-2016 // 23:38:11 root /creo cuenta contable del vehiculo AFB5623
+# 19-02-2016 // 23:38:40 root /creo el vehiculo AFB5623
+# 19-02-2016 // 23:38:40 root /creo cuenta contable del vehiculo AFB5623
+# 19-02-2016 // 23:52:13 root /entro en mantenimiento de vehiculos
+# 19-02-2016 // 23:52:15 root /salio de mantenimientos

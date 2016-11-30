@@ -1,0 +1,91 @@
+# 31-10-2016 // 10:26:01 secretaria /ha iniciado sesion
+# 31-10-2016 // 10:26:03 secretaria /entro en mantenimientos
+# 31-10-2016 // 10:46:23 secretaria /entro en mantenimiento de clientes
+# 31-10-2016 // 11:18:41 secretaria /entro en mantenimiento de clientes
+# 31-10-2016 // 11:20:34 secretaria /entro en mantenimiento de clientes
+# 31-10-2016 // 11:24:22 secretaria /creo el cliente 0101697456
+# 31-10-2016 // 11:24:22 secretaria /creo cuenta contable del cliente 0101697456
+# 31-10-2016 // 11:24:25 secretaria /entro en mantenimiento de clientes
+# 31-10-2016 // 11:24:27 secretaria /salio de mantenimientos
+# 31-10-2016 // 11:24:29 secretaria /entro en mantenimiento de vehiculos
+# 31-10-2016 // 11:26:15 secretaria /creo el vehiculo PBY5366
+# 31-10-2016 // 11:26:15 secretaria /creo cuenta contable del vehiculo PBY5366
+# 31-10-2016 // 11:26:17 secretaria /entro en mantenimiento de vehiculos
+# 31-10-2016 // 11:26:19 secretaria /salio de mantenimientos
+# 31-10-2016 // 11:26:21 secretaria /entro en mantenimientos
+# 31-10-2016 // 11:26:23 secretaria /entro en transacciones
+# 31-10-2016 // 11:26:24 secretaria /entro a visualizar transacciones
+# 31-10-2016 // 11:29:36 secretaria /creo la transaccion 118
+# 31-10-2016 // 11:31:13 secretaria /entro a visualizar transacciones
+# 31-10-2016 // 11:32:33 secretaria /creo la transaccion de consignacion 119
+# 31-10-2016 // 11:32:36 secretaria /salio de transacciones
+# 31-10-2016 // 11:32:38 secretaria /entro a visualizar transacciones
+# 31-10-2016 // 12:04:42 secretaria /entro a visualizar transacciones
+# 31-10-2016 // 12:05:10 secretaria /entro a visualizar transacciones
+# 31-10-2016 // 12:05:25 secretaria /entro a visualizar transacciones
+# 31-10-2016 // 12:06:36 secretaria /entro a visualizar transacciones
+# 31-10-2016 // 12:15:21 secretaria /entro a visualizar transacciones
+# 31-10-2016 // 12:21:43 secretaria /salio de transacciones
+# 31-10-2016 // 12:21:58 secretaria /entro a visualizar transacciones
+# 31-10-2016 // 12:22:50 secretaria /entro a visualizar transacciones
+# 31-10-2016 // 12:23:52 secretaria /entro a visualizar transacciones
+# 31-10-2016 // 16:03:06 secretaria /entro a visualizar transacciones
+# 31-10-2016 // 17:16:30 secretaria /entro a visualizar transacciones
+# 31-10-2016 // 17:16:32 secretaria /salio de transacciones
+# 31-10-2016 // 17:16:34 secretaria /entro en mantenimientos
+# 31-10-2016 // 17:16:35 secretaria /entro en mantenimiento de vehiculos
+# 31-10-2016 // 17:19:01 secretaria /salio de mantenimientos
+# 31-10-2016 // 17:19:06 secretaria /entro en parametros
+# 31-10-2016 // 17:19:12 secretaria /entro en parametros
+# 31-10-2016 // 17:19:15 secretaria /cerro sesion correctamente
+# 31-10-2016 // 17:19:35 root /ha iniciado sesion
+# 31-10-2016 // 17:19:37 root /entro en mantenimientos
+# 31-10-2016 // 17:19:38 root /cerro sesion correctamente
+# 31-10-2016 // 17:19:47 root /ha iniciado sesion
+# 31-10-2016 // 17:19:49 root /entro en parametros
+# 31-10-2016 // 17:20:21 secretaria /ha iniciado sesion
+# 31-10-2016 // 17:20:40 secretaria /entro en mantenimientos
+# 31-10-2016 // 17:20:41 secretaria /entro en mantenimiento de vehiculos
+# 31-10-2016 // 17:21:24 root /entro en parametros
+# 31-10-2016 // 17:21:26 root /entro en administracion
+# 31-10-2016 // 17:21:31 root /entro a visualizar el historial
+# 31-10-2016 // 17:22:37 secretaria /salio de mantenimientos
+# 31-10-2016 // 17:22:40 secretaria /entro en transacciones
+# 31-10-2016 // 17:22:41 secretaria /entro a visualizar transacciones
+# 31-10-2016 // 17:23:54 secretaria /entro a visualizar transacciones
+# 31-10-2016 // 17:23:56 secretaria /salio de transacciones
+# 31-10-2016 // 17:23:59 secretaria /entro en mantenimientos
+# 31-10-2016 // 17:24:00 secretaria /entro en mantenimiento de vehiculos
+# 31-10-2016 // 17:24:25 secretaria /salio de mantenimientos
+# 31-10-2016 // 17:24:28 secretaria /entro en transacciones
+# 31-10-2016 // 17:24:29 secretaria /entro a visualizar transacciones
+# 31-10-2016 // 17:24:40 secretaria /salio de transacciones
+# 31-10-2016 // 17:24:43 secretaria /entro a visualizar transacciones
+# 31-10-2016 // 17:25:28 secretaria /entro a visualizar transacciones
+# 31-10-2016 // 17:27:07 secretaria /entro a visualizar transacciones
+# 31-10-2016 // 17:27:08 secretaria /salio de transacciones
+# 31-10-2016 // 17:27:11 secretaria /entro en mantenimientos
+# 31-10-2016 // 17:27:12 secretaria /entro en mantenimiento de vehiculos
+# 31-10-2016 // 17:34:23 secretaria /entro en mantenimiento de vehiculos
+# 31-10-2016 // 17:34:24 secretaria /salio de mantenimientos
+# 31-10-2016 // 17:34:33 secretaria /entro en transacciones
+# 31-10-2016 // 17:34:35 secretaria /entro a visualizar transacciones
+# 31-10-2016 // 17:36:16 secretaria /entro a visualizar transacciones
+# 31-10-2016 // 17:42:21 secretaria /entro a visualizar transacciones
+# 31-10-2016 // 17:42:29 secretaria /entro a visualizar transacciones
+# 31-10-2016 // 17:43:07 secretaria /entro a visualizar transacciones
+# 31-10-2016 // 17:53:27 root /salio de administracion
+# 31-10-2016 // 17:53:30 root /cerro sesion correctamente
+# 31-10-2016 // 17:53:47 secretaria /ha iniciado sesion
+# 31-10-2016 // 17:53:53 secretaria /entro en transacciones
+# 31-10-2016 // 17:53:55 secretaria /entro a visualizar transacciones
+# 31-10-2016 // 18:04:01 secretaria /entro a visualizar transacciones
+# 31-10-2016 // 18:13:18 secretaria /entro a visualizar transacciones
+# 31-10-2016 // 18:16:15 secretaria /entro a visualizar transacciones
+# 31-10-2016 // 18:16:32 secretaria /entro a visualizar transacciones
+# 31-10-2016 // 18:23:52 secretaria /entro a visualizar transacciones
+# 31-10-2016 // 18:31:09 secretaria /entro a visualizar transacciones
+# 31-10-2016 // 18:38:01 secretaria /entro a visualizar transacciones
+# 31-10-2016 // 18:58:32 secretaria /entro a visualizar transacciones
+# 31-10-2016 // 18:58:34 secretaria /salio de transacciones
+# 31-10-2016 // 18:58:35 secretaria /cerro sesion correctamente

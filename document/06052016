@@ -1,0 +1,122 @@
+# 06-05-2016 // 08:45:11 root /entro a visualizar transacciones
+# 06-05-2016 // 08:45:16 root /salio de transacciones
+# 06-05-2016 // 08:45:20 root /cerro sesion correctamente
+# 06-05-2016 // 09:50:46 root /ha iniciado sesion
+# 06-05-2016 // 09:50:51 root /entro en transacciones
+# 06-05-2016 // 09:50:56 root /entro a visualizar transacciones
+# 06-05-2016 // 10:07:37 root /entro a visualizar transacciones
+# 06-05-2016 // 10:11:22 root /entro a visualizar transacciones
+# 06-05-2016 // 10:28:26 root /entro a visualizar transacciones
+# 06-05-2016 // 10:38:48 root /entro a visualizar transacciones
+# 06-05-2016 // 10:41:10 root /entro a visualizar transacciones
+# 06-05-2016 // 11:32:51 root /entro a visualizar transacciones
+# 06-05-2016 // 11:36:56 root /entro a visualizar transacciones
+# 06-05-2016 // 11:36:59 root /entro a visualizar transacciones
+# 06-05-2016 // 11:37:00 root /salio de transacciones
+# 06-05-2016 // 11:37:02 root /entro a documentos
+# 06-05-2016 // 11:40:34 root /salio de transacciones
+# 06-05-2016 // 11:40:38 root /entro a documentos
+# 06-05-2016 // 11:41:52 root /salio de transacciones
+# 06-05-2016 // 11:41:54 root /entro a visualizar transacciones
+# 06-05-2016 // 11:51:14 root /entro a visualizar transacciones
+# 06-05-2016 // 11:56:51 root /creo la transaccion 31
+# 06-05-2016 // 12:18:55 root /creo la transaccion 32
+# 06-05-2016 // 12:20:20 root /entro a visualizar transacciones
+# 06-05-2016 // 12:22:20 root /creo la transaccion 33
+# 06-05-2016 // 12:26:06 root /entro a visualizar transacciones
+# 06-05-2016 // 12:26:51 root /creo la transaccion 34
+# 06-05-2016 // 12:29:11 root /creo la transaccion 35
+# 06-05-2016 // 12:33:20 root /creo la transaccion 36
+# 06-05-2016 // 12:35:16 root /entro a visualizar transacciones
+# 06-05-2016 // 12:37:17 root /entro a visualizar transacciones
+# 06-05-2016 // 12:38:21 root /creo la transaccion 37
+# 06-05-2016 // 12:40:30 root /creo la transaccion 38
+# 06-05-2016 // 12:41:56 root /creo la transaccion 39
+# 06-05-2016 // 12:56:28 root /entro a visualizar transacciones
+# 06-05-2016 // 12:58:01 root /creo la transaccion 40
+# 06-05-2016 // 12:59:47 root /salio de transacciones
+# 06-05-2016 // 12:59:49 root /entro a visualizar transacciones
+# 06-05-2016 // 13:00:14 root /entro a visualizar transacciones
+# 06-05-2016 // 13:00:15 root /salio de transacciones
+# 06-05-2016 // 13:00:17 root /entro en mantenimientos
+# 06-05-2016 // 13:00:18 root /entro en mantenimiento de vehiculos
+# 06-05-2016 // 13:02:18 root /salio de mantenimientos
+# 06-05-2016 // 13:02:20 root /cerro sesion correctamente
+# 06-05-2016 // 13:02:26 root /ha iniciado sesion
+# 06-05-2016 // 13:02:27 root /entro en mantenimientos
+# 06-05-2016 // 13:02:29 root /entro en transacciones
+# 06-05-2016 // 13:02:31 root /entro a visualizar transacciones
+# 06-05-2016 // 13:03:25 root /creo la transaccion 41
+# 06-05-2016 // 13:51:29 root /entro a visualizar transacciones
+# 06-05-2016 // 13:57:40 root /entro a visualizar transacciones
+# 06-05-2016 // 14:02:51 root /creo la transaccion 8
+# 06-05-2016 // 14:09:20 root /creo la transaccion 9
+# 06-05-2016 // 14:15:46 root /entro a visualizar transacciones
+# 06-05-2016 // 14:45:55 root /entro a visualizar transacciones
+# 06-05-2016 // 14:45:56 root /salio de transacciones
+# 06-05-2016 // 14:46:04 root /entro en parametros
+# 06-05-2016 // 14:46:24 root /cerro sesion correctamente
+# 06-05-2016 // 15:41:13 root /ha iniciado sesion
+# 06-05-2016 // 15:41:24 root /entro en transacciones
+# 06-05-2016 // 15:41:27 root /entro a visualizar transacciones
+# 06-05-2016 // 16:15:51 root /entro a visualizar transacciones
+# 06-05-2016 // 16:18:18 root /entro a visualizar transacciones
+# 06-05-2016 // 16:18:19 root /salio de transacciones
+# 06-05-2016 // 16:18:21 root /cerro sesion correctamente
+# 06-05-2016 // 16:18:29 secretaria /ha iniciado sesion
+# 06-05-2016 // 16:18:31 secretaria /entro en transacciones
+# 06-05-2016 // 16:18:32 secretaria /entro a visualizar transacciones
+# 06-05-2016 // 16:19:33 secretaria /creo la transaccion 10
+# 06-05-2016 // 17:05:57 secretaria /entro a visualizar transacciones
+# 06-05-2016 // 17:11:03 secretaria /entro a visualizar transacciones
+# 06-05-2016 // 17:17:28 secretaria /entro a visualizar transacciones
+# 06-05-2016 // 17:37:18 secretaria /entro a visualizar transacciones
+# 06-05-2016 // 17:37:20 secretaria /salio de transacciones
+# 06-05-2016 // 17:37:24 secretaria /ingreso a cobros
+# 06-05-2016 // 17:37:56 secretaria /entro a visualizar transacciones
+# 06-05-2016 // 17:39:19 secretaria /salio de transacciones
+# 06-05-2016 // 17:39:20 secretaria /ingreso a cobros
+# 06-05-2016 // 17:40:53 secretaria /entro en transacciones
+# 06-05-2016 // 17:40:54 secretaria /entro a visualizar transacciones
+# 06-05-2016 // 17:41:29 secretaria /creo la transaccion 11
+# 06-05-2016 // 17:44:28 secretaria /creo la transaccion 11
+# 06-05-2016 // 17:52:06 secretaria /entro a visualizar transacciones
+# 06-05-2016 // 17:53:23 secretaria /creo la transaccion 11
+# 06-05-2016 // 18:17:02 secretaria /creo la transaccion 12
+# 06-05-2016 // 18:25:08 secretaria /creo la transaccion 13
+# 06-05-2016 // 18:32:32 secretaria /creo la transaccion 14
+# 06-05-2016 // 18:34:12 secretaria /creo la transaccion 15
+# 06-05-2016 // 18:41:23 secretaria /creo la transaccion 16
+# 06-05-2016 // 18:44:10 secretaria /creo la transaccion 17
+# 06-05-2016 // 20:44:17 secretaria /creo la transaccion 18
+# 06-05-2016 // 20:46:11 secretaria /entro en transacciones
+# 06-05-2016 // 20:46:12 secretaria /entro a visualizar transacciones
+# 06-05-2016 // 20:52:41 secretaria /entro en transacciones
+# 06-05-2016 // 20:52:42 secretaria /entro a visualizar transacciones
+# 06-05-2016 // 21:15:24 secretaria /entro a visualizar transacciones
+# 06-05-2016 // 21:22:42 secretaria /creo la transaccion 2
+# 06-05-2016 // 21:26:48 secretaria /creo la transaccion 1
+# 06-05-2016 // 21:28:04 secretaria /creo la transaccion 2
+# 06-05-2016 // 21:35:16 secretaria /creo la transaccion 1
+# 06-05-2016 // 21:36:07 secretaria /creo la transaccion 2
+# 06-05-2016 // 21:45:43 secretaria /creo la transaccion 3
+# 06-05-2016 // 21:47:07 secretaria /creo la transaccion 4
+# 06-05-2016 // 22:01:11 secretaria /creo la transaccion 5
+# 06-05-2016 // 22:02:34 secretaria /creo la transaccion 6
+# 06-05-2016 // 22:31:40 secretaria /creo la transaccion 7
+# 06-05-2016 // 22:37:31 secretaria /creo la transaccion 8
+# 06-05-2016 // 22:46:17 secretaria /creo la transaccion 1
+# 06-05-2016 // 22:47:48 secretaria /creo la transaccion 2
+# 06-05-2016 // 22:53:25 secretaria /creo la transaccion 3
+# 06-05-2016 // 22:55:36 secretaria /creo la transaccion 4
+# 06-05-2016 // 22:59:25 secretaria /entro a visualizar transacciones
+# 06-05-2016 // 23:00:11 secretaria /creo la transaccion 5
+# 06-05-2016 // 23:09:24 secretaria /creo la transaccion 6
+# 06-05-2016 // 23:16:47 secretaria /entro a visualizar transacciones
+# 06-05-2016 // 23:17:58 secretaria /creo la transaccion 1
+# 06-05-2016 // 23:19:29 secretaria /creo la transaccion 2
+# 06-05-2016 // 23:27:48 secretaria /creo la transaccion 3
+# 06-05-2016 // 23:28:57 secretaria /creo la transaccion 4
+# 06-05-2016 // 23:31:38 secretaria /creo la transaccion 5
+# 06-05-2016 // 23:31:43 secretaria /entro a visualizar transacciones
+# 06-05-2016 // 23:33:22 secretaria /creo la transaccion 6

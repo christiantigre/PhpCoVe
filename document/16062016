@@ -1,0 +1,32 @@
+# 16-06-2016 // 17:30:13 root /ha iniciado sesion
+# 16-06-2016 // 17:34:12 root /entro en transacciones
+# 16-06-2016 // 17:34:14 root /entro a visualizar transacciones
+# 16-06-2016 // 18:00:37 root /entro a visualizar transacciones
+# 16-06-2016 // 18:00:42 root /salio de transacciones
+# 16-06-2016 // 18:00:43 root /ingreso a pagos
+# 16-06-2016 // 12:41:27 secretaria /salio de transacciones
+# 16-06-2016 // 12:42:08 secretaria /entro a visualizar transacciones
+# 16-06-2016 // 13:01:25 secretaria /entro a visualizar transacciones
+# 16-06-2016 // 13:02:14 secretaria /salio de transacciones
+# 16-06-2016 // 13:04:58 secretaria /creo el cliente 1400308761
+# 16-06-2016 // 13:04:58 secretaria /creo cuenta contable del cliente 1400308761
+# 16-06-2016 // 13:05:01 secretaria /entro en mantenimiento de clientes
+# 16-06-2016 // 13:05:05 secretaria /salio de mantenimientos
+# 16-06-2016 // 13:05:08 secretaria /entro en mantenimiento de vehiculos
+# 16-06-2016 // 13:07:45 secretaria /creo el vehiculo ABA1672
+# 16-06-2016 // 13:07:45 secretaria /creo cuenta contable del vehiculo ABA1672
+# 16-06-2016 // 13:09:16 secretaria /entro en parametros
+# 16-06-2016 // 13:09:19 secretaria /entro en mantenimiento de vehiculos
+# 16-06-2016 // 13:09:21 secretaria /salio de mantenimientos
+# 16-06-2016 // 12:11:31 secretaria /entro a visualizar transacciones
+# 16-06-2016 // 12:25:58 secretaria /creo la transaccion 99
+# 16-06-2016 // 12:26:23 secretaria /entro a visualizar transacciones
+# 16-06-2016 // 12:26:24 secretaria /salio de transacciones
+# 16-06-2016 // 12:26:28 secretaria /entro en mantenimientos
+# 16-06-2016 // 12:26:29 secretaria /entro en mantenimiento de vehiculos
+# 16-06-2016 // 12:27:12 secretaria /salio de mantenimientos
+# 16-06-2016 // 12:27:15 secretaria /entro en transacciones
+# 16-06-2016 // 12:27:16 secretaria /entro a visualizar transacciones
+# 16-06-2016 // 12:27:33 secretaria /entro a visualizar transacciones
+# 16-06-2016 // 12:27:35 secretaria /salio de transacciones
+# 16-06-2016 // 12:27:39 secretaria /cerro sesion correctamente

@@ -1,0 +1,93 @@
+# 02-11-2016 // 09:10:33 secretaria /entro en transacciones
+# 02-11-2016 // 09:10:34 secretaria /entro a visualizar transacciones
+# 02-11-2016 // 09:14:06 secretaria /entro a visualizar transacciones
+# 02-11-2016 // 09:14:10 secretaria /entro a visualizar transacciones
+# 02-11-2016 // 09:15:10 secretaria /entro en transacciones
+# 02-11-2016 // 09:15:12 secretaria /entro a visualizar transacciones
+# 02-11-2016 // 09:28:14 secretaria /entro a visualizar transacciones
+# 02-11-2016 // 09:28:43 secretaria /entro a visualizar transacciones
+# 02-11-2016 // 09:29:01 secretaria /entro a visualizar transacciones
+# 02-11-2016 // 09:32:28 secretaria /entro a visualizar transacciones
+# 02-11-2016 // 09:54:40 secretaria /entro a visualizar transacciones
+# 02-11-2016 // 09:54:43 secretaria /salio de transacciones
+# 02-11-2016 // 10:20:57 secretaria /entro a visualizar transacciones
+# 02-11-2016 // 10:22:21 secretaria /entro a visualizar transacciones
+# 02-11-2016 // 10:22:23 secretaria /salio de transacciones
+# 02-11-2016 // 10:22:25 secretaria /entro en mantenimientos
+# 02-11-2016 // 10:22:26 secretaria /entro en mantenimiento de vehiculos
+# 02-11-2016 // 11:03:01 secretaria /salio de mantenimientos
+# 02-11-2016 // 11:03:05 secretaria /entro en mantenimientos
+# 02-11-2016 // 11:03:07 secretaria /entro en transacciones
+# 02-11-2016 // 11:03:10 secretaria /ingreso a pagos
+# 02-11-2016 // 11:04:03 secretaria /entro a visualizar transacciones
+# 02-11-2016 // 11:04:30 secretaria /entro a visualizar transacciones
+# 02-11-2016 // 11:05:11 secretaria /entro a visualizar transacciones
+# 02-11-2016 // 11:07:04 secretaria /salio de cobros
+# 02-11-2016 // 11:11:00 secretaria /registro un abono de 150 en la carpeta 118 cuota 1
+# 02-11-2016 // 11:11:12 secretaria /registro un abono de 300 en la carpeta 118 cuota 1
+# 02-11-2016 // 11:11:32 secretaria /registro un abono de 500 en la carpeta 118 cuota 1
+# 02-11-2016 // 11:15:19 secretaria /entro a visualizar transacciones
+# 02-11-2016 // 11:18:24 secretaria /entro a visualizar transacciones
+# 02-11-2016 // 11:21:25 secretaria /registro un abono de 546 en la carpeta 73 cuota 1
+# 02-11-2016 // 11:21:37 secretaria /registro un abono de 700 en la carpeta 73 cuota 24
+# 02-11-2016 // 11:24:01 secretaria /entro a visualizar transacciones
+# 02-11-2016 // 11:24:30 secretaria /entro a visualizar transacciones
+# 02-11-2016 // 11:24:31 secretaria /salio de transacciones
+# 02-11-2016 // 11:24:35 secretaria /entro en mantenimientos
+# 02-11-2016 // 11:26:59 secretaria /entro en mantenimientos
+# 02-11-2016 // 11:27:01 secretaria /entro en mantenimientos
+# 02-11-2016 // 11:48:51 secretaria /entro a visualizar transacciones
+# 02-11-2016 // 11:48:53 secretaria /salio de transacciones
+# 02-11-2016 // 11:48:54 secretaria /entro a visualizar transacciones
+# 02-11-2016 // 11:52:28 secretaria /entro a visualizar transacciones
+# 02-11-2016 // 11:53:30 secretaria /entro a visualizar transacciones
+# 02-11-2016 // 11:54:22 secretaria /entro a visualizar transacciones
+# 02-11-2016 // 12:16:36 secretaria /entro a visualizar transacciones
+# 02-11-2016 // 12:16:40 secretaria /salio de transacciones
+# 02-11-2016 // 12:16:45 secretaria /cerro sesion correctamente
+# 02-11-2016 // 12:21:58 root /ha iniciado sesion
+# 02-11-2016 // 12:22:01 root /entro en transacciones
+# 02-11-2016 // 12:22:02 root /entro a visualizar transacciones
+# 02-11-2016 // 12:25:37 root /salio de transacciones
+# 02-11-2016 // 12:26:16 root /entro en transacciones
+# 02-11-2016 // 12:26:18 root /entro a visualizar transacciones
+# 02-11-2016 // 12:26:35 root /entro a visualizar transacciones
+# 02-11-2016 // 12:29:27 root /entro a visualizar transacciones
+# 02-11-2016 // 12:33:18 root /entro a visualizar transacciones
+# 02-11-2016 // 12:33:39 root /entro a visualizar transacciones
+# 02-11-2016 // 12:35:16 root /entro a visualizar transacciones
+# 02-11-2016 // 12:47:48 root /registro un abono de 750 en la carpeta 118 cuota 1
+# 02-11-2016 // 12:50:11 root /registro un abono de 500 en la carpeta 118 cuota 1
+# 02-11-2016 // 12:53:06 root /registro un abono de 350 en la carpeta 118 cuota 1
+# 02-11-2016 // 12:53:21 root /entro a visualizar transacciones
+# 02-11-2016 // 12:53:36 root /entro a visualizar transacciones
+# 02-11-2016 // 12:54:08 root /entro a visualizar transacciones
+# 02-11-2016 // 12:56:45 root /entro a visualizar transacciones
+# 02-11-2016 // 12:57:48 root /entro a visualizar transacciones
+# 02-11-2016 // 13:13:30 root /entro en transacciones
+# 02-11-2016 // 13:13:32 root /entro a visualizar transacciones
+# 02-11-2016 // 13:14:03 root /entro a visualizar transacciones
+# 02-11-2016 // 13:14:13 root /entro a visualizar transacciones
+# 02-11-2016 // 13:14:17 root /entro a visualizar transacciones
+# 02-11-2016 // 13:14:45 root /entro en transacciones
+# 02-11-2016 // 13:14:47 root /entro a visualizar transacciones
+# 02-11-2016 // 13:15:50 root /entro a visualizar transacciones
+# 02-11-2016 // 13:16:08 root /entro en transacciones
+# 02-11-2016 // 13:16:09 root /entro a visualizar transacciones
+# 02-11-2016 // 13:18:51 root /entro a visualizar transacciones
+# 02-11-2016 // 13:19:02 root /entro a visualizar transacciones
+# 02-11-2016 // 13:19:48 root /entro en transacciones
+# 02-11-2016 // 13:21:23 root /entro a visualizar transacciones
+# 02-11-2016 // 13:22:50 root /entro en transacciones
+# 02-11-2016 // 13:22:52 root /entro a visualizar transacciones
+# 02-11-2016 // 13:23:53 root /entro en transacciones
+# 02-11-2016 // 13:23:55 root /entro a visualizar transacciones
+# 02-11-2016 // 13:27:32 root /entro en transacciones
+# 02-11-2016 // 13:27:34 root /entro a visualizar transacciones
+# 02-11-2016 // 13:28:03 root /entro en transacciones
+# 02-11-2016 // 13:28:04 root /entro a visualizar transacciones
+# 02-11-2016 // 13:28:19 root /registro un abono de 55 en la carpeta 70 cuota 1
+# 02-11-2016 // 13:29:23 root /registro un abono de 75 en la carpeta 70 cuota 2
+# 02-11-2016 // 14:53:03 root /entro a visualizar transacciones
+# 02-11-2016 // 14:53:05 root /salio de transacciones
+# 02-11-2016 // 14:53:08 root /cerro sesion correctamente

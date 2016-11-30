@@ -1,0 +1,2 @@
+ALTER TABLE `abono` ADD `detall` CHAR(255) NOT NULL AFTER `tran_cre_idtran_cre_cab`;
+ALTER TABLE `cli_datos` ADD `ced_conyuge` CHAR(15) NOT NULL AFTER `cli_conyuge`;
