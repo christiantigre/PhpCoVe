@@ -270,10 +270,10 @@ $objcal = new Calendario();
                                 <td>  
                                     &nbsp;&nbsp;                                  
                                     <div class="form-group">
-                                     <label for="tran_cab_gastos">Gastos:</label>
-                                     <input type="text" name="tran_cab_gastos" id="tran_cab_gastos" readonly="" placeholder="0.00" value="<?php
-                                     echo 0;
-                                     if (isset($_REQUEST['tran_cab_gastos'])) {
+                                       <label for="tran_cab_gastos">Gastos:</label>
+                                       <input type="text" name="tran_cab_gastos" id="tran_cab_gastos" readonly="" placeholder="0.00" value="<?php
+                                       echo 0;
+                                       if (isset($_REQUEST['tran_cab_gastos'])) {
                                         echo $_REQUEST['tran_cab_gastos'];
                                     } else {
                                         echo '';
@@ -615,17 +615,46 @@ $objcal = new Calendario();
                     $("#lstveh").load("nueva_transac.php");  
                 }
 
-                function detall(carpeta,monto,id) {
-                    var resultado = document.getElementById('cajacredito');
-                    ajax = objetoAjax();
-                    ajax.open('GET', './script/modal_credit.php?carpeta=' + carpeta + "&monto=" + monto + "&id=" +id, true);
-                    ajax.onreadystatechange = function () {
-                        if (ajax.readyState == 4) {
-                            resultado.innerHTML = ajax.responseText;
-                            tables();
+                function detall(carpeta,monto,id,tipo) {
+                    if (tipo==1) {
+                        var tp="ENTRADA";
+                        var resultado = document.getElementById('cajaentrada');
+                        ajax = objetoAjax();
+                        ajax.open('GET', './script/modal_pay.php?carpeta=' + carpeta + "&monto=" + monto + "&id=" +id + "&tipo="+ tp, true);
+                        ajax.onreadystatechange = function () {
+                            if (ajax.readyState == 4) {
+                                resultado.innerHTML = ajax.responseText;
+                                tables();
+                            }
                         }
+                        ajax.send(null);
                     }
-                    ajax.send(null);
+                    if (tipo==2) {
+                        var tp="ADICIONAL";                        
+                        var resultado = document.getElementById('cajaadicional');
+                        ajax = objetoAjax();
+                        ajax.open('GET', './script/modal_pay.php?carpeta=' + carpeta + "&monto=" + monto + "&id=" +id + "&tipo="+ tp, true);
+                        ajax.onreadystatechange = function () {
+                            if (ajax.readyState == 4) {
+                                resultado.innerHTML = ajax.responseText;
+                                tables();
+                            }
+                        }
+                        ajax.send(null);
+                    }
+                    if (tipo==3) {
+                        var tp="CREDITO";
+                        var resultado = document.getElementById('cajacredito');
+                        ajax = objetoAjax();
+                        ajax.open('GET', './script/modal_pay.php?carpeta=' + carpeta + "&monto=" + monto + "&id=" +id + "&tipo="+ tp, true);
+                        ajax.onreadystatechange = function () {
+                            if (ajax.readyState == 4) {
+                                resultado.innerHTML = ajax.responseText;
+                                tables();
+                            }
+                        }
+                        ajax.send(null);
+                    }                    
                 }
             </script>
 
@@ -833,7 +862,7 @@ mysqli_close($c);
         include_once 'class/trandetalle.php';
         $conn = new Trandetalle();
         $conn->conec_base();
-        if(($_POST['refresh']=="ACTUALIZAR TABLA")||($_POST['pago']=='CREDITO')){
+        if(($_POST['refresh']=="ACTUALIZAR TABLA")||($_POST['pago']=='CREDITO')||($_POST['pago']=='ADICIONAL')){
             $conn->listar_detalle();
             $conn->credit_temporal();            
         }else{
@@ -1114,7 +1143,21 @@ mysqli_close($c);
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="myModalLabel">VISUALIZAR ADICIONAL</h4>
             </div>
-            <div class="modal-body" id="cajacredito">
+            <div class="modal-body" id="cajaadicional">
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Adiional-->
+<div class="modal fade" id="ENTRADA" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">VISUALIZAR ENTRADA</h4>
+            </div>
+            <div class="modal-body" id="cajaentrada">
 
             </div>
         </div>
