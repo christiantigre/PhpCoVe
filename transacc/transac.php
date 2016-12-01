@@ -39,6 +39,7 @@
                                             <th>Seguro</th>
                                             <th>Gastos</th>
                                             <th></th>
+                                            <th></th>
                                         </tr>
                                     </thead>
                                     <tbody>

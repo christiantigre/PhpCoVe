@@ -270,10 +270,10 @@ $objcal = new Calendario();
                                 <td>  
                                     &nbsp;&nbsp;                                  
                                     <div class="form-group">
-                                       <label for="tran_cab_gastos">Gastos:</label>
-                                       <input type="text" name="tran_cab_gastos" id="tran_cab_gastos" readonly="" placeholder="0.00" value="<?php
-                                       echo 0;
-                                       if (isset($_REQUEST['tran_cab_gastos'])) {
+                                     <label for="tran_cab_gastos">Gastos:</label>
+                                     <input type="text" name="tran_cab_gastos" id="tran_cab_gastos" readonly="" placeholder="0.00" value="<?php
+                                     echo 0;
+                                     if (isset($_REQUEST['tran_cab_gastos'])) {
                                         echo $_REQUEST['tran_cab_gastos'];
                                     } else {
                                         echo '';
@@ -296,7 +296,7 @@ $objcal = new Calendario();
                             </td>
                             <td>  
                                 &nbsp;&nbsp;                              
-                                <div class="form-group">
+                                <div class="form-group" style="display: none;">
                                     <label for="ganancia">Ganancia : </label>
                                     <input type="text" id="ganancia" name="ganancia" value="<?php
                                     if (isset($_REQUEST['ganancia'])) {
@@ -315,6 +315,7 @@ $objcal = new Calendario();
         </div>
 
         <script type = "text/javascript" >
+
             function tables() {
                 $(document).ready(function () {
                     $('#dataTables-example').dataTable();
@@ -342,11 +343,15 @@ $objcal = new Calendario();
                 if (seguro != '') {
                     s = parseFloat(seguro.value);
                 } else {
+                    //$("#tran_cab_seguro").val("");
+                    //$("#tran_cab_seguro").val(seguro.toFixed(2).toString().replace(',', '.'));
                     seguro = 0;
                 }
                 if (gastos != '') {
                     g = parseFloat(gastos.value);
                 } else {
+                    //$("#tran_cab_gastos").val("");
+                    //$("#tran_cab_gastos").val(gastos.toFixed(2).toString().replace(',', '.'));
                     gastos = 0;
                 }
                 s = parseFloat(seguro.value);
@@ -586,6 +591,14 @@ $objcal = new Calendario();
                             }
                         }
                     </script>
+                    <script type="text/javascript">
+                        function excel(id){
+                            window.open('./documentos/export/' + id + '.php');
+                        }
+                        function pdf(id){
+                            window.open('./documentos/export/' + id + '.php');
+                        }
+                    </script>
 
                 </p>
             </fieldset>
@@ -619,42 +632,52 @@ $objcal = new Calendario();
                     if (tipo==1) {
                         var tp="ENTRADA";
                         var resultado = document.getElementById('cajaentrada');
-                        ajax = objetoAjax();
-                        ajax.open('GET', './script/modal_pay.php?carpeta=' + carpeta + "&monto=" + monto + "&id=" +id + "&tipo="+ tp, true);
-                        ajax.onreadystatechange = function () {
-                            if (ajax.readyState == 4) {
-                                resultado.innerHTML = ajax.responseText;
-                                tables();
-                            }
-                        }
-                        ajax.send(null);
+                        view_modal(carpeta,monto,id,tp,resultado);
                     }
                     if (tipo==2) {
                         var tp="ADICIONAL";                        
                         var resultado = document.getElementById('cajaadicional');
-                        ajax = objetoAjax();
-                        ajax.open('GET', './script/modal_pay.php?carpeta=' + carpeta + "&monto=" + monto + "&id=" +id + "&tipo="+ tp, true);
-                        ajax.onreadystatechange = function () {
-                            if (ajax.readyState == 4) {
-                                resultado.innerHTML = ajax.responseText;
-                                tables();
-                            }
-                        }
-                        ajax.send(null);
+                        view_modal(carpeta,monto,id,tp,resultado);                        
                     }
                     if (tipo==3) {
                         var tp="CREDITO";
                         var resultado = document.getElementById('cajacredito');
-                        ajax = objetoAjax();
-                        ajax.open('GET', './script/modal_pay.php?carpeta=' + carpeta + "&monto=" + monto + "&id=" +id + "&tipo="+ tp, true);
-                        ajax.onreadystatechange = function () {
-                            if (ajax.readyState == 4) {
-                                resultado.innerHTML = ajax.responseText;
-                                tables();
-                            }
+                        view_modal(carpeta,monto,id,tp,resultado);                        
+                    }             
+                    if (tipo==4) {
+                        var tp="ADICIONALES"; 
+                        var resultado = document.getElementById('cajaadicional');
+                        view_modal(carpeta,monto,id,tp,resultado);
+                    }
+                    if (tipo==5) {
+                        var tp="CREDITOS";                     
+                        var resultado = document.getElementById('cajacredito');
+                        view_modal(carpeta,monto,id,tp,resultado);                        
+                    }       
+                }
+
+                function view_modal(carpeta,monto,id,tp,resultado){
+                    ajax = objetoAjax();
+                    ajax.open('GET', './script/modal_pay.php?carpeta=' + carpeta + "&monto=" + monto + "&id=" +id + "&tipo="+ tp, true);
+                    ajax.onreadystatechange = function () {
+                        if (ajax.readyState == 4) {
+                            resultado.innerHTML = ajax.responseText;
+                            tables();
                         }
-                        ajax.send(null);
-                    }                    
+                    }
+                    ajax.send(null);
+                }
+
+                function trash(){
+                    var carpeta = '0';
+                    var monto = '0';
+                    var answer = confirm("Esta seguro que desea vaciar los pagos registrados?");                    
+                    if (answer) {
+                        $.post("./script/trash.php", {"carpeta": carpeta,"monto": monto},
+                            function (respuestag) {
+                                alert(respuestag);
+                            });
+                    } 
                 }
             </script>
 
@@ -677,7 +700,7 @@ $objcal = new Calendario();
                                 <div class="table-responsive">
 
 
-                                    <table border="1" class="table table-hover">
+                                    <table class="table">
                                         <thead>
                                             <tr align="center">
                                                 <td width="80">Pago</td>
@@ -693,7 +716,7 @@ $objcal = new Calendario();
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
+                                            <tr class="info">
                                                 <td class="center">
 <!--<input list="lstpago" id="pago" name="pago" placeholder="seleccione" style="width: 80px">
 <datalist id="lstpago">
@@ -701,7 +724,7 @@ $objcal = new Calendario();
 <option value="ADICIONAL">ADICIONAL</option>
 <option value="CREDITO">CREDITO</option>
 </datalist>-->
-<select name="pago" id="pago" style="width: 90px">    
+<select name="pago" id="pago" style="width: 90px;font-size: 9px;" class="form-control">    
     <option value="0">Selecci&oacute;ne </option>
     <option value="ENTRADA">ENTRADA</option>
     <option value="ADICIONAL">ADICIONAL</option>
@@ -716,7 +739,7 @@ $objcal = new Calendario();
 <option value="LETRA DE CAMBIO">LETRA DE CAMBIO</option>
 <option value="VEHICULO">VEHICULO</option>
 </datalist>-->
-<select name="forma" id="forma" style="width: 130px">    
+<select name="forma" id="forma" style="width: 130px;font-size: 9px;" class="form-control">    
     <option value="EFECTIVO">Selecci&oacute;ne</option>
 </select>
 </td>
@@ -727,7 +750,7 @@ $objcal = new Calendario();
 <!--<button type="button" data-toggle="modal" title="Seleccionar Vehículo" data-target="#myModal2" class="btn btn-outline btn-sm btn-info glyphicon glyphicon-search" onclick=""/>-->
 <!--</td>-->
 <td class="center">
-    <input type="text" id="dcto" name="dcto" onchange="contts();" style="width: 120px" list="cta" autocomplete="off"/>
+    <input type="text" id="dcto" name="dcto" onchange="contts();" style="width: 120px;font-size: 9px;" list="cta" autocomplete="off" class="form-control"/>
     <datalist id="cta">
         <optgroup label="bancos">
             <?php
@@ -743,7 +766,7 @@ echo '</option>';
 mysqli_close($c);
 ?>
 </optgroup>
-<optgroup label="ingresos">
+<optgroup label="ingresos" >
     <?php
     $c = mysqli_connect('localhost', $_SESSION['user'], $_SESSION['pass'], 'condata');
     $query = "select * from t_plan_de_cuentas where cod_cuenta='2.2.1.3.1.'";
@@ -807,14 +830,14 @@ mysqli_close($c);
 <!--<input type="text" id="dcto" name="dcto" style="width: 120px" list="cuentas" autocomplete="off">-->
 </td>
 <td class="center">
-    <input type="text" id="valor" name="valor" placeholder="0.00" style="width: 60px">
+    <input type="text" id="valor" name="valor" placeholder="0.00" style="width: 60px;font-size: 9px;" class="form-control">
 </td>
 <td class="center" >
-    <input type="text" id="fecha_det" name="fecha_det" value="<?Php echo date("Y-m-d"); ?>" style="width: 60px" readonly="readonly">
+    <input type="text" id="fecha_det" name="fecha_det" value="<?Php echo date("Y-m-d"); ?>" style="width: 60px;font-size: 9px;" readonly="readonly" class="form-control">
 </td>
 <td class="center">
     <!--<input type="text" id="interes" name="interes" style="width: 50px" placeholder="0.00">-->
-    <select name="interes" id="interes" size="0" style="alignment-adjust: central; width: 50px;" >
+    <select name="interes" id="interes" size="0" style="alignment-adjust: central; width: 50px;font-size: 9px;" class="form-control">
         <?php
         $c = mysqli_connect('localhost', $_SESSION['user'], $_SESSION['pass'], 'cove_veh');
         $consulint = "select prm_int from soft_prm";
@@ -834,17 +857,17 @@ mysqli_close($c);
         </select>
     </td>
     <td class="center">
-        <input type="text" id="plazo" name="plazo" style="width: 50px" placeholder="0">
+        <input type="text" id="plazo" name="plazo" style="width: 50px;font-size: 9px;" placeholder="0" class="form-control">
     </td>
     <td class="center">
-        <select id="lststd" id="lststd" name="lststd" width="60">
+        <select id="lststd" id="lststd" name="lststd" width="60" class="form-control">
             <option value=""></option>
             <option value="PENDIENTE">PENDIENTE</option>
             <option value="PAGADO">PAGADO</option>
         </select>
     </td>
     <td class="center">
-        <input type="text" id="observacion" name="observacion" style="width: 150px" />
+        <input type="text" id="observacion" name="observacion" style="width: 150px" class="form-control"/>
     </td>
 </tr>
 </tbody>
@@ -1088,39 +1111,6 @@ mysqli_close($c);
 </div>
 
 
-<!-- ModalADICIONAL -->
-<div class="modal fade" id="ADICIONAL1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">VISUALIZAR ADICIONAL</h4>
-            </div>
-            <div class="modal-body" id="caja">
-                <fieldset>
-                    <h3></h3>
-                    <div class="row">
-                        <form role="form" method="POST" name="add_veh_form" id="add_veh_form">
-                            <div class="col-lg-12">
-                                <?Php
-                                $conn->adicional_temporal();
-                                ?>
-                            </div>
-                            <div class="col-lg-8">
-                                <div class="form-group">
-                                    <br><br>
-                                    <input type="button" onclick="excel(this.id);" class="btn btn-success" name="ex_morti_exc" id="ex_morti_exc"  value="EXCEL">&nbsp;
-                                    <input type="button" onclick="pdf(this.id);" class="btn btn-danger" name="ex_morti_pdf" id="ex_morti_pdf"  value="PDF">&nbsp;
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </fieldset>
-            </div>
-        </div>
-    </div>
-</div>
-
 <!-- Modal Credito-->
 <div class="modal fade" id="CREDITO" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
@@ -1130,7 +1120,6 @@ mysqli_close($c);
                 <h4 class="modal-title" id="myModalLabel">VISUALIZAR CR&Eacute;DITO</h4>
             </div>
             <div class="modal-body" id="cajacredito">
-
             </div>
         </div>
     </div>
@@ -1144,7 +1133,6 @@ mysqli_close($c);
                 <h4 class="modal-title" id="myModalLabel">VISUALIZAR ADICIONAL</h4>
             </div>
             <div class="modal-body" id="cajaadicional">
-
             </div>
         </div>
     </div>
@@ -1158,7 +1146,6 @@ mysqli_close($c);
                 <h4 class="modal-title" id="myModalLabel">VISUALIZAR ENTRADA</h4>
             </div>
             <div class="modal-body" id="cajaentrada">
-
             </div>
         </div>
     </div>

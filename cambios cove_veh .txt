@@ -29,3 +29,8 @@ CREATE TABLE `det_pag` (
   `subtotal` int(11) NOT NULL,
   `porcentaje` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+agregar campos id_ref en tran_det_temp y prv_cre
+ALTER TABLE `tran_det_temp` ADD `id_ref` INT(11) NOT NULL AUTO_INCREMENT AFTER `tran_det_obs`, ADD PRIMARY KEY (`id_ref`);
+ALTER TABLE `prv_cre` ADD `id_ref` CHAR(11) NOT NULL AFTER `monto`;
