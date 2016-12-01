@@ -724,7 +724,7 @@ $objcal = new Calendario();
 <option value="ADICIONAL">ADICIONAL</option>
 <option value="CREDITO">CREDITO</option>
 </datalist>-->
-<select name="pago" id="pago" style="width: 90px;font-size: 9px;" class="form-control">    
+<select name="pago" id="pago" style="width: 100px;font-size: 9px;" class="form-control">    
     <option value="0">Selecci&oacute;ne </option>
     <option value="ENTRADA">ENTRADA</option>
     <option value="ADICIONAL">ADICIONAL</option>
@@ -739,7 +739,7 @@ $objcal = new Calendario();
 <option value="LETRA DE CAMBIO">LETRA DE CAMBIO</option>
 <option value="VEHICULO">VEHICULO</option>
 </datalist>-->
-<select name="forma" id="forma" style="width: 130px;font-size: 9px;" class="form-control">    
+<select name="forma" id="forma" style="width: 100px;font-size: 9px;" class="form-control">    
     <option value="EFECTIVO">Selecci&oacute;ne</option>
 </select>
 </td>
@@ -750,7 +750,7 @@ $objcal = new Calendario();
 <!--<button type="button" data-toggle="modal" title="Seleccionar Vehículo" data-target="#myModal2" class="btn btn-outline btn-sm btn-info glyphicon glyphicon-search" onclick=""/>-->
 <!--</td>-->
 <td class="center">
-    <input type="text" id="dcto" name="dcto" onchange="contts();" style="width: 120px;font-size: 9px;" list="cta" autocomplete="off" class="form-control"/>
+    <input type="text" id="dcto" name="dcto" onchange="contts();" style="font-size: 9px;" list="cta" autocomplete="off" class="form-control"/>
     <datalist id="cta">
         <optgroup label="bancos">
             <?php
@@ -830,14 +830,14 @@ mysqli_close($c);
 <!--<input type="text" id="dcto" name="dcto" style="width: 120px" list="cuentas" autocomplete="off">-->
 </td>
 <td class="center">
-    <input type="text" id="valor" name="valor" placeholder="0.00" style="width: 60px;font-size: 9px;" class="form-control">
+    <input type="text" id="valor" name="valor" placeholder="0.00" style="font-size: 9px;" class="form-control">
 </td>
 <td class="center" >
-    <input type="text" id="fecha_det" name="fecha_det" value="<?Php echo date("Y-m-d"); ?>" style="width: 60px;font-size: 9px;" readonly="readonly" class="form-control">
+    <input type="text" id="fecha_det" name="fecha_det" value="<?Php echo date("Y-m-d"); ?>" style="width: 80px;font-size: 9px;" readonly="readonly" class="form-control">
 </td>
 <td class="center">
     <!--<input type="text" id="interes" name="interes" style="width: 50px" placeholder="0.00">-->
-    <select name="interes" id="interes" size="0" style="alignment-adjust: central; width: 50px;font-size: 9px;" class="form-control">
+    <select name="interes" id="interes" size="0" style="alignment-adjust: central;width: 70px; font-size: 9px;" class="form-control">
         <?php
         $c = mysqli_connect('localhost', $_SESSION['user'], $_SESSION['pass'], 'cove_veh');
         $consulint = "select prm_int from soft_prm";
@@ -857,7 +857,7 @@ mysqli_close($c);
         </select>
     </td>
     <td class="center">
-        <input type="text" id="plazo" name="plazo" style="width: 50px;font-size: 9px;" placeholder="0" class="form-control">
+        <input type="text" id="plazo" name="plazo" style="font-size: 9px;" placeholder="0" class="form-control">
     </td>
     <td class="center">
         <select id="lststd" id="lststd" name="lststd" width="60" class="form-control">
