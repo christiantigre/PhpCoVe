@@ -614,6 +614,19 @@ $objcal = new Calendario();
                     $("#refresh").load("nueva_transac.php");  
                     $("#lstveh").load("nueva_transac.php");  
                 }
+
+                function detall(carpeta,monto,id) {
+                    var resultado = document.getElementById('cajacredito');
+                    ajax = objetoAjax();
+                    ajax.open('GET', './script/modal_credit.php?carpeta=' + carpeta + "&monto=" + monto + "&id=" +id, true);
+                    ajax.onreadystatechange = function () {
+                        if (ajax.readyState == 4) {
+                            resultado.innerHTML = ajax.responseText;
+                            tables();
+                        }
+                    }
+                    ajax.send(null);
+                }
             </script>
 
         </div>
@@ -1046,13 +1059,13 @@ mysqli_close($c);
 </div>
 
 
-<!-- ModalCREDITO -->
-<div class="modal fade" id="CREDITO" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<!-- ModalADICIONAL -->
+<div class="modal fade" id="ADICIONAL1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">VISUALIZAR CR&Eacute;DITO</h4>
+                <h4 class="modal-title" id="myModalLabel">VISUALIZAR ADICIONAL</h4>
             </div>
             <div class="modal-body" id="caja">
                 <fieldset>
@@ -1061,7 +1074,7 @@ mysqli_close($c);
                         <form role="form" method="POST" name="add_veh_form" id="add_veh_form">
                             <div class="col-lg-12">
                                 <?Php
-                                    $conn->credit_temporal();
+                                $conn->adicional_temporal();
                                 ?>
                             </div>
                             <div class="col-lg-8">
@@ -1079,7 +1092,21 @@ mysqli_close($c);
     </div>
 </div>
 
-<!-- ModalADICIONAL -->
+<!-- Modal Credito-->
+<div class="modal fade" id="CREDITO" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">VISUALIZAR CR&Eacute;DITO</h4>
+            </div>
+            <div class="modal-body" id="cajacredito">
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Adiional-->
 <div class="modal fade" id="ADICIONAL" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -1087,26 +1114,8 @@ mysqli_close($c);
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="myModalLabel">VISUALIZAR ADICIONAL</h4>
             </div>
-            <div class="modal-body" id="caja">
-                <fieldset>
-                    <h3></h3>
-                    <div class="row">
-                        <form role="form" method="POST" name="add_veh_form" id="add_veh_form">
-                            <div class="col-lg-12">
-                                <?Php
-                                    $conn->adicional_temporal();
-                                ?>
-                            </div>
-                            <div class="col-lg-8">
-                                <div class="form-group">
-                                    <br><br>
-                                    <input type="button" onclick="excel(this.id);" class="btn btn-success" name="ex_morti_exc" id="ex_morti_exc"  value="EXCEL">&nbsp;
-                                    <input type="button" onclick="pdf(this.id);" class="btn btn-danger" name="ex_morti_pdf" id="ex_morti_pdf"  value="PDF">&nbsp;
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </fieldset>
+            <div class="modal-body" id="cajacredito">
+
             </div>
         </div>
     </div>
