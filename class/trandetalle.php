@@ -40,6 +40,38 @@ class Trandetalle{
             mysqli_close($conn);    
         }
     }
+    function trs_delete_pay($carpeta,$monto,$pg){
+        $conn = $this->conec_base();
+        if ($conn == true) {
+            $query = "DELETE FROM tran_det where idtran_det_cab='".$carpeta."' and tran_det_monto='".$monto."' and tran_det_pago='".$pg."' ";
+            if ($pg=='ADICIONAL') {
+                $query_cre="delete from tran_cre where idtran_cre_cab='".$carpeta."'";
+                mysqli_query($conn, $query_cre);
+            }
+            if ($pg=='CREDITO') {
+                $query_cre="delete from tran_cre where idtran_cre_cab='".$carpeta."'";
+                mysqli_query($conn, $query_cre);
+            }
+            return mysqli_query($conn, $query);
+            mysqli_close($conn);    
+        }
+    }
+    function trs_delete_trash_pay($carpeta,$monto,$pg){
+        $conn = $this->conec_base();
+        if ($conn == true) {
+            $query = "DELETE FROM tran_det where idtran_det_cab='".$carpeta."' ";
+            if ($pg=='ADICIONAL') {
+                $query_cre="delete from tran_cre where idtran_cre_cab='".$carpeta."'";
+                mysqli_query($conn, $query_cre);
+            }
+            if ($pg=='CREDITO') {
+                $query_cre="delete from tran_cre where idtran_cre_cab='".$carpeta."'";
+                mysqli_query($conn, $query_cre);
+            }
+            return mysqli_query($conn, $query);
+            mysqli_close($conn);    
+        }
+    }
     function trash_pay($carpeta,$monto){
         $conn = $this->conec_base();
         if ($conn == true) {
@@ -554,6 +586,8 @@ class Trandetalle{
                                                                     $restrs = mysqli_query($conn, $query);
 
                                                                     while($datotrans = mysqli_fetch_array($restrs, MYSQLI_BOTH)){
+                                                                        $carpeta = $datotrans['idtran_det_cab'];
+                                                                        $monto =$datotrans['tran_det_monto'];
                                                                         echo "<tr>";
                                                                         echo "<td>".$datotrans['idtran_det_cab']. "</td>";
                                                                         echo "<td>".$datotrans['tran_det_pago']. "</td>";
@@ -569,6 +603,46 @@ class Trandetalle{
                                                                         }
                                                                         echo "<td>".$estado. "</td>";
                                                                         echo "<td>".$datotrans['tran_det_obs']. "</td>";
+                                                                        
+                                                                        echo "</tr>";               
+                                                                    }
+                                                                    mysqli_close($conn);
+                                                                } 
+
+                                                                function edit_detalle_transac($numtra){
+                                                                    $conn = $this->conec_base();
+                                                                    $query = "SELECT * FROM tran_det where idtran_det_cab = '$numtra'";
+                                                                    $restrs = mysqli_query($conn, $query);
+
+                                                                    while($datotrans = mysqli_fetch_array($restrs, MYSQLI_BOTH)){
+                                                                        $mensaje='"Esta seguro que desea eliminar este pago?"';
+                                                                        $carpeta = $datotrans['idtran_det_cab'];
+                                                                        $monto =$datotrans['tran_det_monto'];
+                                                                        $pago=$datotrans['tran_det_pago'];
+                                                                        if($pago=='ENTRADA'){$pago=1;}
+                                                                        if($pago=='ADICIONAL'){$pago=2;}
+                                                                        if($pago=='CREDITO'){$pago=3;}
+                                                                        echo "<tr>";
+                                                                        echo "<td>".$datotrans['idtran_det_cab']. "</td>";
+                                                                        echo "<td>".$datotrans['tran_det_pago']. "</td>";
+                                                                        echo "<td>".$datotrans['tran_det_forma']. "</td>";
+                                                                        echo "<td>".$datotrans['tran_det_dcto']. "</td>";
+                                                                        echo "<td>".$datotrans['tran_det_monto']. "</td>";
+                                                                        echo "<td>".$datotrans['tran_det_interes']. "</td>";
+                                                                        echo "<td>".$datotrans['tran_det_plazo']. "</td>";
+                                                                        if($datotrans['tran_det_estado']==0){
+                                                                            $estado = 'PENDIENTE';
+                                                                        }else{
+                                                                            $estado = 'PAGADO';
+                                                                        }
+                                                                        echo "<td>".$estado. "</td>";
+                                                                        echo "<td>".$datotrans['tran_det_obs']. "</td>";
+                                                                        ?>
+                                                                        <td width=20>
+                                                                            <button type='button' title='ELIMINAR PAGO' class='btn btn-outline btn-sm btn-info glyphicon glyphicon-trash' 
+                                                                            onclick='confirma_delet(<?Php echo $carpeta; ?>,<?Php echo $monto; ?>,<?Php echo $pago; ?>,<?Php echo $tipodelete=1; ?>,<?Php echo $mensaje; ?>);'></button>
+                                                                        </td>
+                                                                        <?php
                                                                         echo "</tr>";               
                                                                     }
                                                                     mysqli_close($conn);

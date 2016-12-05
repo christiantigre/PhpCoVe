@@ -266,7 +266,7 @@ class Transacc {
 //            . "</td>";
             echo "<td align='center'><a href='inicio.php?variable=ver_transaccion&vertrans=".$datomarca["idtran_cab"]."' data-toggle='modal''><button type='button' title='VER' class='btn btn-outline btn-info glyphicon glyphicon-eye-open'></button></a></td>";            
 
-            echo "<td align='center'><a href='inicio.php?variable=ver_transaccion&vertrans=".$datomarca["idtran_cab"]."' data-toggle='modal''><button type='button' title='EDITAR' class='btn btn-outline btn-info glyphicon glyphicon-edit'></button></a></td>";            
+            echo "<td align='center'><a href='inicio.php?variable=edit_transaccion&vertrans=".$datomarca["idtran_cab"]."' data-toggle='modal''><button type='button' title='EDITAR' class='btn btn-outline btn-info glyphicon glyphicon-edit'></button></a></td>";            
             echo "</tr>";
         }
 //        echo "</table>";

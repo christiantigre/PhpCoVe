@@ -42,6 +42,12 @@ if(isset($_REQUEST['variable'])){
         $objreg->registrar($mensaje);        
         $variable = 21;
     }
+    //editar transaccion
+    if($entorno == "edit_transaccion"){
+        $mensaje = $_SESSION['user'] . " /entro a editar transaccion";
+        $objreg->registrar($mensaje);        
+        $variable = 213;
+    }
     if($entorno == "ver_transaccion"){
         $codigo = $_REQUEST['vertrans'];
         $mensaje = $_SESSION['user'] . " /entro a visualizar transacción  $codigo";
@@ -691,6 +697,9 @@ if (isset($_POST['insertar_transac'])) {
                                         break;                                    
                                     case 212:
                                         include_once 'transacc/ver_trans.php';
+                                        break;
+                                    case 213:
+                                        include_once 'transacc/edit_transac.php';
                                         break;
                                     case 22:
                                         include_once 'data/credito_prv.php';
