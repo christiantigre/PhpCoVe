@@ -270,10 +270,10 @@ $objcal = new Calendario();
                                 <td>  
                                     &nbsp;&nbsp;                                  
                                     <div class="form-group">
-                                     <label for="tran_cab_gastos">Gastos:</label>
-                                     <input type="text" name="tran_cab_gastos" id="tran_cab_gastos" readonly="" placeholder="0.00" value="<?php
-                                     echo 0;
-                                     if (isset($_REQUEST['tran_cab_gastos'])) {
+                                       <label for="tran_cab_gastos">Gastos:</label>
+                                       <input type="text" name="tran_cab_gastos" id="tran_cab_gastos" readonly="" placeholder="0.00" value="<?php
+                                       echo 0;
+                                       if (isset($_REQUEST['tran_cab_gastos'])) {
                                         echo $_REQUEST['tran_cab_gastos'];
                                     } else {
                                         echo '';
@@ -718,32 +718,19 @@ $objcal = new Calendario();
                                         <tbody>
                                             <tr class="info">
                                                 <td class="center">
-<!--<input list="lstpago" id="pago" name="pago" placeholder="seleccione" style="width: 80px">
-<datalist id="lstpago">
-<option value="ENTRADA">ENTRADA</option>
-<option value="ADICIONAL">ADICIONAL</option>
-<option value="CREDITO">CREDITO</option>
-</datalist>-->
-<select name="pago" id="pago" style="width: 100px;font-size: 9px;" class="form-control">    
-    <option value="0">Selecci&oacute;ne </option>
-    <option value="ENTRADA">ENTRADA</option>
-    <option value="ADICIONAL">ADICIONAL</option>
-    <option value="CREDITO">CREDITO</option>   
-</select></p>
-</td>
-<td class="center">
-<!--<input list="lstforma" id="forma" name="forma" placeholder="seleccione" style="width: 100px">
-<datalist id="lstforma">
-<option value="EFECTIVO">EFECTIVO</option>
-<option value="CHEQUE">CHEQUE</option>
-<option value="LETRA DE CAMBIO">LETRA DE CAMBIO</option>
-<option value="VEHICULO">VEHICULO</option>
-</datalist>-->
-<select name="forma" id="forma" style="width: 100px;font-size: 9px;" class="form-control">    
-    <option value="EFECTIVO">Selecci&oacute;ne</option>
-</select>
-</td>
-<!--<td class="center" > <!--width="130"-->
+                                                    <select name="pago" id="pago" style="width: 100px;font-size: 9px;" class="form-control">    
+                                                        <option value="0">Selecci&oacute;ne </option>
+                                                        <option value="ENTRADA">ENTRADA</option>
+                                                        <option value="ADICIONAL">ADICIONAL</option>
+                                                        <option value="CREDITO">CREDITO</option>   
+                                                    </select></p>
+                                                </td>
+                                                <td class="center">
+                                                    <select name="forma" id="forma" style="width: 100px;font-size: 9px;" class="form-control">    
+                                                        <option value="EFECTIVO">Selecci&oacute;ne</option>
+                                                    </select>
+                                                </td>
+                                                <!--<td class="center" > <!--width="130"-->
 <!--<center>
 <button type="button" data-toggle="modal" title="Registrar Vehículo" data-target="#myModal" class="btn btn-outline btn-sm btn-info glyphicon glyphicon-plus-sign" onclick=""/>
 </center>-->

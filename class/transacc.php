@@ -67,7 +67,7 @@ class Transacc {
             $sec_trs = $sec_trs + 1;
         }
         $query = "INSERT INTO tran_cab(idtran_cab, tran_sec_tipo, tran_cab_tipo, tran_cab_fecha, tran_veh_placas, tran_cli_ident, tran_cab_precio, tran_cab_seguro, tran_cab_gastos) "
-                . "VALUES('$idtran_cab', '$sec_trs', '$tipo', '$fecha', '$tran_veh_placas', '$tran_cli_ident', '$tran_cab_precio', '$tran_cab_seguro', '$tran_cab_gastos')";
+        . "VALUES('$idtran_cab', '$sec_trs', '$tipo', '$fecha', '$tran_veh_placas', '$tran_cli_ident', '$tran_cab_precio', '$tran_cab_seguro', '$tran_cab_gastos')";
         mysqli_query($conn, $query);
     }
 
@@ -102,12 +102,12 @@ class Transacc {
                 $fechacre = strtotime('+30 day', strtotime($fechacre));
                 $fechacre = date('Y-m-j', $fechacre);
                 $query = "INSERT INTO tran_cre (idtran_cre_cab, tran_cre_sec, tran_cre_fecha_venc, tran_cre_fecha_pago, tran_cre_cuota, tran_cre_interes, tran_cre_monto, tran_cre_sal, tran_cre_estado)"
-                        . "VALUES ($numerocre, $i, '$fechacre', '', $pago_mes, $interes_mes, $montomes, $saldocre, 0)";
+                . "VALUES ($numerocre, $i, '$fechacre', '', $pago_mes, $interes_mes, $montomes, $saldocre, 0)";
                 mysqli_query($conn, $query);
             }
 
             $ver_id = "SELECT tc.idtran_cab as carpeta,concat(cd.cli_nombre ,' ', cd.cli_apellido) as cliente,sum(tr.`tran_cre_interes`) as tot_intrs, cd.idcli_ident as id_cli  FROM `tran_cre` tr join tran_cab tc join cli_datos cd where tr.`idtran_cre_cab`=tc.idtran_cab and tc.tran_cli_ident=cd.idcli_ident "
-                    . "and tc.idtran_cab='$numerocre'";
+            . "and tc.idtran_cab='$numerocre'";
             $res_id = mysqli_query($conn, $ver_id);
             $datoid = mysqli_fetch_array($res_id, MYSQLI_BOTH);
             $id_cli = $datoid['id_cli'];
@@ -160,14 +160,14 @@ class Transacc {
                 $fechacre = date('Y-m-j', $fechacre);
 
                 $query = "INSERT INTO tran_cre (idtran_cre_cab, tran_cre_sec, tran_cre_fecha_venc, tran_cre_fecha_pago, tran_cre_cuota, tran_cre_interes, tran_cre_monto, tran_cre_sal, tran_cre_estado)"
-                        . "VALUES ($numerocre, $incr, '$fechacre', '', $totalcre, $interes_tot, $montocre, 0, 0)";
+                . "VALUES ($numerocre, $incr, '$fechacre', '', $totalcre, $interes_tot, $montocre, 0, 0)";
                 mysqli_query($conn, $query);
                 $cont++;
 
                 $ver_id = "SELECT tc.idtran_cab as carpeta,concat(cd.cli_nombre ,' ', cd.cli_apellido) as cliente,"
-                        . "tr.`tran_cre_interes` as tot_intrs, cd.idcli_ident as id_cli  "
-                        . "FROM `tran_cre` tr join tran_cab tc join cli_datos cd where tr.`idtran_cre_cab`=tc.idtran_cab and tc.tran_cli_ident=cd.idcli_ident "
-                        . "and tc.idtran_cab='$numerocre' and tr.tran_cre_sec>=990";
+                . "tr.`tran_cre_interes` as tot_intrs, cd.idcli_ident as id_cli  "
+                . "FROM `tran_cre` tr join tran_cab tc join cli_datos cd where tr.`idtran_cre_cab`=tc.idtran_cab and tc.tran_cli_ident=cd.idcli_ident "
+                . "and tc.idtran_cab='$numerocre' and tr.tran_cre_sec>=990";
                 $res_id = mysqli_query($conn, $ver_id);
                 $datoid = mysqli_fetch_array($res_id, MYSQLI_BOTH);
                 $id_cli = $datoid['id_cli'];
@@ -197,9 +197,9 @@ class Transacc {
 
 
             $ver_id = "SELECT tc.idtran_cab as carpeta,concat(cd.cli_nombre ,' ', cd.cli_apellido) as cliente,"
-                    . "sum(tr.`tran_cre_interes`) as tot_intrs, cd.idcli_ident as id_cli  "
-                    . "FROM `tran_cre` tr join tran_cab tc join cli_datos cd where tr.`idtran_cre_cab`=tc.idtran_cab and tc.tran_cli_ident=cd.idcli_ident "
-                    . "and tc.idtran_cab='$numerocre' and tr.tran_cre_sec>=990";
+            . "sum(tr.`tran_cre_interes`) as tot_intrs, cd.idcli_ident as id_cli  "
+            . "FROM `tran_cre` tr join tran_cab tc join cli_datos cd where tr.`idtran_cre_cab`=tc.idtran_cab and tc.tran_cli_ident=cd.idcli_ident "
+            . "and tc.idtran_cab='$numerocre' and tr.tran_cre_sec>=990";
             $res_id = mysqli_query($conn, $ver_id);
             $datoid = mysqli_fetch_array($res_id, MYSQLI_BOTH);
             $id_cli = $datoid['id_cli'];
@@ -246,7 +246,7 @@ class Transacc {
     function listar_trans() {
         $conn = $this->conec_base();
         $query = "SELECT idtran_cab, tran_cab_fecha, tran_cab_tipo, tran_veh_placas, tran_cli_ident, "
-                . "tran_cab_precio, tran_cab_seguro, tran_cab_gastos FROM tran_cab order by idtran_cab";
+        . "tran_cab_precio, tran_cab_seguro, tran_cab_gastos FROM tran_cab order by idtran_cab";
         $restrs = mysqli_query($conn, $query);
 //        echo "<table border=1><tr align=center style='color:red'><td>CARPETA</td><td>FECHA</td><td>TRANSACCION</td><td>PLACA</td><td>CLIENTE</td><td>PRECIO</td><td>SEGURO</td><td>GASTOS</td>";
         while ($datomarca = mysqli_fetch_array($restrs, MYSQLI_BOTH)) {
@@ -381,9 +381,9 @@ class Transacc {
     function doc_busc_trans($idtran_cab) {
         $conn = $this->conec_base();
         $query = "SELECT * FROM tran_cab where idtran_cab LIKE '%" . $idtran_cab . "%' "
-                . "OR tran_cab_fecha LIKE '%" . $idtran_cab . "%' OR tran_cab_tipo LIKE '%" . $idtran_cab . "%' "
-                . "OR tran_veh_placas LIKE '%" . $idtran_cab . "%' OR tran_cli_ident LIKE '%" . $idtran_cab . "%' "
-                . "order by idtran_cab";
+        . "OR tran_cab_fecha LIKE '%" . $idtran_cab . "%' OR tran_cab_tipo LIKE '%" . $idtran_cab . "%' "
+        . "OR tran_veh_placas LIKE '%" . $idtran_cab . "%' OR tran_cli_ident LIKE '%" . $idtran_cab . "%' "
+        . "order by idtran_cab";
         $restrs = mysqli_query($conn, $query);
         echo "<table border=1><tr align=center style='color:red'><td>CARPETA</td><td>FECHA</td><td>TRANSACCION</td><td>PLACA</td><td>CLIENTE</td><td>PRECIO</td><td>SEGURO</td><td>GASTOS</td><td colspan=3 align=center>DOCUMENTOS</td></tr>";
         while ($datomarca = mysqli_fetch_array($restrs, MYSQLI_BOTH)) {

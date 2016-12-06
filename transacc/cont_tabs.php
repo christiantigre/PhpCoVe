@@ -7,7 +7,7 @@
    <div class="form-group">
      <div class="btn-group btn-group-xs" role="group" aria-label="...">
       <button type="button" id="btn-trash" name="btn-trash" class="btn btn-warning" onclick='confirma_delet(<?Php echo $codigo; ?>,<?Php echo $monto=0; ?>,<?Php echo $pago=0; ?>,<?Php echo $tipodelete=2; ?>,<?Php echo $mensaje='"Esta seguro que desea eliminar los pagos?"'; ?>);'>Vaciar pagos</button>
-      <button type="button" class="btn btn-primary" onclick="javascript:recargar();">Agregar Pago</button>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Agregar Pago</button>
     </div>
     <br/>
   </div>

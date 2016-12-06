@@ -383,15 +383,16 @@ if(isset($_POST['agregar_en'])){
             echo '<script>alert("SELECCIONE FORMA DE PAGO / FORMA")</script>';
         } else {
             $interes = $_POST['interes'];
-//            echo '<script>alert('.$interes.')</script>';
-            $objdetalle->inserta_detalle($_POST['idtran_cab'], $_POST['pago'], $_POST['forma'], $_POST['dcto'], $_POST['valor'], $_POST['fecha_det'], $_POST['interes'], $_POST['plazo'], $_POST['lststd'], $_POST['observacion']);
+            $objdetalle->inserta_detalle(
+                $_POST['idtran_cab'], $_POST['pago'], $_POST['forma'], $_POST['dcto'], 
+                $_POST['valor'], $_POST['fecha_det'], $_POST['interes'], $_POST['plazo'], 
+                $_POST['lststd'], $_POST['observacion']);
             $objcont->gen_ass_temp(array($_POST['pago'], $_POST['forma'], $_POST['dcto'], $_POST['valor'], $_POST['fecha_det'], $_POST['interes'],
                 $_POST['plazo'], $_POST['lststd'], $_SESSION['user'], $_REQUEST['tipo'], $_POST['idtran_cab'], $_POST['tran_cli_ident'], $_POST['tran_veh_placas'], $_POST['total']));
         }
     }
     $variable = 211;    
 }
-
 if (isset($_POST['refresh'])) {
     $variable=211;
 }

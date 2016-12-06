@@ -56,6 +56,92 @@ class Trandetalle{
             mysqli_close($conn);    
         }
     }
+    function insertar_detall($pago,$forma,$dcto,$valor,$fecha_det,$interes,$plazo,$lststd,$observacion,$tipotrs,$trs) {
+        $conn = $this->objconec;
+        if ($conn==true) {
+            $query = "INSERT INTO tran_det 
+            (idtran_det_cab, tran_det_pago, tran_det_forma, tran_det_dcto, tran_det_monto, tran_det_fecha, tran_det_interes, tran_det_plazo, tran_det_estado, tran_det_obs)values('$trs','$pago','$forma','$dcto','$valor','$fecha_det','$interes','$plazo','$lststd','$observacion')";
+            return mysqli_query($conn, $query);
+        }
+    }
+    function insertar_adicional_edit($pago,$forma,$dcto,$valor,$fecha_det,$interes,$plazo,$lststd,$observacion,$tipotrs,$trs) {
+        $conn = $this->objconec;
+        if ($conn==true) {
+            $query = "INSERT INTO tran_det 
+            (idtran_det_cab, tran_det_pago, tran_det_forma, tran_det_dcto, tran_det_monto, tran_det_fecha, tran_det_interes, tran_det_plazo, tran_det_estado, tran_det_obs)values('$trs','$pago','$forma','$dcto','$valor','$fecha_det','$interes','$plazo','$lststd','$observacion')";
+            $drop='delete from tran_det_temp';
+            mysqli_query($conn, $drop);
+            $query2 = "INSERT INTO tran_det_temp 
+            (idtran_det_cab, tran_det_pago, tran_det_forma, tran_det_dcto, tran_det_monto, tran_det_fecha, tran_det_interes, tran_det_plazo, tran_det_estado, tran_det_obs)values('$trs','$pago','$forma','$dcto','$valor','$fecha_det','$interes','$plazo','$lststd','$observacion')";
+            mysqli_query($conn, $query2);
+            $cant = 0;
+            $fija = 99;
+            $query_adi = "SELECT * FROM tran_det_temp where tran_det_pago = 'ADICIONAL'";
+            $result = mysqli_query($conn, $query_adi);            
+            if (isset($result)) {
+                $cont = 0;
+                while ($adicional = mysqli_fetch_array($result)) {
+                    $numerocre = $adicional['idtran_det_cab'];
+                    $fechacre = $adicional['tran_det_fecha'];
+                    $incr = $fija . $cont;
+                    $montocre = $adicional['tran_det_monto'];
+                    $interes = ($adicional['tran_det_interes']) / 100;
+                    $plazocre = $adicional['tran_det_plazo'];
+                    $interes_dia = ($montocre * $interes) / 30;
+                    $interes_tot = $interes_dia * $plazocre;
+                    $totalcre = $montocre + $interes_tot;
+                    $saldocre = $totalcre;
+                    $fechacre = strtotime('+' . $plazocre . ' days', strtotime($fechacre));
+                    $fechacre = date('Y-m-j', $fechacre);
+                    $query_ins = "INSERT INTO tran_cre (idtran_cre_cab, tran_cre_sec, tran_cre_fecha_venc, tran_cre_fecha_pago, tran_cre_cuota, tran_cre_interes, tran_cre_monto, tran_cre_sal, tran_cre_estado)"
+                    . "VALUES ($numerocre, $incr, '$fechacre', '', $totalcre, $interes_tot, $montocre, 0, 0)";
+                    mysqli_query($conn, $query_ins);
+                    $cont++;
+                }
+            }                        
+            return mysqli_query($conn, $query);
+        }
+    }
+    function insertar_credito_edit($pago,$forma,$dcto,$valor,$fecha_det,$interes,$plazo,$lststd,$observacion,$tipotrs,$trs) {
+        $conn = $this->objconec;
+        if ($conn==true) {
+            $query = "INSERT INTO tran_det 
+            (idtran_det_cab, tran_det_pago, tran_det_forma, tran_det_dcto, tran_det_monto, tran_det_fecha, tran_det_interes, tran_det_plazo, tran_det_estado, tran_det_obs)values('$trs','$pago','$forma','$dcto','$valor','$fecha_det','$interes','$plazo','$lststd','$observacion')";
+            $drop='delete from tran_det_temp';
+            mysqli_query($conn, $drop);
+            $query2 = "INSERT INTO tran_det_temp 
+            (idtran_det_cab, tran_det_pago, tran_det_forma, tran_det_dcto, tran_det_monto, tran_det_fecha, tran_det_interes, tran_det_plazo, tran_det_estado, tran_det_obs)values('$trs','$pago','$forma','$dcto','$valor','$fecha_det','$interes','$plazo','$lststd','$observacion')";
+            mysqli_query($conn, $query2);
+            $cant = 0;
+            $query_cred = "SELECT * FROM tran_det_temp where tran_det_pago = 'CREDITO'";
+            $result = mysqli_query($conn, $query_cred);
+            $cant = mysqli_num_rows($result);
+            if (($cant) > 0) {
+                $datocre = mysqli_fetch_array($result, MYSQLI_BOTH);
+                $numerocre = $datocre['idtran_det_cab'];
+                $fechacre = $datocre['tran_det_fecha'];
+                $montocre = $datocre['tran_det_monto'];
+                $interes = ($datocre['tran_det_interes']) / 100;
+                $plazocre = $datocre['tran_det_plazo'];
+                $interes_mes = $montocre * $interes;
+                $interes_dia = ($montocre * $interes) / 30;
+                $totalcre = $montocre + (($interes_dia) * $plazocre);
+                $pago_mes = $totalcre / ($plazocre / 30);
+                $montomes = $montocre / ($plazocre / 30);
+                $tiempo = $plazocre / 30;
+                $saldocre = $totalcre;
+                for ($i = 1; $i <= $tiempo; $i++) {
+                    $saldocre = $saldocre - $pago_mes;
+                    $fechacre = strtotime('+30 day', strtotime($fechacre));
+                    $fechacre = date('Y-m-j', $fechacre);
+                    $query_inc_cre = "INSERT INTO tran_cre (idtran_cre_cab, tran_cre_sec, tran_cre_fecha_venc, tran_cre_fecha_pago, tran_cre_cuota, tran_cre_interes, tran_cre_monto, tran_cre_sal, tran_cre_estado)"
+                    . "VALUES ($numerocre, $i, '$fechacre', '', $pago_mes, $interes_mes, $montomes, $saldocre, 0)";
+                    mysqli_query($conn, $query_inc_cre);
+                }           
+            }  
+            return mysqli_query($conn, $query);
+        }
+    }
     function trs_delete_trash_pay($carpeta,$monto,$pg){
         $conn = $this->conec_base();
         if ($conn == true) {
@@ -580,6 +666,10 @@ class Trandetalle{
                                                                     . "VALUES ('$idtran_cab', '$pago', '$forma', '$dcto', '$valor', '$fecha_det', '$interes', '$plazo', '$estado', '$observacion')";
                                                                     mysqli_query($conn, $query);
                                                                 }
+                                                                //Editar transacciónes
+                                                                function insert_cabecera(){
+
+                                                                }
                                                                 function detalle_transac($numtra){
                                                                     $conn = $this->conec_base();
                                                                     $query = "SELECT * FROM tran_det where idtran_det_cab = '$numtra'";
@@ -639,7 +729,7 @@ class Trandetalle{
                                                                         echo "<td>".$datotrans['tran_det_obs']. "</td>";
                                                                         ?>
                                                                         <td width=20>
-                                                                            <button type='submit' name="delete_pay" id="delete_pay" title='ELIMINAR PAGO' value="Eliminar pago" class='btn btn-outline btn-sm btn-info glyphicon glyphicon-trash' 
+                                                                            <button type='button' name="delete_pay" id="delete_pay" title='ELIMINAR PAGO' value="Eliminar pago" class='btn btn-outline btn-sm btn-info glyphicon glyphicon-trash' 
                                                                             onclick='confirma_delet(<?Php echo $carpeta; ?>,<?Php echo $monto; ?>,<?Php echo $pago; ?>,<?Php echo $tipodelete=1; ?>,<?Php echo $mensaje; ?>);'></button>
                                                                         </td>
                                                                         <?php
