@@ -639,7 +639,7 @@ class Trandetalle{
                                                                         echo "<td>".$datotrans['tran_det_obs']. "</td>";
                                                                         ?>
                                                                         <td width=20>
-                                                                            <button type='button' title='ELIMINAR PAGO' class='btn btn-outline btn-sm btn-info glyphicon glyphicon-trash' 
+                                                                            <button type='submit' name="delete_pay" id="delete_pay" title='ELIMINAR PAGO' value="Eliminar pago" class='btn btn-outline btn-sm btn-info glyphicon glyphicon-trash' 
                                                                             onclick='confirma_delet(<?Php echo $carpeta; ?>,<?Php echo $monto; ?>,<?Php echo $pago; ?>,<?Php echo $tipodelete=1; ?>,<?Php echo $mensaje; ?>);'></button>
                                                                         </td>
                                                                         <?php

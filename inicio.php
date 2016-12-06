@@ -261,6 +261,12 @@ if (isset($_POST['bpago'])) {
     $bmonto = $_POST['bmonto'];
     $variable = 241;
 }
+
+    if(isset($_POST['delete_pay'])){
+        $mensaje = $_SESSION['user'] . " /elimino un pago de la transaccion";
+        $objreg->registrar($mensaje);        
+        $variable = 213;
+    }
 if (isset($_POST['impcomprobantepagotros'])) {
     $idhei = $_POST['idhei'];
     echo '<script>window.open("imp/impcomppagotr.php?s/&slide=1&show=09&load=555&data=8&idhei=' . $idhei . '&file=3&&datatipdata=09end=79&datpag=4534&obv=97&prm=xt4&new=65")</script>';
