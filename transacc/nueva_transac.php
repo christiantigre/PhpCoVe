@@ -147,16 +147,20 @@ $objcal = new Calendario();
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <?php
-                    if (isset($_POST['buscar_veh_trs']) or isset($_POST['buscar_cli_com'])) {
-                        include_once 'class/vehiculo.php';
-                        $objveh = new Vehiculo();
-                        $objveh->conec_base();
-                        $objveh->buscar_veh_trs($_POST['tran_veh_placas'], $_POST['tipo']);
-                        $objcontbl->vercuenta($_POST['tran_veh_placas']);
-                        $objveh->trae_valor($_POST['tran_veh_placas'], $_POST['tipo']);
-                    }
-                    ?>
+                    <center>
+                        <table>
+                            <?php
+                            if (isset($_POST['buscar_veh_trs']) or isset($_POST['buscar_cli_com'])) {
+                                include_once 'class/vehiculo.php';
+                                $objveh = new Vehiculo();
+                                $objveh->conec_base();
+                                $objveh->buscar_veh_trs($_POST['tran_veh_placas'], $_POST['tipo']);
+                                $objcontbl->vercuenta($_POST['tran_veh_placas']);
+                                $objveh->trae_valor($_POST['tran_veh_placas'], $_POST['tipo']);
+                            }
+                            ?>
+                        </table>
+                    </center>
                 </div>                
             </div>
             <br>
@@ -187,15 +191,19 @@ $objcal = new Calendario();
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <?php
-                    if (isset($_POST['buscar_cli_com']) or isset($_POST['buscar_veh_trs'])) {
-                        include_once 'class/cliente.php';
-                        $objcli = new Cliente();
-                        $objcli->conec_base();
-                        $objcli->buscar_cliente_com($_POST['tran_cli_ident']);
-                        $objcontbl->vercuentacli($_POST['tran_cli_ident']);
-                    }
-                    ?>
+                    <center>
+                        <table>
+                            <?php
+                            if (isset($_POST['buscar_cli_com']) or isset($_POST['buscar_veh_trs'])) {
+                                include_once 'class/cliente.php';
+                                $objcli = new Cliente();
+                                $objcli->conec_base();
+                                $objcli->buscar_cliente_com($_POST['tran_cli_ident']);
+                                $objcontbl->vercuentacli($_POST['tran_cli_ident']);
+                            }
+                            ?>
+                        </table>
+                    </center>
                 </div>
             </div>
         </div>
@@ -246,28 +254,31 @@ $objcal = new Calendario();
                                 ?>">
                             </td>
                             <td>   
-                                &nbsp;&nbsp;                                 
+                                &nbsp;&nbsp;    
                                 <div class="form-group">
-                                    <label for="tran_cab_precio">Valor veh&iacute;culo:</label>
+                                    <label for="pventa">Valor de venta:</label>
+                                    <input type="text" name="pventa" id="pventa"
+                                    placeholder="0.00" value="" onchange="verifica();" min="0" >
+                                </div>                             
+                                <div class="form-group" style="display: none;">
+                                    <label for="tran_cab_precio">Valor veh&iacute;culo:</label>                                    
                                     <input type="text" name="tran_cab_precio" id="tran_cab_precio"
                                     placeholder="0.00" value="<?php
                                     if (isset($_REQUEST['tran_cab_precio'])) {
                                         echo $_REQUEST['tran_cab_precio'];
                                     }
-                                    ?>" onchange="totaliza();
-                                    calculo_ganancia()" min="0" >
+                                    ?>" min="0" >
                                 </div> 
                             </td>
                             <td>
                                 &nbsp;&nbsp;
-                                <div class="form-group">
+                                <div class="form-group" style="display: none;">
                                     <label for="tran_cab_seguro">Seguro:</label>
                                     <input type="text" name="tran_cab_seguro" id="tran_cab_seguro" readonly=""  placeholder="0.00" value="<?php
-                                    echo 0;
                                     if (isset($_REQUEST['tran_cab_seguro'])) {
                                         echo $_REQUEST['tran_cab_seguro'];
                                     }
-                                    ?>" onchange="totaliza()"  >  
+                                    ?>"  >  
                                 </div>
                             </td>
                             <td>  
@@ -275,13 +286,12 @@ $objcal = new Calendario();
                                 <div class="form-group">
                                    <label for="tran_cab_gastos">Gastos:</label>
                                    <input type="text" name="tran_cab_gastos" id="tran_cab_gastos" readonly="" placeholder="0.00" value="<?php
-                                   echo 0;
                                    if (isset($_REQUEST['tran_cab_gastos'])) {
                                     echo $_REQUEST['tran_cab_gastos'];
                                 } else {
                                     echo '';
                                 }
-                                ?>" onchange="totaliza()"  >
+                                ?>"  >
                             </div>
                         </td>
                         <td>    
@@ -299,7 +309,7 @@ $objcal = new Calendario();
                         </td>
                         <td>  
                             &nbsp;&nbsp;                              
-                            <div class="form-group" style="display: none;">
+                            <div class="form-group" style="display: none;" ><!---->
                                 <label for="ganancia">Ganancia : </label>
                                 <input type="text" id="ganancia" name="ganancia" value="<?php
                                 if (isset($_REQUEST['ganancia'])) {
@@ -316,52 +326,78 @@ $objcal = new Calendario();
         </div>
 
     </div>
+    <script type="text/javascript">
+        function cargaval() {
+            var placa = $('#tran_veh_placas').attr('value');
+            var tipo = $('#tipo').attr('value');
+            var tipo = 0;
+            for (i = 0; ele = document.formu.elements[i]; i++) {
+                if (ele.type == 'radio')
+                    if (ele.checked) {
+                        tipo = "INGRESO";
+                        break;
+                    } else {
+                        tipo = "EGRESO";
+                        break;
+                    }
+                }
+                $.post("./class/script_val.php", {"texto": placa, "tipo": tipo},
+                    function (respuestag) {
+                        var valores = respuestag.split("-");
+                        precio = valores[0];
+                        gastos = valores[1];
+                        document.getElementById('tran_cab_precio').value = precio;
+                        document.getElementById('tran_cab_gastos').value = gastos;
+                        document.getElementById('prec_compra').value = precio;
 
-    <script type = "text/javascript" >
+                        $("#tran_cab_precio").val(respuestag.toFixed(2).toString().replace(',', '.'));
+                    });
+            }
+        </script>
+        <script type = "text/javascript" >
 
-        function tables() {
-            $(document).ready(function () {
-                $('#dataTables-example').dataTable();
-            });
-        }
-
-        function totaliza() {
-            var precio = document.getElementsByName("tran_cab_precio").item(0);
-            var upload = $("#val_veh").val();
-            var seguro = document.getElementsByName("tran_cab_seguro").item(0);
-            var gastos = document.getElementsByName("tran_cab_gastos").item(0);
-            var total = document.getElementsByName("total").item(0);
-            var p, s, g, t, pre;
-            p = parseFloat(precio.value);
-            pre = parseInt(precio.value);
-            var upvar = parseInt(upload);
-            if (pre < upvar) {
-                respuesta = confirm("Esta seguro de realizar la venta por el precio menor a $" + upload);
-                if (respuesta) {
-                    $("#tran_cab_precio").val(precio.toFixed(2).toString().replace(',', '.'));
-                } else {
-                    $("#tran_cab_precio").val("0.00");
+            function tables() {
+                $(document).ready(function () {
+                    $('#dataTables-example').dataTable();
+                });
+            }
+            function verifica(){
+                var pventa = $("#pventa").val();
+                var tran_cab_precio = $("#tran_cab_precio").val();
+                var tran_cab_gastos = $("#tran_cab_gastos").val();
+                pvnt=parseFloat(pventa);
+                pprc=parseFloat(tran_cab_precio);
+                pgst=parseFloat(tran_cab_gastos);
+                ganancia = 0;
+                gnc=parseFloat(ganancia);
+                diferencia=0;
+                dif = parseFloat(diferencia);
+                perdida=0;
+                prd=parseFloat(perdida);
+                if (pvnt==pprc) {
+                    alert('Se realizará la venta por el mismo precio de adquisición');
+                    total = pprc+pgst;
+                    gnc = (pvnt-pprc)-pgst;
+                    $("#total").val(total.toFixed(2).toString().replace(',', '.'));
+                    $("#ganancia").val(gnc.toFixed(2).toString().replace(',', '.'));
+                }
+                if (pvnt>pprc) {
+                    dif = pvnt-pprc;
+                    total = (dif+pprc)+pgst;
+                    prd=(dif-pgst);
+                    $("#total").val(total.toFixed(2).toString().replace(',', '.'));
+                    $("#ganancia").val(prd.toFixed(2).toString().replace(',', '.'));
+                }
+                if (pvnt<pprc) {
+                    dif = pprc-pvnt;
+                    total =(pprc-dif)+pgst;
+                    prd=(dif+pgst);
+                    alert('Se realizará la venta por un valor menor al precio de adquisición');
+                    $("#total").val(total.toFixed(2).toString().replace(',', '.'));
+                    $("#ganancia").val(prd.toFixed(2).toString().replace(',', '.'));
                 }
             }
-            if (seguro != '') {
-                s = parseFloat(seguro.value);
-            } else {
-                    //$("#tran_cab_seguro").val("");
-                    //$("#tran_cab_seguro").val(seguro.toFixed(2).toString().replace(',', '.'));
-                    seguro = 0;
-                }
-                if (gastos != '') {
-                    g = parseFloat(gastos.value);
-                } else {
-                    //$("#tran_cab_gastos").val("");
-                    //$("#tran_cab_gastos").val(gastos.toFixed(2).toString().replace(',', '.'));
-                    gastos = 0;
-                }
-                s = parseFloat(seguro.value);
-                g = parseFloat(gastos.value);
-                t = p + s + g;
-                $("#total").val(t.toFixed(2).toString().replace(',', '.'));
-            }
+            
         </script>
 
         <script>
@@ -446,491 +482,446 @@ $objcal = new Calendario();
                     }
 
                 }
-                function calculo_ganancia() {
-                    var upload = $("#val_veh").val();
-                    var precio = $("#tran_cab_precio").val();
-                    var up_int, pre_int, tot;
-                    up_int = parseFloat(upload);
-                    pre_int = parseFloat(precio);
-                    $("#prec_compra").val(upload);
-                    if (up_int == pre_int) {
-                        alert("Se va a generar la venta por el mismo valor de su compra, sin ganacias");
-                    }
-                    if (pre_int > up_int) {
-                        tot = pre_int - up_int;
-                        $("#ganancia").val(tot.toFixed(2).toString().replace(',', '.'));
-                    }
-                    if (pre_int == up_int) {
-                        tot = pre_int - up_int;
-                        $("#ganancia").val(tot.toFixed(2).toString().replace(',', '.'));
-                    }
-                }
+                
                 function vaciar() {
                     $("#tran_cab_precio").val("");
                 }
-                function cargaval() {
-                    var placa = $('#tran_veh_placas').attr('value');
+                
+            </script>
+
+            <script>
+                function objetoAjax() {
+                    var xmlhttp = false;
+                    try {
+                        xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+                    } catch (e) {
+                        try {
+                            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                        } catch (E) {
+                            xmlhttp = false;
+                        }
+                    }
+
+                    if (!xmlhttp && typeof XMLHttpRequest != 'undefined') {
+                        xmlhttp = new XMLHttpRequest();
+                    }
+                    return xmlhttp;
+                }
+                function mostrar() {
+                    var tipo = $('#tipo').attr('value');
+                    if (tipo == "EGRESO") {
+                        document.getElementById('oculto').style.display = 'block';
+                    }
+                }
+                function reset() {
+                    document.getElementById("reg_veh_form").reset();
+                }
+                function new_veh() {
+                    var idveh_placa = $("#idveh_placa").val();
+                    var veh_vehiculo = document.getElementById("veh_vehiculo").value;
+                    var veh_anio = document.getElementById("veh_anio").value;
+                    var veh_color2 = document.getElementById("veh_color2").value;
+                    var veh_mat_lugar = document.getElementById("veh_mat_lugar").value;
+                    var veh_estado = document.getElementById("veh_estado").value;
+                    var veh_motor = document.getElementById("veh_motor").value;
+                    var veh_chasis = document.getElementById("veh_chasis").value;
+                    var veh_color1 = document.getElementById("veh_color1").value;
+                    var veh_km = document.getElementById("veh_km").value;
+                    var veh_mat_anio = document.getElementById("veh_mat_anio").value;
+                }
+
+                function ver_cta_veh() {
+                    var idveh_placa = $("#idveh_placa_add").val();
+                    ajax = objetoAjax();
+                    ajax.open('POST', './class/script_bs.php?idveh_placa=' + idveh_placa, true);
+                    ajax.onreadystatechange = function () {
+                        if (ajax.readyState == 4) {
+                            resultado.innerHTML = ajax.responseText;
+                        }
+                    }
+                    ajax.send(null);
+                }
+
+                function carga_cta() {
+
+                    var estado = $("#estado").val();
+                    var val_veh = $("#val_veh").val();
+                    if (estado == 'VENDIDO') {
+                        alert("No se puede seleccionar este vehículo");
+                    } else {
+                        var idveh_placa = $("#nom_cte_veh").val();
+                        document.getElementById('dcto').value = idveh_placa;
+                        document.getElementById('valor').value = val_veh;
+                        alert("Se agrego el vehículo : " + idveh_placa);
+                    }
+                }
+            </script>
+
+            <!--Carga los select-->
+            <script language="javascript">
+                $(document).ready(function () {
+                    $("#pago").change(function () {
+                        $("#pago option:selected").each(function () {
+                            elegido = $(this).val();
+                            $.post("class/modelos.php", {elegido: elegido}, function (data) {
+                                $("#forma").html(data);
+                            });
+                        });
+                    })
+                });
+            </script>
+            <script>
+                function contts() {
+                    var data = $("#dcto").val();
                     var tipo = $('#tipo').attr('value');
                     var tipo = 0;
                     for (i = 0; ele = document.formu.elements[i]; i++) {
                         if (ele.type == 'radio')
                             if (ele.checked) {
                                 tipo = "INGRESO";
+                                if (data == 'Gastos Diferidos') {
+                                    alert('Opcion invalida');
+                                }
                                 break;
                             } else {
                                 tipo = "EGRESO";
+                                if (data == 'Ingresos Diferidos') {
+                                    alert('Opcion invalida');
+                                }
                                 break;
                             }
                         }
-                        $.post("./class/script_val.php", {"texto": placa, "tipo": tipo},
-                            function (respuestag) {
-                                document.getElementById('tran_cab_precio').value = respuestag;
-                                $("#tran_cab_precio").val(respuestag.toFixed(2).toString().replace(',', '.'));
-                            });
+                    }
+                </script>
+                <script type="text/javascript">
+                    function excel(id){
+                        window.open('./documentos/export/' + id + '.php');
+                    }
+                    function pdf(id){
+                        window.open('./documentos/export/' + id + '.php');
                     }
                 </script>
 
-                <script>
-                    function objetoAjax() {
-                        var xmlhttp = false;
-                        try {
-                            xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
-                        } catch (e) {
-                            try {
-                                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-                            } catch (E) {
-                                xmlhttp = false;
-                            }
-                        }
+            </p>
+        </fieldset>
 
-                        if (!xmlhttp && typeof XMLHttpRequest != 'undefined') {
-                            xmlhttp = new XMLHttpRequest();
-                        }
-                        return xmlhttp;
-                    }
-                    function mostrar() {
-                        var tipo = $('#tipo').attr('value');
-                        if (tipo == "EGRESO") {
-                            document.getElementById('oculto').style.display = 'block';
-                        }
-                    }
-                    function reset() {
-                        document.getElementById("reg_veh_form").reset();
-                    }
-                    function new_veh() {
-                        var idveh_placa = $("#idveh_placa").val();
-                        var veh_vehiculo = document.getElementById("veh_vehiculo").value;
-                        var veh_anio = document.getElementById("veh_anio").value;
-                        var veh_color2 = document.getElementById("veh_color2").value;
-                        var veh_mat_lugar = document.getElementById("veh_mat_lugar").value;
-                        var veh_estado = document.getElementById("veh_estado").value;
-                        var veh_motor = document.getElementById("veh_motor").value;
-                        var veh_chasis = document.getElementById("veh_chasis").value;
-                        var veh_color1 = document.getElementById("veh_color1").value;
-                        var veh_km = document.getElementById("veh_km").value;
-                        var veh_mat_anio = document.getElementById("veh_mat_anio").value;
-                    }
-
-                    function ver_cta_veh() {
-                        var idveh_placa = $("#idveh_placa_add").val();
-                        ajax = objetoAjax();
-                        ajax.open('POST', './class/script_bs.php?idveh_placa=' + idveh_placa, true);
-                        ajax.onreadystatechange = function () {
-                            if (ajax.readyState == 4) {
-                                resultado.innerHTML = ajax.responseText;
-                            }
-                        }
-                        ajax.send(null);
-                    }
-
-                    function carga_cta() {
-
-                        var estado = $("#estado").val();
-                        var val_veh = $("#val_veh").val();
-                        if (estado == 'VENDIDO') {
-                            alert("No se puede seleccionar este vehículo");
-                        } else {
-                            var idveh_placa = $("#nom_cte_veh").val();
-                            document.getElementById('dcto').value = idveh_placa;
-                            document.getElementById('valor').value = val_veh;
-                            alert("Se agrego el vehículo : " + idveh_placa);
-                        }
-                    }
-                </script>
-
-                <!--Carga los select-->
-                <script language="javascript">
-                    $(document).ready(function () {
-                        $("#pago").change(function () {
-                            $("#pago option:selected").each(function () {
-                                elegido = $(this).val();
-                                $.post("class/modelos.php", {elegido: elegido}, function (data) {
-                                    $("#forma").html(data);
-                                });
-                            });
-                        })
-                    });
-                </script>
-                <script>
-                    function contts() {
-                        var data = $("#dcto").val();
-                        var tipo = $('#tipo').attr('value');
-                        var tipo = 0;
-                        for (i = 0; ele = document.formu.elements[i]; i++) {
-                            if (ele.type == 'radio')
-                                if (ele.checked) {
-                                    tipo = "INGRESO";
-                                    if (data == 'Gastos Diferidos') {
-                                        alert('Opcion invalida');
-                                    }
-                                    break;
-                                } else {
-                                    tipo = "EGRESO";
-                                    if (data == 'Ingresos Diferidos') {
-                                        alert('Opcion invalida');
-                                    }
-                                    break;
-                                }
-                            }
-                        }
-                    </script>
-                    <script type="text/javascript">
-                        function excel(id){
-                            window.open('./documentos/export/' + id + '.php');
-                        }
-                        function pdf(id){
-                            window.open('./documentos/export/' + id + '.php');
-                        }
-                    </script>
-
-                </p>
-            </fieldset>
-
-            <script type="text/javascript">
-                function confirma_delet(carpeta,monto){
-                    var answer = confirm("Esta seguro que desea eliminar este pago?");                    
-                    if (answer) {
-                        $.post("./script/delete_pay.php", {"carpeta": carpeta,"monto": monto},
+        <script type="text/javascript">
+            function confirma_delet(carpeta,monto){
+                var answer = confirm("Esta seguro que desea eliminar este pago?");                    
+                if (answer) {
+                    $.post("./script/delete_pay.php", {"carpeta": carpeta,"monto": monto},
                             //$(this).closes('tr').remove();
                             function (respuestag) {
                                 alert(respuestag);
+                                //window.location.reload();
                             });
-                    } 
-                }
+                } 
+            }
 
-                function revome(t){
-                    var td = t.parentNode;
-                    var tr = td.parentNode;
-                    var table = tr.parentNode;
-                    table.removeChild(tr);
-                    refresh();
-                }
+            function revome(t){
+                var td = t.parentNode;
+                var tr = td.parentNode;
+                var table = tr.parentNode;
+                table.removeChild(tr);
+                refresh();
+            }
 
-                function refresh(){
-                    $("#refresh").load("nueva_transac.php");  
-                    $("#lstveh").load("nueva_transac.php");  
-                }
+            function refresh(){
+                $("#refresh").load("nueva_transac.php");  
+                $("#lstveh").load("nueva_transac.php");  
+            }
 
-                function detall(carpeta,monto,id,tipo) {
-                    if (tipo==1) {
-                        var tp="ENTRADA";
-                        var resultado = document.getElementById('cajaentrada');
-                        view_modal(carpeta,monto,id,tp,resultado);
+            function detall(carpeta,monto,id,tipo) {
+                if (tipo==1) {
+                    var tp="ENTRADA";
+                    var resultado = document.getElementById('cajaentrada');
+                    view_modal(carpeta,monto,id,tp,resultado);
+                }
+                if (tipo==2) {
+                    var tp="ADICIONAL";                        
+                    var resultado = document.getElementById('cajaadicional');
+                    view_modal(carpeta,monto,id,tp,resultado);                        
+                }
+                if (tipo==3) {
+                    var tp="CREDITO";
+                    var resultado = document.getElementById('cajacredito');
+                    view_modal(carpeta,monto,id,tp,resultado);                        
+                }             
+                if (tipo==4) {
+                    var tp="ADICIONALES"; 
+                    var resultado = document.getElementById('cajaadicional');
+                    view_modal(carpeta,monto,id,tp,resultado);
+                }
+                if (tipo==5) {
+                    var tp="CREDITOS";                     
+                    var resultado = document.getElementById('cajacredito');
+                    view_modal(carpeta,monto,id,tp,resultado);                        
+                }       
+            }
+
+            function view_modal(carpeta,monto,id,tp,resultado){
+                ajax = objetoAjax();
+                ajax.open('GET', './script/modal_pay.php?carpeta=' + carpeta + "&monto=" + monto + "&id=" +id + "&tipo="+ tp, true);
+                ajax.onreadystatechange = function () {
+                    if (ajax.readyState == 4) {
+                        resultado.innerHTML = ajax.responseText;
+                        tables();
                     }
-                    if (tipo==2) {
-                        var tp="ADICIONAL";                        
-                        var resultado = document.getElementById('cajaadicional');
-                        view_modal(carpeta,monto,id,tp,resultado);                        
-                    }
-                    if (tipo==3) {
-                        var tp="CREDITO";
-                        var resultado = document.getElementById('cajacredito');
-                        view_modal(carpeta,monto,id,tp,resultado);                        
-                    }             
-                    if (tipo==4) {
-                        var tp="ADICIONALES"; 
-                        var resultado = document.getElementById('cajaadicional');
-                        view_modal(carpeta,monto,id,tp,resultado);
-                    }
-                    if (tipo==5) {
-                        var tp="CREDITOS";                     
-                        var resultado = document.getElementById('cajacredito');
-                        view_modal(carpeta,monto,id,tp,resultado);                        
-                    }       
                 }
+                ajax.send(null);
+            }
 
-                function view_modal(carpeta,monto,id,tp,resultado){
-                    ajax = objetoAjax();
-                    ajax.open('GET', './script/modal_pay.php?carpeta=' + carpeta + "&monto=" + monto + "&id=" +id + "&tipo="+ tp, true);
-                    ajax.onreadystatechange = function () {
-                        if (ajax.readyState == 4) {
-                            resultado.innerHTML = ajax.responseText;
-                            tables();
-                        }
-                    }
-                    ajax.send(null);
-                }
+            function trash(){
+                var carpeta = '0';
+                var monto = '0';
+                var answer = confirm("Esta seguro que desea vaciar los pagos registrados?");                    
+                if (answer) {
+                    $.post("./script/trash.php", {"carpeta": carpeta,"monto": monto},
+                        function (respuestag) {
+                            alert(respuestag);
+                        });
+                } 
+            }
+        </script>
 
-                function trash(){
-                    var carpeta = '0';
-                    var monto = '0';
-                    var answer = confirm("Esta seguro que desea vaciar los pagos registrados?");                    
-                    if (answer) {
-                        $.post("./script/trash.php", {"carpeta": carpeta,"monto": monto},
-                            function (respuestag) {
-                                alert(respuestag);
-                            });
-                    } 
-                }
-            </script>
-
-        </div>
     </div>
+</div>
 
 
-    <div class="row" id="refresh">
-        <div class="col-lg-12">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    PAGOS
-                </div>
-                <div class="panel-body">
+<div class="row" id="refresh">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                PAGOS
+            </div>
+            <div class="panel-body">
 
-                    <fieldset> 
-                        <br>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="table-responsive">
+                <fieldset> 
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="table-responsive">
 
 
-                                    <table class="table">
-                                        <thead>
-                                            <tr align="center">
-                                                <td width="80">Pago</td>
-                                                <td width="100">Forma</td>
-                                                <!--<td width="130">Mantenimiento</td>-->
-                                                <td width="120"># Placa-Dcto-Chq-Letr</td>
-                                                <td width="60">Valor</td>
-                                                <td width="100">Fecha transacci&oacuten</td>
-                                                <td width="60">Interes</td>
-                                                <td width="50">Plazo dias</td>
-                                                <td width="60">Estado</td>
-                                                <td width="150">Observaci&oacute;n</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="info">
-                                                <td class="center">
-                                                    <select name="pago" id="pago" style="width: 100px;font-size: 9px;" >    
-                                                        <option value="0">Selecci&oacute;ne </option>
-                                                        <option value="ENTRADA">ENTRADA</option>
-                                                        <option value="ADICIONAL">ADICIONAL</option>
-                                                        <option value="CREDITO">CREDITO</option>   
-                                                    </select></p>
-                                                </td>
-                                                <td class="center">
-                                                    <select name="forma" id="forma" style="width: 100px;font-size: 9px;" >    
-                                                        <option value="EFECTIVO">Selecci&oacute;ne</option>
+                                <table class="table">
+                                    <thead>
+                                        <tr align="center">
+                                            <td width="80">Pago</td>
+                                            <td width="100">Forma</td>
+                                            <!--<td width="130">Mantenimiento</td>-->
+                                            <td width="120"># Placa-Dcto-Chq-Letr</td>
+                                            <td width="60">Valor</td>
+                                            <td width="100">Fecha transacci&oacuten</td>
+                                            <td width="60">Interes</td>
+                                            <td width="50">Plazo dias</td>
+                                            <td width="60">Estado</td>
+                                            <td width="150">Observaci&oacute;n</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="info">
+                                            <td class="center">
+                                                <select name="pago" id="pago" style="width: 100px;font-size: 9px;" >    
+                                                    <option value="0">Selecci&oacute;ne </option>
+                                                    <option value="ENTRADA">ENTRADA</option>
+                                                    <option value="ADICIONAL">ADICIONAL</option>
+                                                    <option value="CREDITO">CREDITO</option>   
+                                                </select></p>
+                                            </td>
+                                            <td class="center">
+                                                <select name="forma" id="forma" style="width: 100px;font-size: 9px;" >    
+                                                    <option value="EFECTIVO">Selecci&oacute;ne</option>
+                                                </select>
+                                            </td>
+                                            <td class="center">
+                                                <input type="text" id="dcto" name="dcto" class="text-lg" onchange="contts();" style="font-size: 9px;" list="cta" autocomplete="off" />
+                                                <datalist id="cta">
+                                                    <optgroup label="bancos">
+                                                        <?php
+                                                        $c = mysqli_connect('localhost', $_SESSION['user'], $_SESSION['pass'], 'condata');
+                                                        $query = "select * from t_plan_de_cuentas where t_subcuenta_cod_subcuenta='1.1.1.2.' and nombre_cuenta_plan !='BANCOS' ";
+                                                        $resul1 = mysqli_query($c, $query);
+                                                        while ($dato1 = mysqli_fetch_array($resul1)) {
+                                                            $cod1 = $dato1['cod_cuenta'];
+                                                            echo "<option value='" . $dato1['nombre_cuenta_plan'] . "' >"; 
+                                                            echo $dato1['cod_cuenta'] . '      ' . $dato1['nombre_cuenta_plan'];
+                                                            echo '</option>';
+                                                        }
+                                                        mysqli_close($c);
+                                                        ?>
+                                                    </optgroup>
+                                                    <optgroup label="ingresos" >
+                                                        <?php
+                                                        $c = mysqli_connect('localhost', $_SESSION['user'], $_SESSION['pass'], 'condata');
+                                                        $query = "select * from t_plan_de_cuentas where cod_cuenta='2.2.1.3.1.'";
+                                                        $resul1 = mysqli_query($c, $query);
+                                                        while ($dato1 = mysqli_fetch_array($resul1)) {
+                                                            $cod1 = $dato1['cod_cuenta'];
+                                                            echo "<option value='" . $dato1['nombre_cuenta_plan'] . "' >"; 
+                                                            echo $dato1['cod_cuenta'] . '      ' . $dato1['nombre_cuenta_plan'];
+                                                            echo '</option>';
+                                                        }
+                                                        mysqli_close($c);
+                                                        ?>
+                                                    </optgroup>
+                                                    <optgroup label="gastos">
+                                                        <?php
+                                                        $c = mysqli_connect('localhost', $_SESSION['user'], $_SESSION['pass'], 'condata');
+                                                        $query = "select * from t_plan_de_cuentas where cod_cuenta='1.2.3.1.'";
+                                                        $resul1 = mysqli_query($c, $query);
+                                                        while ($dato1 = mysqli_fetch_array($resul1)) {
+                                                            $cod1 = $dato1['cod_cuenta'];
+                                                            echo "<option value='" . $dato1['nombre_cuenta_plan'] . "' >"; 
+                                                            echo $dato1['cod_cuenta'] . '      ' . $dato1['nombre_cuenta_plan'];
+                                                            echo '</option>';
+                                                        }
+                                                        mysqli_close($c);
+                                                        ?>
+                                                    </optgroup>
+                                                    <optgroup label="cajas">
+                                                        <?php
+                                                        $c = mysqli_connect('localhost', $_SESSION['user'], $_SESSION['pass'], 'condata');
+                                                        $query = "select * from t_plan_de_cuentas where cod_cuenta='1.1.1.1.'";
+                                                        $resul1 = mysqli_query($c, $query);
+                                                        while ($dato1 = mysqli_fetch_array($resul1)) {
+                                                            $cod1 = $dato1['cod_cuenta'];
+                                                            echo "<option value='" . $dato1['nombre_cuenta_plan'] . "' >"; 
+                                                            echo $dato1['cod_cuenta'] . '      ' . $dato1['nombre_cuenta_plan'];
+                                                            echo '</option>';
+                                                        }
+                                                        mysqli_close($c);
+                                                        ?>
+                                                    </optgroup> 
+                                                </datalist>
+
+
+
+
+                                                <datalist id="cuentas">
+                                                    <?php
+                                                    $c = mysqli_connect('localhost', $_SESSION['user'], $_SESSION['pass'], 'condata');
+                                                    $query = "select * from t_plan_de_cuentas";
+                                                    $resul1 = mysqli_query($c, $query);
+                                                    while ($dato1 = mysqli_fetch_array($resul1)) {
+                                                        $cod1 = $dato1['cod_cuenta'];
+                                                        echo "<option value='" . $dato1['nombre_cuenta_plan'] . "' >"; 
+                                                        echo $dato1['cod_cuenta'] . '      ' . $dato1['nombre_cuenta_plan'];
+                                                        echo '</option>';
+                                                    }
+                                                    mysqli_close($c);
+                                                    ?>
+                                                </datalist>
+
+                                            </td>
+                                            <td class="center">
+                                                <input type="text" id="valor" name="valor" class="text-sm" placeholder="0.00" style="font-size: 9px;" >
+                                            </td>
+                                            <td class="center" >
+                                                <input type="text" id="fecha_det" name="fecha_det" value="<?Php echo date("Y-m-d"); ?>" style="width: 80px;font-size: 9px;" readonly="readonly" >
+                                            </td>
+                                            <td class="center">
+
+                                                <select name="interes" id="interes" size="0" style="alignment-adjust: central;width: 70px; font-size: 9px;" >
+                                                    <?php
+                                                    $c = mysqli_connect('localhost', $_SESSION['user'], $_SESSION['pass'], 'cove_veh');
+                                                    $consulint = "select prm_int from soft_prm";
+                                                    $queryclases = mysqli_query($c, $consulint);
+                                                    while ($arreglorepalmtu = mysqli_fetch_array($queryclases)) {
+                                                        if ($_POST['prm_int'] == $arreglorepalmtu['prm_int']) {
+                                                            echo "<option value='" . $arreglorepalmtu['prm_int'] . "' selected>&nbsp;&nbsp;" . $arreglorepalmtu['prm_int'] . "</option>";
+                                                        } else {
+                                                            ?>
+                                                            <option value="<?php echo $arreglorepalmtu['prm_int'] ?>">
+                                                                <?php echo $arreglorepalmtu['prm_int'] ?></option>     
+                                                                <?php
+                                                            }
+                                                        }
+                                                        mysqli_close($conn);
+                                                        ?>
                                                     </select>
                                                 </td>
-                                                <!--<td class="center" > <!--width="130"-->
-<!--<center>
-<button type="button" data-toggle="modal" title="Registrar Vehículo" data-target="#myModal" class="btn btn-outline btn-sm btn-info glyphicon glyphicon-plus-sign" onclick=""/>
-</center>-->
-<!--<button type="button" data-toggle="modal" title="Seleccionar Vehículo" data-target="#myModal2" class="btn btn-outline btn-sm btn-info glyphicon glyphicon-search" onclick=""/>-->
-<!--</td>-->
-<td class="center">
-<input type="text" id="dcto" name="dcto" class="text-lg" onchange="contts();" style="font-size: 9px;" list="cta" autocomplete="off" />
-    <datalist id="cta">
-        <optgroup label="bancos">
-            <?php
-            $c = mysqli_connect('localhost', $_SESSION['user'], $_SESSION['pass'], 'condata');
-            $query = "select * from t_plan_de_cuentas where t_subcuenta_cod_subcuenta='1.1.1.2.' and nombre_cuenta_plan !='BANCOS' ";
-            $resul1 = mysqli_query($c, $query);
-            while ($dato1 = mysqli_fetch_array($resul1)) {
-                $cod1 = $dato1['cod_cuenta'];
-echo "<option value='" . $dato1['nombre_cuenta_plan'] . "' >"; //_'.$dato1['cod_cuenta']
-echo $dato1['cod_cuenta'] . '      ' . $dato1['nombre_cuenta_plan'];
-echo '</option>';
-}
-mysqli_close($c);
-?>
-</optgroup>
-<optgroup label="ingresos" >
-    <?php
-    $c = mysqli_connect('localhost', $_SESSION['user'], $_SESSION['pass'], 'condata');
-    $query = "select * from t_plan_de_cuentas where cod_cuenta='2.2.1.3.1.'";
-    $resul1 = mysqli_query($c, $query);
-    while ($dato1 = mysqli_fetch_array($resul1)) {
-        $cod1 = $dato1['cod_cuenta'];
-echo "<option value='" . $dato1['nombre_cuenta_plan'] . "' >"; //_'.$dato1['cod_cuenta']
-echo $dato1['cod_cuenta'] . '      ' . $dato1['nombre_cuenta_plan'];
-echo '</option>';
-}
-mysqli_close($c);
-?>
-</optgroup>
-<optgroup label="gastos">
-    <?php
-    $c = mysqli_connect('localhost', $_SESSION['user'], $_SESSION['pass'], 'condata');
-    $query = "select * from t_plan_de_cuentas where cod_cuenta='1.2.3.1.'";
-    $resul1 = mysqli_query($c, $query);
-    while ($dato1 = mysqli_fetch_array($resul1)) {
-        $cod1 = $dato1['cod_cuenta'];
-echo "<option value='" . $dato1['nombre_cuenta_plan'] . "' >"; //_'.$dato1['cod_cuenta']
-echo $dato1['cod_cuenta'] . '      ' . $dato1['nombre_cuenta_plan'];
-echo '</option>';
-}
-mysqli_close($c);
-?>
-</optgroup>
-<optgroup label="cajas">
-    <?php
-    $c = mysqli_connect('localhost', $_SESSION['user'], $_SESSION['pass'], 'condata');
-    $query = "select * from t_plan_de_cuentas where cod_cuenta='1.1.1.1.'";
-    $resul1 = mysqli_query($c, $query);
-    while ($dato1 = mysqli_fetch_array($resul1)) {
-        $cod1 = $dato1['cod_cuenta'];
-echo "<option value='" . $dato1['nombre_cuenta_plan'] . "' >"; //_'.$dato1['cod_cuenta']
-echo $dato1['cod_cuenta'] . '      ' . $dato1['nombre_cuenta_plan'];
-echo '</option>';
-}
-mysqli_close($c);
-?>
-</optgroup> 
-</datalist>
-
-
-
-
-<datalist id="cuentas">
-    <?php
-    $c = mysqli_connect('localhost', $_SESSION['user'], $_SESSION['pass'], 'condata');
-    $query = "select * from t_plan_de_cuentas";
-    $resul1 = mysqli_query($c, $query);
-    while ($dato1 = mysqli_fetch_array($resul1)) {
-        $cod1 = $dato1['cod_cuenta'];
-echo "<option value='" . $dato1['nombre_cuenta_plan'] . "' >"; //_'.$dato1['cod_cuenta']
-echo $dato1['cod_cuenta'] . '      ' . $dato1['nombre_cuenta_plan'];
-echo '</option>';
-}
-mysqli_close($c);
-?>
-</datalist>
-<!--<input type="text" id="dcto" name="dcto" style="width: 120px" list="cuentas" autocomplete="off">-->
-</td>
-<td class="center">
-    <input type="text" id="valor" name="valor" class="text-sm" placeholder="0.00" style="font-size: 9px;" >
-</td>
-<td class="center" >
-    <input type="text" id="fecha_det" name="fecha_det" value="<?Php echo date("Y-m-d"); ?>" style="width: 80px;font-size: 9px;" readonly="readonly" >
-</td>
-<td class="center">
-    <!--<input type="text" id="interes" name="interes" style="width: 50px" placeholder="0.00">-->
-    <select name="interes" id="interes" size="0" style="alignment-adjust: central;width: 70px; font-size: 9px;" >
-        <?php
-        $c = mysqli_connect('localhost', $_SESSION['user'], $_SESSION['pass'], 'cove_veh');
-        $consulint = "select prm_int from soft_prm";
-        $queryclases = mysqli_query($c, $consulint);
-        while ($arreglorepalmtu = mysqli_fetch_array($queryclases)) {
-            if ($_POST['prm_int'] == $arreglorepalmtu['prm_int']) {
-                echo "<option value='" . $arreglorepalmtu['prm_int'] . "' selected>&nbsp;&nbsp;" . $arreglorepalmtu['prm_int'] . "</option>";
-            } else {
-                ?>
-                <option value="<?php echo $arreglorepalmtu['prm_int'] ?>">
-                    <?php echo $arreglorepalmtu['prm_int'] ?></option>     
-                    <?php
-                }
-            }
-            mysqli_close($conn);
-            ?>
-        </select>
-    </td>
-    <td class="center">
-        <input type="text" id="plazo" name="plazo" style="font-size: 9px;" class="text-sm" placeholder="0" >
-    </td>
-    <td class="center">
-        <select id="lststd" id="lststd" name="lststd" width="60" >
-            <option value=""></option>
-            <option value="PENDIENTE">PENDIENTE</option>
-            <option value="PAGADO">PAGADO</option>
-        </select>
-    </td>
-    <td class="center">
-        <input type="text" id="observacion" name="observacion" style="width: 150px" />
-    </td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-<br>
-<div class="btn-group btn-group-xs" role="group" aria-label="...">
-    <input type="submit"  name="agregar_en" value="Agregar a Pagos" class="btn btn-primary btn-sm"/>
-</div>
-<br><br>
-<div id="lstveh">
-    <form name="form" id="form" action="" method="post">
-        <?php
-        include_once 'class/trandetalle.php';
-        $conn = new Trandetalle();
-        $conn->conec_base();
-        if(($_POST['refresh']=="ACTUALIZAR TABLA")||($_POST['pago']=='CREDITO')||($_POST['pago']=='ADICIONAL')){
-            $conn->listar_detalle();
-            $conn->credit_temporal();            
-        }else{
-            $conn->listar_detalle();
-        }
-        $a = $_POST['tran_cab_precio'];
-        $b = $_POST['tran_cab_seguro'];
-        $c = $_POST['tran_cab_gastos'];
-        $t = $a + $b + $c;
-        ?>      
-    </form>
-    <p style="font-size:13px; text-align: center">
-        <table>
-            <tr>
-                <td>
-                    <label>Venta por :&nbsp;</label>
-                    <input type="text" name="totalsumadb1" id="totalsumadb1" value="<?Php echo doubleval($t); ?>" disabled="" />
-                </td>
-                <?Php
-                $con = new mysqli("localhost", $_SESSION['user'], $_SESSION['pass'], 'cove_veh');
-                $sqlsuma = "SELECT ROUND(SUM(`mnt`), 2) as suma FROM gen_ass_temp;";
-                $ej = mysqli_query($con, $sqlsuma) or trigger_error("Query Failed! SQL: $sqlsuma - Error: " . mysqli_error($con), E_USER_ERROR);
-                while ($row = mysqli_fetch_array($ej)) {
-                    $row['suma'];
-                    $vl = $row['suma'];
-                    $ajustar = $t - $row['suma'];
-                    ?>    
-                    <td>
-                        <label>Justificados :&nbsp;</label><input type="text" name="totalsumadb2" id="totalsumadb2" value="<?Php echo doubleval($vl); ?>" disabled="" />
-                        <td>
-                            <label>Faltan  :&nbsp;</label><input type="text" name="poraj" value="<?Php echo doubleval($ajustar); ?>" disabled="" />
-                            <?Php
-                        }
-                        $con->close();
-                        ?>
-                    </td>
-                </tr>
-            </table>
-        </p>
-    </div>  
-</fieldset>
-<br><br>
-<div class="btn-group btn-group-xs" role="group" aria-label="...">
-    <input type="submit" name="insertar_transac" onclick="return cvereficarvalores(this)" value="GRABA TRANSACCION" class="btn btn-success btn-sm">
-    &nbsp;&nbsp;
-    <input type="submit" name="resettemp" value="CANCELAR" class="btn btn-primary btn-sm">
-    &nbsp;&nbsp;
-    <input type="submit" name="transac" value="SALIR" class="btn btn-default btn-sm">
-</div>
-</form> 
-</div>
-</div>
-</div>
-</div>
+                                                <td class="center">
+                                                    <input type="text" id="plazo" name="plazo" style="font-size: 9px;" class="text-sm" placeholder="0" >
+                                                </td>
+                                                <td class="center">
+                                                    <select id="lststd" id="lststd" name="lststd" width="60" >
+                                                        <option value=""></option>
+                                                        <option value="PENDIENTE">PENDIENTE</option>
+                                                        <option value="PAGADO">PAGADO</option>
+                                                    </select>
+                                                </td>
+                                                <td class="center">
+                                                    <input type="text" id="observacion" name="observacion" style="width: 150px" />
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="btn-group btn-group-xs" role="group" aria-label="...">
+                            <input type="submit"  name="agregar_en" value="Agregar a Pagos" class="btn btn-primary btn-sm"/>
+                        </div>
+                        <br><br>
+                        <div id="lstveh">
+                            <form name="form" id="form" action="" method="post">
+                                <?php
+                                include_once 'class/trandetalle.php';
+                                $conn = new Trandetalle();
+                                $conn->conec_base();
+                                if(($_POST['refresh']=="ACTUALIZAR TABLA")||($_POST['pago']=='CREDITO')||($_POST['pago']=='ADICIONAL')){
+                                    $conn->listar_detalle();
+                                    $conn->credit_temporal();            
+                                }else{
+                                    $conn->listar_detalle();
+                                }
+                                $t = $_POST['total'];
+                                ?>      
+                            </form>
+                            <p style="font-size:13px; text-align: center">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <label>Venta por :&nbsp;</label>
+                                            <input type="text" name="totalsumadb1" id="totalsumadb1" value="<?Php echo doubleval($t); ?>" disabled="" />
+                                        </td>
+                                        <?Php
+                                        $con = new mysqli("localhost", $_SESSION['user'], $_SESSION['pass'], 'cove_veh');
+                                        $sqlsuma = "SELECT ROUND(SUM(`mnt`), 2) as suma FROM gen_ass_temp;";
+                                        $ej = mysqli_query($con, $sqlsuma) or trigger_error("Query Failed! SQL: $sqlsuma - Error: " . mysqli_error($con), E_USER_ERROR);
+                                        while ($row = mysqli_fetch_array($ej)) {
+                                            $row['suma'];
+                                            $vl = $row['suma'];
+                                            $ajustar = $t - $row['suma'];
+                                            ?>    
+                                            <td>
+                                                <label>Justificados :&nbsp;</label><input type="text" name="totalsumadb2" id="totalsumadb2" value="<?Php echo doubleval($vl); ?>" disabled="" />
+                                                <td>
+                                                    <label>Faltan  :&nbsp;</label><input type="text" name="poraj" value="<?Php echo doubleval($ajustar); ?>" disabled="" />
+                                                    <?Php
+                                                }
+                                                $con->close();
+                                                ?>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </p>
+                            </div>  
+                        </fieldset>
+                        <br><br>
+                        <div class="btn-group btn-group-xs" role="group" aria-label="...">
+                            <input type="submit" name="insertar_transac" onclick="return cvereficarvalores(this)" value="GRABA TRANSACCION" class="btn btn-success btn-sm">
+                            &nbsp;&nbsp;
+                            <input type="submit" name="resettemp" value="CANCELAR" class="btn btn-primary btn-sm">
+                            &nbsp;&nbsp;
+                            <input type="submit" name="transac" value="SALIR" class="btn btn-default btn-sm">
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </div>
 </center>
 </div>
 

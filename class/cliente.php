@@ -179,68 +179,59 @@ class Cliente {
             $ced_conyuge = $datomarca['ced_conyuge'];
             
             ?>
-            <!--<p style="font-size:9px; text-align: center">-->
-            <div class="col-lg-6">   
-
-
-                <!--    <label>C&eacute;cula:</label>&nbsp; <?php echo $idcli_ident ?> -->
-                <div class="form-group">
-                <label>Nombres:</label> <input type="text" name="cli_nombre" value="<?php echo $cli_nombre ?>" readonly="readonly" />
-                </div>
-
-                <div class="form-group">
-                    <label>Apellidos:</label> <input type="text" name="cli_apellidos" value="<?php echo $cli_apellido ?>" readonly="readonly" />
-                </div>
-
-                <div class="form-group">
-                    <label>Tel&eacute;fonos:</label> <input type="text" name="cli_tel_fijos" value="<?php echo $cli_tel_fijos . ' ' . $cli_tel_cel ?>" readonly="readonly" />
-                </div>
-
-                <div class="form-group">
+            <tr>
+                <td>
+                    <label>Nombres:</label> <input type="text" class="text-col6" name="cli_nombre" value="<?php echo $cli_nombre ?>" readonly="readonly" />
+                </td>
+                <td>
+                    <label>Apellidos:</label> <input type="text" class="text-col6" name="cli_apellidos" value="<?php echo $cli_apellido ?>" readonly="readonly" />
+                </td>
+                <td>
                     <label>Direcci&oacute;n casa:</label> 
-                    <textarea name="cli_dir_casa" cols="55" rows="2" readonly="readonly" ><?php echo $cli_dir_casa ?></textarea>
-                </div>                
+                    <textarea name="cli_dir_casa" class="text-col8" cols="55" rows="2" readonly="readonly" ><?php echo $cli_dir_casa ?></textarea>
+                </td>
+                <td>            
 
-                <div class="form-group">
                     <label>Direcci&oacute;n trabajo:</label>
-                    <textarea name="cli_dir_casa" cols="55" rows="2" readonly="readonly" ><?php echo $cli_dir_tra ?></textarea>
-                </div>
-                <div class="form-group">
-                    <label>Correo Electr&oacute;nico:</label><input type="text" name="cli_correo" value="<?php echo $cli_correo ?>" readonly="readonly" />
-                </div>
-
-                <div class="form-group">
-                    <label>Ciudad:</label><input type="text" name="cli_ciudad" value="<?php echo $cli_ciudad ?>" readonly="readonly" />
-                </div>
-
-                <div class="form-group">
-                    <label>Estado civil:</label><input type="text" name="cli_est_civ" value="<?php echo $cli_est_civ ?>" readonly="readonly" />
-                </div>
-
-                <!--</p>-->
-            </div>
-            <div class="col-lg-6"> 
-
-
-                <div class="form-group">
-                    <label>Conyuge:</label><input type="text" name="cli_conyuge" value="<?php echo $cli_conyuge ?>" readonly="readonly" />
-                </div>    
-                <div class="form-group">
+                    <textarea name="cli_dir_casa" class="text-col8" cols="55" rows="2" readonly="readonly" ><?php echo $cli_dir_tra ?></textarea>
+                </td>
+            </tr>
+            <tr>                
+                <td>
+                    <label>Tel&eacute;fonos:</label> <input type="text" class="text-col6" name="cli_tel_fijos" value="<?php echo $cli_tel_fijos . ' ' . $cli_tel_cel ?>" readonly="readonly" />
+                </td>
+                <td>
+                    <label>Correo Electr&oacute;nico:</label><input type="text" name="cli_correo" class="text-col6" value="<?php echo $cli_correo ?>" readonly="readonly" />
+                </td>
+                <td>
+                    <label>Ciudad:</label><input type="text" class="text-col2" name="cli_ciudad" value="<?php echo $cli_ciudad ?>" readonly="readonly" />
+                </td>
+                <td>
+                    <label>Estado civil:</label><input type="text" class="text-col3" name="cli_est_civ" value="<?php echo $cli_est_civ ?>" readonly="readonly" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Conyuge:</label><input type="text" class="text-col8" name="cli_conyuge" value="<?php echo $cli_conyuge ?>" readonly="readonly" />
+                </td>
+                <td> 
                     <label>C&eacute;dula Conyuge:</label>
-                    <input type="text" name="ced_conyuge" value="<?php echo $ced_conyuge ?>" readonly="readonly" />                
-                </div>
-                <div class="form-group">                
-                    <label>Referencia:</label> <input type="text" name="cli_nom_ref" value="<?php echo $cli_nom_ref ?>" readonly="readonly" />
-                </div>
-                <div class="form-group">
+                    <input type="text" name="ced_conyuge" class="text-col4" value="<?php echo $ced_conyuge ?>"
+                    readonly="readonly" />             
+                </td>
+                <td>
+                    <label>Referencia:</label> <input type="text" class="text-col8" name="cli_nom_ref" value="<?php echo $cli_nom_ref ?>" readonly="readonly" />
+                </td>
+                <td>
                     <label>Direcci&oacute;n:</label> 
-                    <textarea name="cli_dir_ref" cols="55" rows="2" readonly="readonly" ><?php echo $cli_dir_ref ?></textarea>
-                </div>
-                <div class="form-group">
-                    <label>Tel&eacute;fono:</label> <input type="text" name="cli_tel_ref" value="<?php echo $cli_tel_ref ?>" readonly="readonly" />
-                </div>
-                
-            </div>
+                    <textarea name="cli_dir_ref" class="text-col8" cols="55" rows="2" readonly="readonly" ><?php echo $cli_dir_ref ?></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Tel&eacute;fono:</label> <input type="text" class="text-col6" name="cli_tel_ref" value="<?php echo $cli_tel_ref ?>" readonly="readonly" />
+                </td>
+            </tr>
 
             <?php
         }

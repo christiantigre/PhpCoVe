@@ -235,30 +235,61 @@ class Vehiculo {
         }
         ?>
         <p style="font-size:9px; text-align: center">
-            <!--            <label>Placa:</label>&nbsp; -->
-            <label>Marca:</label>&nbsp; <input type="text" name="veh_marca" value="<?php echo $veh_marca; ?>" disabled=""/>
-            &nbsp;&nbsp;
-            <label>Modelo:</label>&nbsp; <input type="text" name="veh_modelo" value="<?php echo $veh_modelo; ?>" style="width: 250px" disabled=""/>
-            &nbsp;&nbsp;
-            <label>Tipo:</label>&nbsp; <input type="text" name="veh_tipo_des" value="<?php echo $veh_tipo_des; ?>" disabled=""/>
-            &nbsp;&nbsp;
-            <label>A&ntilde;o:</label>&nbsp; <input type="text" name="veh_anio" style="width: 50px" value="<?php echo $veh_anio; ?>" disabled=""/>
-            &nbsp;&nbsp;
-            <label>Kilometraje:</label>&nbsp; <input type="text" name="veh_km" style="width: 80px" value="<?php echo $veh_km; ?>" disabled=""/>             
-            <br>
-            <label>Color 1:</label>&nbsp; <input type="text" name="veh_color1" value="<?php echo $veh_color1; ?>" disabled=""/>
-            &nbsp;&nbsp;
-            <label>Color 2</label>&nbsp; <input type="text" name="veh_color2" value="<?php echo $veh_color2; ?>" disabled=""/>            
-            &nbsp;&nbsp;
-            <label>Chasis:</label>&nbsp; <input type="text" name="veh_chasis" style="width: 150px" value="<?php echo $veh_chasis; ?>" disabled=""/>
-            &nbsp;&nbsp;
-            <label>Motor</label>&nbsp; <input type="text" name="veh_motor" style="width: 150px" value="<?php echo $veh_motor; ?>" disabled=""/>
-            <br>
-            <label>Matriculado en:</label>&nbsp; <input type="text" name="veh_mat_lugar" value="<?php echo $veh_mat_lugar; ?>" disabled=""/>
-            &nbsp;&nbsp;
-            <label>Por el a&ntilde;o:</label>&nbsp; <input type="text" name="veh_mat_anio" value="<?php echo $veh_mat_anio; ?>" disabled=""/>
-            &nbsp;&nbsp;
-            <label>Estado:</label>&nbsp; <input type="text" name="estado" value="<?php echo $estado; ?>" disabled=""/>            
+            <table>                
+                <tr>
+                    <td>
+                        <label>Marca:</label>&nbsp; <input type="text" name="veh_marca" value="<?php echo $veh_marca; ?>" readonly="readonly"/>
+                        &nbsp;&nbsp;
+                    </td>
+                    <td>
+                        <label>Modelo:</label>&nbsp; <input type="text" name="veh_modelo" value="<?php echo $veh_modelo; ?>" style="width: 250px" readonly="readonly"/>
+                        &nbsp;&nbsp;
+                    </td>
+                    <td>
+                        <label>Tipo:</label>&nbsp; <input type="text" name="veh_tipo_des" value="<?php echo $veh_tipo_des; ?>" readonly="readonly"/>
+                        &nbsp;&nbsp;
+                    </td>
+                    <td>
+                        <label>A&ntilde;o:</label>&nbsp; <input type="text" name="veh_anio" style="width: 50px" value="<?php echo $veh_anio; ?>" readonly="readonly"/>
+                        &nbsp;&nbsp;
+                    </td>
+                    <td>
+                        <label>Kilometraje:</label>&nbsp; <input type="text" name="veh_km" style="width: 80px" value="<?php echo $veh_km; ?>" readonly="readonly"/>             
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Color 1:</label>&nbsp; <input type="text" name="veh_color1" value="<?php echo $veh_color1; ?>" readonly="readonly"/>
+                        &nbsp;&nbsp;
+                    </td>
+                    <td>
+                        <label>Color 2</label>&nbsp; <input type="text" name="veh_color2" value="<?php echo $veh_color2; ?>" readonly="readonly"/>            
+                        &nbsp;&nbsp;
+                    </td>
+                    <td>
+                        <label>Chasis:</label>&nbsp; <input type="text" name="veh_chasis" style="width: 150px" value="<?php echo $veh_chasis; ?>" readonly="readonly"/>
+                        &nbsp;&nbsp;
+                    </td>
+                    <td>
+                        <label>Motor</label>&nbsp; <input type="text" name="veh_motor" style="width: 150px" value="<?php echo $veh_motor; ?>" readonly="readonly"/>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Matriculado en:</label>&nbsp; <input type="text" name="veh_mat_lugar" value="<?php echo $veh_mat_lugar; ?>" readonly="readonly"/>
+                        &nbsp;&nbsp;
+                    </td>
+                    <td>
+                        <label>Por el a&ntilde;o:</label>&nbsp; <input type="text" name="veh_mat_anio" value="<?php echo $veh_mat_anio; ?>" readonly="readonly"/>
+                        &nbsp;&nbsp;
+                    </td>
+                    <td>
+                        <label>Estado:</label>&nbsp; <input type="text" name="estado" value="<?php echo $estado; ?>" readonly="readonly"/>
+                    </td>
+                </tr>    
+            </table>     
         </p>
         <?php
     }
@@ -353,257 +384,255 @@ class Vehiculo {
         }
         if (($bandera) == 0) {
             ?>
-            <!--<p style="font-size:9px;">-->
-                <!--            <label>Placa:</label>&nbsp; -->
-                    <div class="col-lg-4">   
-                        <div class="form-group">
-                            <label>Marca:</label>
-                            <input type="text" name="veh_marca" value="<?php echo $veh_marca; ?>" readonly="readonly"  />                    
-                        </div>
-                        <div class="form-group">
-                            <label>Tipo:</label>
-                            <input type="text" name="veh_tipo_des" value="<?php echo $veh_tipo_des; ?>" readonly="readonly"  />
-                        </div>
-                        <div class="form-group">
-                            <label>Kilometraje:</label> 
-                            <input type="text" name="veh_km" value="<?php echo $veh_km; ?>" readonly="readonly"  />       
-                        </div>
-                        <div class="form-group">
-                            <label>Chasis:</label> 
-                            <input type="text" name="veh_chasis"  value="<?php echo $veh_chasis; ?>" readonly="readonly" />
-                        </div>
-                        <div class="form-group">                        
-                            <label>Motor</label> 
-                            <input type="text" name="veh_motor"  value="<?php echo $veh_motor; ?>" readonly="readonly" />             
-                        </div>
-                        <div class="form-group">                        
-                            <label>Estado:</label> 
-                            <input type="text" name="estado" value="<?php echo $estado; ?>" readonly="readonly"  />   
-                        </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="form-group">                                                
-                                <label>Modelo:</label> <input type="text" name="veh_modelo" value="<?php echo $veh_modelo; ?>"  readonly="readonly" />
-                            </div>
-                            <div class="form-group">                                                    
-                                <label>A&ntilde;o:</label> 
-                                <input type="text" name="veh_anio" value="<?php echo $veh_anio; ?>" readonly="readonly"  />
-                            </div>
-                            <div class="form-group">                                                    
-                                <label>Color 1:</label> 
-                                <input type="text" name="veh_color1" value="<?php echo $veh_color1; ?>" readonly="readonly"  />
-                            </div>
-                            <div class="form-group">                                                    
-                                <label>Color 2</label> 
-                                <input type="text" name="veh_color2" value="<?php echo $veh_color2; ?>" readonly="readonly"  />    
-                            </div>
-                            <div class="form-group">                                                    
-                                <label>Matriculado en:</label> 
-                                <input type="text" name="veh_mat_lugar" value="<?php echo $veh_mat_lugar; ?>" readonly="readonly"  />
-                            </div>
-                            <div class="form-group">                                                    
-                                <label>Por el a&ntilde;o:</label> 
-                                <input type="text" name="veh_mat_anio" value="<?php echo $veh_mat_anio; ?>" readonly="readonly"  />
-                            </div>
-
-                        </div>
-                       
-                <!--</p>-->
-                <?php
-            }
+                <tr>
+                    <td>
+                        <label>Marca:</label>
+                        <input type="text" class="text-col3" name="veh_marca" value="<?php echo $veh_marca; ?>" readonly="readonly"  />     
+                    </td>
+                    <td>           
+                        <label>Tipo:</label>
+                        <input type="text" class="text-col3" name="veh_tipo_des" value="<?php echo $veh_tipo_des; ?>" readonly="readonly"  />
+                    </td>
+                    <td>
+                        <label>Kilometraje:</label> 
+                        <input type="text" class="text-col6" name="veh_km" value="<?php echo $veh_km; ?>" readonly="readonly"  />       
+                    </td>
+                    <td>
+                        <label>Chasis:</label> 
+                        <input type="text" class="text-col6" name="veh_chasis"  value="<?php echo $veh_chasis; ?>" readonly="readonly" />
+                    </td>
+                    <td>
+                        <label>Motor</label> 
+                        <input type="text" class="text-col6" name="veh_motor"  value="<?php echo $veh_motor; ?>" readonly="readonly" />             
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Estado:</label> 
+                        <input type="text" class="text-col3" name="estado" value="<?php echo $estado; ?>" readonly="readonly"  />   
+                    </td>
+                    <td>
+                        <label>Modelo:</label> 
+                        <input type="text" class="text-col8" name="veh_modelo" value="<?php echo $veh_modelo; ?>"  readonly="readonly" />
+                    </td>
+                    <td>
+                        <label>A&ntilde;o:</label> 
+                        <input type="text" class="text-col2" name="veh_anio" value="<?php echo $veh_anio; ?>" readonly="readonly"  />
+                    </td>
+                    <td>
+                        <label>Color 1:</label> 
+                        <input type="text" class="text-col4" name="veh_color1" value="<?php echo $veh_color1; ?>" readonly="readonly"  />
+                    </td>
+                    <td>
+                        <label>Color 2</label> 
+                        <input type="text" class="text-col4" name="veh_color2" value="<?php echo $veh_color2; ?>" readonly="readonly"  />    
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Matriculado en:</label> 
+                        <input type="text" name="veh_mat_lugar" value="<?php echo $veh_mat_lugar; ?>" readonly="readonly"  />
+                    </td>
+                    <td>
+                        <label>Por el a&ntilde;o:</label> 
+                        <input type="text" name="veh_mat_anio" value="<?php echo $veh_mat_anio; ?>" readonly="readonly"  />
+                    </td>
+                </tr>
+            <?php
+        }
 
 //        $valor = $objtrs->trae_valor($placa);
 //        echo $valor;
-        }
+    }
 
-        function ver_vehiculo($placa) {
+    function ver_vehiculo($placa) {
 //        $cont_doc = 0;
-            $conn = $this->objconec;
-            $query = "SELECT veh_datos.idveh_placa, veh_marca.veh_marca, veh_vehiculo.veh_modelo, "
-            . "veh_tipo.veh_tipo_des, veh_datos.veh_anio, veh_datos.veh_color1, "
-            . "veh_datos.veh_color2, veh_datos.veh_motor, veh_datos.veh_chasis, "
-            . "veh_datos.veh_km, veh_datos.veh_mat_lugar, mat_lugar.mat_lugar, veh_datos.veh_mat_anio, "
-            . "veh_datos.veh_estado, veh_docu.nom_docu, veh_docu.est_doc, "
-            . "veh_estado.est_alfombras, veh_estado.est_brazosplumas, "
-            . "veh_estado.est_cinturones, veh_estado.est_espejos, veh_estado.est_gata, "
-            . "veh_estado.est_llaveruedas, veh_estado.est_manual, veh_estado.est_radioparlantes, "
-            . "veh_estado.est_tapatuerca, veh_estado.esta_mecanico, veh_estado.esta_sistelect, "
-            . "veh_estado.esta_pintura, veh_estado.est_otros "
-            . "FROM veh_datos, veh_marca, veh_vehiculo, veh_tipo, mat_lugar, veh_docu, veh_estado "
-            . "WHERE veh_datos.idveh_placa = '$placa' and veh_datos.veh_vehiculo=veh_vehiculo.idveh_vehiculo "
-            . "and veh_marca.idveh_marca=veh_vehiculo.veh_marca and veh_tipo.idveh_tipo=veh_vehiculo.veh_tipo "
-            . "and veh_datos.veh_mat_lugar=mat_lugar.idmat_lugar and  veh_datos.idveh_placa=veh_docu.idveh_placa "
-            . "and veh_datos.idveh_placa=veh_estado.idveh_placa";
-            $resveh = mysqli_query($conn, $query) or die(mysqli_error($conn));
+        $conn = $this->objconec;
+        $query = "SELECT veh_datos.idveh_placa, veh_marca.veh_marca, veh_vehiculo.veh_modelo, "
+        . "veh_tipo.veh_tipo_des, veh_datos.veh_anio, veh_datos.veh_color1, "
+        . "veh_datos.veh_color2, veh_datos.veh_motor, veh_datos.veh_chasis, "
+        . "veh_datos.veh_km, veh_datos.veh_mat_lugar, mat_lugar.mat_lugar, veh_datos.veh_mat_anio, "
+        . "veh_datos.veh_estado, veh_docu.nom_docu, veh_docu.est_doc, "
+        . "veh_estado.est_alfombras, veh_estado.est_brazosplumas, "
+        . "veh_estado.est_cinturones, veh_estado.est_espejos, veh_estado.est_gata, "
+        . "veh_estado.est_llaveruedas, veh_estado.est_manual, veh_estado.est_radioparlantes, "
+        . "veh_estado.est_tapatuerca, veh_estado.esta_mecanico, veh_estado.esta_sistelect, "
+        . "veh_estado.esta_pintura, veh_estado.est_otros "
+        . "FROM veh_datos, veh_marca, veh_vehiculo, veh_tipo, mat_lugar, veh_docu, veh_estado "
+        . "WHERE veh_datos.idveh_placa = '$placa' and veh_datos.veh_vehiculo=veh_vehiculo.idveh_vehiculo "
+        . "and veh_marca.idveh_marca=veh_vehiculo.veh_marca and veh_tipo.idveh_tipo=veh_vehiculo.veh_tipo "
+        . "and veh_datos.veh_mat_lugar=mat_lugar.idmat_lugar and  veh_datos.idveh_placa=veh_docu.idveh_placa "
+        . "and veh_datos.idveh_placa=veh_estado.idveh_placa";
+        $resveh = mysqli_query($conn, $query) or die(mysqli_error($conn));
 
-            while ($datomarca = mysqli_fetch_array($resveh, MYSQLI_BOTH)) {
-                $tran_veh_placas = $datomarca['idveh_placa'];
-                $veh_marca = $datomarca['veh_marca'];
-                $veh_modelo = $datomarca['veh_modelo'];
-                $veh_tipo_des = $datomarca['veh_tipo_des'];
-                $veh_anio = $datomarca['veh_anio'];
-                $veh_motor = $datomarca['veh_motor'];
-                $veh_chasis = $datomarca['veh_chasis'];
-                $veh_km = $datomarca['veh_km'];
-                $veh_color1 = $datomarca['veh_color1'];
-                $veh_color2 = $datomarca['veh_color2'];
-                $veh_cod_lugar = $datomarca['veh_mat_lugar'];
-                $veh_mat_lugar = $datomarca['mat_lugar'];
-                $veh_mat_anio = $datomarca['veh_mat_anio'];
-                switch ($datomarca['veh_estado']) {
-                    case 0:
-                    $varestado = 0;
-                    $estado = 'CONSIGNACION';
-                    break;
-                    case 1:
-                    $varestado = 1;
-                    $estado = 'COMISION';
-                    break;
-                    case 2:
-                    $varestado = 2;
-                    $estado = 'VENDIDO';
-                    break;
-                }
-                $nom_docu = $datomarca['nom_docu'];
-                $est_doc = $datomarca['est_doc'];
-                $est_alfombras = $datomarca['est_alfombras'];
-                $est_brazosplumas = $datomarca['est_brazosplumas'];
-                $est_cinturones = $datomarca['est_cinturones'];
-                $est_espejos = $datomarca['est_espejos'];
-                $est_gata = $datomarca['est_gata'];
-                $est_llaveruedas = $datomarca['est_llaveruedas'];
-                $est_manual = $datomarca['est_manual'];
-                $est_radioparlantes = $datomarca['est_radioparlantes'];
-                $est_tapatuerca = $datomarca['est_tapatuerca'];
-                $esta_mecanico = $datomarca['esta_mecanico'];
-                $esta_sistelect = $datomarca['esta_sistelect'];
-                $esta_pintura = $datomarca['esta_pintura'];
-                $est_otros = $datomarca['est_otros'];
-
-                $vec_doc[] = ($datomarca['nom_docu']);
+        while ($datomarca = mysqli_fetch_array($resveh, MYSQLI_BOTH)) {
+            $tran_veh_placas = $datomarca['idveh_placa'];
+            $veh_marca = $datomarca['veh_marca'];
+            $veh_modelo = $datomarca['veh_modelo'];
+            $veh_tipo_des = $datomarca['veh_tipo_des'];
+            $veh_anio = $datomarca['veh_anio'];
+            $veh_motor = $datomarca['veh_motor'];
+            $veh_chasis = $datomarca['veh_chasis'];
+            $veh_km = $datomarca['veh_km'];
+            $veh_color1 = $datomarca['veh_color1'];
+            $veh_color2 = $datomarca['veh_color2'];
+            $veh_cod_lugar = $datomarca['veh_mat_lugar'];
+            $veh_mat_lugar = $datomarca['mat_lugar'];
+            $veh_mat_anio = $datomarca['veh_mat_anio'];
+            switch ($datomarca['veh_estado']) {
+                case 0:
+                $varestado = 0;
+                $estado = 'CONSIGNACION';
+                break;
+                case 1:
+                $varestado = 1;
+                $estado = 'COMISION';
+                break;
+                case 2:
+                $varestado = 2;
+                $estado = 'VENDIDO';
+                break;
             }
-            ?>
-            <p style="font-size:9px; text-align: left">
-                <label>Placa:</label>&nbsp;<input type="text" value="<?php echo $tran_veh_placas; ?>" disabled=""/>
-                <input type="text" id="idveh_placa" name="idveh_placa" value="<?php echo $tran_veh_placas; ?>" hidden=""/>
-                <br/>
-                <label>Marca:</label>&nbsp; <input type="text" name="veh_marca" value="<?php echo $veh_marca; ?>" style="width: 200px" disabled=""/>
-                &nbsp;&nbsp;
-                <label>Modelo:</label>&nbsp; <input type="text" name="veh_modelo" value="<?php echo $veh_modelo; ?>" style="width: 300px" disabled=""/>
-                &nbsp;&nbsp;
-                <label>Tipo:</label>&nbsp; <input type="text" name="veh_tipo_des" value="<?php echo $veh_tipo_des; ?>" disabled=""/>
-                <br/>
-                <label>A&ntilde;o:</label>&nbsp; <input type="text" name="veh_anio" style="width: 50px" value="<?php echo $veh_anio; ?>" /><!--disabled=""-->
-                &nbsp;&nbsp;
-                <label>Kilometraje:</label>&nbsp; <input type="text" name="veh_km" style="width: 80px" value="<?php echo $veh_km; ?>"/>             
-                &nbsp;&nbsp;
-                <label>Color 1:</label>&nbsp; <input type="text" name="veh_color1" value="<?php echo $veh_color1; ?>" /><!--disabled=""-->
-                &nbsp;&nbsp;
-                <label>Color 2</label>&nbsp; <input type="text" name="veh_color2" value="<?php echo $veh_color2; ?>" />          <!--disabled=""-->  
-                <br/>
-                <label>Chasis:</label>&nbsp; <input type="text" name="veh_chasis" style="width: 150px" value="<?php echo $veh_chasis; ?>" /><!--disabled=""-->
-                &nbsp;&nbsp;
-                <label>Motor</label>&nbsp; <input type="text" name="veh_motor" style="width: 150px" value="<?php echo $veh_motor; ?>" /><!--disabled=""-->
-                <br>
-                <label>Matriculado en:</label>&nbsp; <input type="text" name="veh_cod_lugar" value="<?php echo $veh_cod_lugar; ?>" hidden=""/>
-                <select id="veh_cod_lugar" name="veh_cod_lugar" required="">
-                    <option value="<?php echo $veh_cod_lugar ?>"><?php echo $veh_mat_lugar ?></option>
-                    <?php
-                    include_once 'class/lugar.php';
-                    $objltlugar = new Lugar();
-                    $objltlugar->conec_base();
-                    $objltlugar->mostrar_lugar();
-                    ?>                    
-                </select>            
+            $nom_docu = $datomarca['nom_docu'];
+            $est_doc = $datomarca['est_doc'];
+            $est_alfombras = $datomarca['est_alfombras'];
+            $est_brazosplumas = $datomarca['est_brazosplumas'];
+            $est_cinturones = $datomarca['est_cinturones'];
+            $est_espejos = $datomarca['est_espejos'];
+            $est_gata = $datomarca['est_gata'];
+            $est_llaveruedas = $datomarca['est_llaveruedas'];
+            $est_manual = $datomarca['est_manual'];
+            $est_radioparlantes = $datomarca['est_radioparlantes'];
+            $est_tapatuerca = $datomarca['est_tapatuerca'];
+            $esta_mecanico = $datomarca['esta_mecanico'];
+            $esta_sistelect = $datomarca['esta_sistelect'];
+            $esta_pintura = $datomarca['esta_pintura'];
+            $est_otros = $datomarca['est_otros'];
 
-                &nbsp;&nbsp;
-                <label>Por el a&ntilde;o:</label>&nbsp; <input type="text" name="veh_mat_anio" value="<?php echo $veh_mat_anio; ?>"/>
-                &nbsp;&nbsp;
-                <label>Estado:</label>&nbsp;
-                <select id="estado_a" name="estado_a">
-                    <option value="<?php echo $varestado ?>"><?php echo $estado ?></option>
-                    <option></option>
-                    <option value="0">CONSIGNACION</option>
-                    <option value="1">COMISION</option>
-                </select>
+            $vec_doc[] = ($datomarca['nom_docu']);
+        }
+        ?>
+        <p style="font-size:9px; text-align: left">
+            <label>Placa:</label>&nbsp;<input type="text" value="<?php echo $tran_veh_placas; ?>" disabled=""/>
+            <input type="text" id="idveh_placa" name="idveh_placa" value="<?php echo $tran_veh_placas; ?>" hidden=""/>
+            <br/>
+            <label>Marca:</label>&nbsp; <input type="text" name="veh_marca" value="<?php echo $veh_marca; ?>" style="width: 200px" disabled=""/>
+            &nbsp;&nbsp;
+            <label>Modelo:</label>&nbsp; <input type="text" name="veh_modelo" value="<?php echo $veh_modelo; ?>" style="width: 300px" disabled=""/>
+            &nbsp;&nbsp;
+            <label>Tipo:</label>&nbsp; <input type="text" name="veh_tipo_des" value="<?php echo $veh_tipo_des; ?>" disabled=""/>
+            <br/>
+            <label>A&ntilde;o:</label>&nbsp; <input type="text" name="veh_anio" style="width: 50px" value="<?php echo $veh_anio; ?>" /><!--disabled=""-->
+            &nbsp;&nbsp;
+            <label>Kilometraje:</label>&nbsp; <input type="text" name="veh_km" style="width: 80px" value="<?php echo $veh_km; ?>"/>             
+            &nbsp;&nbsp;
+            <label>Color 1:</label>&nbsp; <input type="text" name="veh_color1" value="<?php echo $veh_color1; ?>" /><!--disabled=""-->
+            &nbsp;&nbsp;
+            <label>Color 2</label>&nbsp; <input type="text" name="veh_color2" value="<?php echo $veh_color2; ?>" />          <!--disabled=""-->  
+            <br/>
+            <label>Chasis:</label>&nbsp; <input type="text" name="veh_chasis" style="width: 150px" value="<?php echo $veh_chasis; ?>" /><!--disabled=""-->
+            &nbsp;&nbsp;
+            <label>Motor</label>&nbsp; <input type="text" name="veh_motor" style="width: 150px" value="<?php echo $veh_motor; ?>" /><!--disabled=""-->
+            <br>
+            <label>Matriculado en:</label>&nbsp; <input type="text" name="veh_cod_lugar" value="<?php echo $veh_cod_lugar; ?>" hidden=""/>
+            <select id="veh_cod_lugar" name="veh_cod_lugar" required="">
+                <option value="<?php echo $veh_cod_lugar ?>"><?php echo $veh_mat_lugar ?></option>
+                <?php
+                include_once 'class/lugar.php';
+                $objltlugar = new Lugar();
+                $objltlugar->conec_base();
+                $objltlugar->mostrar_lugar();
+                ?>                    
+            </select>            
 
-                <br/>
-                <hr>
-                <label>ESTADO DE ACCESORIOS</label>
-                <hr>
-                <label>Alfombras:</label>&nbsp;<input list="estado1" name="estado1" value="<?php echo $est_alfombras; ?>" />
-                <datalist id="estado1">
-                    <option>BUENO</option>
-                    <option>MALO</option>
-                    <option>SI</option>
-                    <option>NO</option>
-                </datalist>
-                &nbsp;
-                <label>Brazos y Plumas:</label>&nbsp;<input list="estado2" name="estado2" value="<?php echo $est_brazosplumas; ?>" />
-                <datalist id="estado2">
-                    <option>BUENO</option>
-                    <option>MALO</option>
-                    <option>SI</option>
-                    <option>NO</option>                
-                </datalist>
-                &nbsp;
-                <label>Cinturones:</label>&nbsp;<input list="estado3" name="estado3" value="<?php echo $est_cinturones; ?>" />
-                <datalist id="estado3">
-                    <option>BUENO</option>
-                    <option>MALO</option>
-                    <option>SI</option>
-                    <option>NO</option>                
-                </datalist>  
-                &nbsp;
-                <label>Espejos:</label>&nbsp;<input list="estado4" name="estado4" value="<?php echo $est_espejos; ?>" />
-                <datalist id="estado4">
-                    <option>BUENO</option>
-                    <option>MALO</option>
-                    <option>SI</option>
-                    <option>NO</option>                
-                </datalist>  
-                <br/><br/>
-                <label>Gata:</label>&nbsp;<input list="estado5" name="estado5" value="<?php echo $est_gata; ?>" />
-                <datalist id="estado5">
-                    <option>BUENO</option>
-                    <option>MALO</option>
-                    <option>SI</option>
-                    <option>NO</option>                
-                </datalist> 
-                &nbsp;
-                <label>Llave de ruedas:</label>&nbsp;<input list="estado6" name="estado6" value="<?php echo $est_brazosplumas; ?>" />
-                <datalist id="estado6">
-                    <option>BUENO</option>
-                    <option>MALO</option>
-                    <option>SI</option>
-                    <option>NO</option>                
-                </datalist>  
-                &nbsp;
-                <label>Manual:</label>&nbsp;<input list="estado7" name="estado7" value="<?php echo $est_manual; ?>" />
-                <datalist id="estado7">
-                    <option>BUENO</option>
-                    <option>MALO</option>
-                    <option>SI</option>
-                    <option>NO</option>                
-                </datalist> 
-                &nbsp;            
-                <label>Radio y Parlantes:</label>&nbsp;<input list="estado8" name="estado8" value="<?php echo $est_radioparlantes; ?>" />
-                <datalist id="estado8">
-                    <option>BUENO</option>
-                    <option>MALO</option>
-                    <option>SI</option>
-                    <option>NO</option>                
-                </datalist> 
-                <br/><br/>
-                <label>Tapacubos y Tuercas:</label>&nbsp;<input list="estado9" name="estado9" value="<?php echo $est_tapatuerca; ?>" />
-                <datalist id="estado9">
-                    <option>BUENO</option>
-                    <option>MALO</option>
-                    <option>SI</option>
-                    <option>NO</option>                
-                </datalist> 
-                &nbsp; 
-                <label>Clave/Otros:</label>&nbsp;<input type="text" name="estado10" value="<?php echo $est_otros; ?>" height="150" />
+            &nbsp;&nbsp;
+            <label>Por el a&ntilde;o:</label>&nbsp; <input type="text" name="veh_mat_anio" value="<?php echo $veh_mat_anio; ?>"/>
+            &nbsp;&nbsp;
+            <label>Estado:</label>&nbsp;
+            <select id="estado_a" name="estado_a">
+                <option value="<?php echo $varestado ?>"><?php echo $estado ?></option>
+                <option></option>
+                <option value="0">CONSIGNACION</option>
+                <option value="1">COMISION</option>
+            </select>
+
+            <br/>
+            <hr>
+            <label>ESTADO DE ACCESORIOS</label>
+            <hr>
+            <label>Alfombras:</label>&nbsp;<input list="estado1" name="estado1" value="<?php echo $est_alfombras; ?>" />
+            <datalist id="estado1">
+                <option>BUENO</option>
+                <option>MALO</option>
+                <option>SI</option>
+                <option>NO</option>
+            </datalist>
+            &nbsp;
+            <label>Brazos y Plumas:</label>&nbsp;<input list="estado2" name="estado2" value="<?php echo $est_brazosplumas; ?>" />
+            <datalist id="estado2">
+                <option>BUENO</option>
+                <option>MALO</option>
+                <option>SI</option>
+                <option>NO</option>                
+            </datalist>
+            &nbsp;
+            <label>Cinturones:</label>&nbsp;<input list="estado3" name="estado3" value="<?php echo $est_cinturones; ?>" />
+            <datalist id="estado3">
+                <option>BUENO</option>
+                <option>MALO</option>
+                <option>SI</option>
+                <option>NO</option>                
+            </datalist>  
+            &nbsp;
+            <label>Espejos:</label>&nbsp;<input list="estado4" name="estado4" value="<?php echo $est_espejos; ?>" />
+            <datalist id="estado4">
+                <option>BUENO</option>
+                <option>MALO</option>
+                <option>SI</option>
+                <option>NO</option>                
+            </datalist>  
+            <br/><br/>
+            <label>Gata:</label>&nbsp;<input list="estado5" name="estado5" value="<?php echo $est_gata; ?>" />
+            <datalist id="estado5">
+                <option>BUENO</option>
+                <option>MALO</option>
+                <option>SI</option>
+                <option>NO</option>                
+            </datalist> 
+            &nbsp;
+            <label>Llave de ruedas:</label>&nbsp;<input list="estado6" name="estado6" value="<?php echo $est_brazosplumas; ?>" />
+            <datalist id="estado6">
+                <option>BUENO</option>
+                <option>MALO</option>
+                <option>SI</option>
+                <option>NO</option>                
+            </datalist>  
+            &nbsp;
+            <label>Manual:</label>&nbsp;<input list="estado7" name="estado7" value="<?php echo $est_manual; ?>" />
+            <datalist id="estado7">
+                <option>BUENO</option>
+                <option>MALO</option>
+                <option>SI</option>
+                <option>NO</option>                
+            </datalist> 
+            &nbsp;            
+            <label>Radio y Parlantes:</label>&nbsp;<input list="estado8" name="estado8" value="<?php echo $est_radioparlantes; ?>" />
+            <datalist id="estado8">
+                <option>BUENO</option>
+                <option>MALO</option>
+                <option>SI</option>
+                <option>NO</option>                
+            </datalist> 
+            <br/><br/>
+            <label>Tapacubos y Tuercas:</label>&nbsp;<input list="estado9" name="estado9" value="<?php echo $est_tapatuerca; ?>" />
+            <datalist id="estado9">
+                <option>BUENO</option>
+                <option>MALO</option>
+                <option>SI</option>
+                <option>NO</option>                
+            </datalist> 
+            &nbsp; 
+            <label>Clave/Otros:</label>&nbsp;<input type="text" name="estado10" value="<?php echo $est_otros; ?>" height="150" />
         <!--            <datalist id="estado10">
                         <option>BUENO</option>
                         <option>MALO</option>

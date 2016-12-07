@@ -338,13 +338,20 @@ class Transacc {
             $tran_cab_gastos = $datover['tran_cab_gastos'];
         }
         ?>
-        <label>Transacci&oacute;n:</label>&nbsp;<input type="text" name="idtran_cab" value="<?php echo $idtran_cab; ?>" disabled="">&nbsp;&nbsp;
-        <label>Fecha:</label>&nbsp;<input type="text" name="tran_cab_fecha" value="<?php echo $tran_cab_fecha; ?>" disabled="">&nbsp;&nbsp;
-        <label>Tipo:</label>&nbsp;<input type="text" name="tran_cab_tipo" value="<?php echo $tran_cab_tipo; ?>" disabled="">&nbsp;&nbsp;
-        <br><br>
-        <label>Vehiculo:</label>&nbsp;<input type="text" name="tran_veh_placas" value="<?php echo $tran_veh_placas; ?>" disabled="">&nbsp;&nbsp;
-        <label>Cliente:</label>&nbsp;<input type="text" name="tran_cli_ident" value="<?php echo $tran_cli_ident; ?>" disabled="">
-        <br><br>
+        <table>
+            <tr>
+                <label>Transacci&oacute;n:</label>&nbsp;<input type="text" name="idtran_cab" value="<?php echo $idtran_cab; ?>" readonly="readonly">&nbsp;&nbsp;
+                <label>Fecha:</label>&nbsp;<input type="text" name="tran_cab_fecha" value="<?php echo $tran_cab_fecha; ?>" readonly="readonly">&nbsp;&nbsp;
+                <label>Tipo:</label>&nbsp;<input type="text" name="tran_cab_tipo" value="<?php echo $tran_cab_tipo; ?>" readonly="readonly">&nbsp;&nbsp;
+                <br><br>
+            </tr>
+            <tr>
+                <label>Vehiculo:</label>&nbsp;<input type="text" name="tran_veh_placas" value="<?php echo $tran_veh_placas; ?>" readonly="readonly">&nbsp;&nbsp;
+                <label>Cliente:</label>&nbsp;<input type="text" name="tran_cli_ident" value="<?php echo $tran_cli_ident; ?>" readonly="readonly">&nbsp;
+                <label>Venta:</label>&nbsp;<input type="text" name="tran_cab_precio" value="<?php echo $tran_cab_precio; ?>" readonly="readonly">
+                <br><br>
+            </tr>
+        </table>
         <?php
         $numtra = $idtran_cab;
         $placa = $tran_veh_placas;

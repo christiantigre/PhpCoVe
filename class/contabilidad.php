@@ -120,9 +120,11 @@ class contabilidad {
     function vercuenta($id_veh) {
         if ($id_veh == "") {
             ?>
+
             <p style="font-size:13px; text-align: center; color: #CC0000;">
                 <label>Complete el campo</label>&nbsp;&nbsp;
             </br>
+
         </p>
         <?Php
     } else {
@@ -134,12 +136,12 @@ class contabilidad {
             $varveh = $row["cod_cauxiliar"];
             ?>
             <!--<p style="font-size:13px; text-align: left">-->
-            <div class="col-lg-4">   
-                <div class="form-group">                    
+            <tr>
+                <td>                   
                     <label>Cuenta :</label>
                     <input type="text" style="width:200px;" id="cod_veh" name="cod_veh" value="<?php echo $varveh; ?>" readonly="readonly" placeholder="Cod." />
-                </div>
-            </div>
+                </td>
+            </tr>
             <!--</p>-->
             <?php
         } else {
@@ -171,10 +173,12 @@ function vercuentacli($id_cli) {
         $varcli = $rowcli["cod_cauxiliar"];
         ?>
         <!--<p style="font-size:13px; text-align: left">-->
-        <div class="form-group">
-            <label>Cuenta :</label>
-            <input type="text" style="width:200px;" id="cod_cli" name="cod_cli" value="<?php echo $varcli; ?>" readonly="readonly" placeholder="Cod." />
-        </div>
+        <tr>
+            <td>
+                <label>Cuenta :</label>
+                <input type="text" style="width:200px;" id="cod_cli" name="cod_cli" value="<?php echo $varcli; ?>" readonly="readonly" placeholder="Cod." />
+            </td>
+        </tr>
         <!--</p>-->
         <?php
     } else {

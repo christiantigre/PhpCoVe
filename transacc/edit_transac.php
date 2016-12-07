@@ -80,7 +80,13 @@ if(isset($_REQUEST['vertrans'])){
                      include_once 'class/cliente.php';
                      $objcli = new Cliente();
                      $objcli->conec_base();
-                     $objcli->buscar_cliente_com($GLOBALS['cliente']);
+                     ?>
+                     <table>
+                       <?php
+                       $objcli->buscar_cliente_com($GLOBALS['cliente']);
+                       ?>
+                     </table>
+                     <?php
                      ?>  
                    </div>
                    <div class="col-lg-12" id="divtrs">
@@ -177,8 +183,8 @@ if(isset($_REQUEST['vertrans'])){
           $.post("./script/edit_trs.php", {"pago": pago,"forma": forma,"dcto":dcto,"valor":valor,"fecha_det":fecha_det,"interes":interes,"plazo":plazo,"lststd":lststd,"observacion":observacion,"tipotrs":tipotrs,"trs":trs},
             function (respuestag) {
               alert(respuestag);
+              window.location.reload();
             });                    
-          window.location.reload();
         }
       }
     }
@@ -186,15 +192,15 @@ if(isset($_REQUEST['vertrans'])){
 }
 
 $(document).ready(function(){
-  $('#valor').numeric(","); 
-  $('#plazo').numeric(","); 
+  $('#valor').numeric("."); 
+  $('#plazo').numeric("."); 
 });
 </script>
 <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
      <form action="inicio.php" name="formu" id="formu" method="POST" role="form-inline">
-      
+
        <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="gridSystemModalLabel">Nuevo Pago</h4>
@@ -213,32 +219,34 @@ $(document).ready(function(){
          </div>
        </div>
        <div class="col-md-12">
-        <div class="col-md-4">
-          <label>Pago :</label>
-          <select name="pago" id="pago" class="form-control input-sm">     
-           <option value="0">Selecci&oacute;ne </option>
-           <option value="ENTRADA">ENTRADA</option>
-           <option value="ADICIONAL">ADICIONAL</option>
-           <option value="CREDITO">CREDITO</option>   
-         </select>
-       </div>
-       <div class="col-md-4">
-        <label>Forma :</label>
-        <select name="forma" id="forma" class="form-control input-sm">    
-          <option value="EFECTIVO">Selecci&oacute;ne</option>
-        </select>
-      </div>
-      <div class="col-md-4">
-        <label>Documento :</label>
-        <input type="text" id="dcto" name="dcto" onchange="contts();" list="cta" autocomplete="off" class="form-control input-sm"/>
-        <datalist id="cta">
-          <optgroup label="bancos">
-            <?php
-            $c = mysqli_connect('localhost', $_SESSION['user'], $_SESSION['pass'], 'condata');
-            $query = "select * from t_plan_de_cuentas where t_subcuenta_cod_subcuenta='1.1.1.2.' and nombre_cuenta_plan !='BANCOS' ";
-            $resul1 = mysqli_query($c, $query);
-            while ($dato1 = mysqli_fetch_array($resul1)) {
-              $cod1 = $dato1['cod_cuenta'];
+         <table>
+           <tr>
+             <td>
+              <label>Pago :</label>
+              <select name="pago" id="pago" ><!--class="form-control input-sm"-->     
+               <option value="0">Selecci&oacute;ne </option>
+               <option value="ENTRADA">ENTRADA</option>
+               <option value="ADICIONAL">ADICIONAL</option>
+               <option value="CREDITO">CREDITO</option>   
+             </select>
+           </td>
+           <td>
+            <label>Forma :</label>
+            <select name="forma" id="forma" >    
+              <option value="EFECTIVO">Selecci&oacute;ne</option>
+            </select>
+          </td>
+          <td>
+            <label>Documento :</label>
+            <input type="text" id="dcto" class="text-col10" name="dcto" onchange="contts();" list="cta" autocomplete="off" />
+            <datalist id="cta">
+              <optgroup label="bancos">
+                <?php
+                $c = mysqli_connect('localhost', $_SESSION['user'], $_SESSION['pass'], 'condata');
+                $query = "select * from t_plan_de_cuentas where t_subcuenta_cod_subcuenta='1.1.1.2.' and nombre_cuenta_plan !='BANCOS' ";
+                $resul1 = mysqli_query($c, $query);
+                while ($dato1 = mysqli_fetch_array($resul1)) {
+                  $cod1 = $dato1['cod_cuenta'];
                     echo "<option value='" . $dato1['nombre_cuenta_plan'] . "' >"; //_'.$dato1['cod_cuenta']
                     echo $dato1['cod_cuenta'] . '      ' . $dato1['nombre_cuenta_plan'];
                     echo '</option>';
@@ -303,19 +311,20 @@ $(document).ready(function(){
                   mysqli_close($c);
                   ?>
                 </datalist>
-              </div>
-
-              <div class="col-md-3">
+              </td> 
+            </tr>
+            <tr>
+              <td>
                 <label>Valor :</label>
-                <input type="text" id="valor" name="valor" placeholder="0,00" class="form-control input-sm">
-              </div>
-              <div class="col-md-4">
+                <input type="text" id="valor" class="text-col3" name="valor" placeholder="0.00" >
+              </td>
+              <td>
                 <label>Fecha transacci&oacute;n :</label>
-                <input type="text" id="fecha_det" name="fecha_det" value="<?Php echo date("Y-m-d"); ?>" readonly="readonly" class="form-control input-sm">
-              </div>
-              <div class="col-md-3">
+                <input type="text" id="fecha_det" class="text-col3" name="fecha_det" value="<?Php echo date("Y-m-d"); ?>" readonly="readonly" >
+              </td>
+              <td>
                 <label>Interes :</label>
-                <select name="interes" id="interes" size="0" class="form-control input-sm">
+                <select name="interes" id="interes" size="0" >
                   <?php
                   $c = mysqli_connect('localhost', $_SESSION['user'], $_SESSION['pass'], 'cove_veh');
                   $consulint = "select prm_int from soft_prm";
@@ -333,34 +342,39 @@ $(document).ready(function(){
                     mysqli_close($conn);
                     ?>
                   </select>
-                </div>
-                <div class="col-md-3">
+                </td>
+              </tr>
+              <tr>
+                <td>
                   <label>Plazo dias :</label>
-                  <input type="text" id="plazo" name="plazo" placeholder="0" class="form-control input-sm">
-                </div> 
-                <div class="col-md-4">
+                  <input type="text" id="plazo" class="text-col3" name="plazo" placeholder="0" >
+                </td>
+                <td> 
                   <label>Estado :</label>
-                  <select id="lststd" id="lststd" name="lststd" width="60" class="form-control input-sm">
+                  <select id="lststd" id="lststd" name="lststd" width="60" >
                     <option value=""></option>
                     <option value="PENDIENTE">PENDIENTE</option>
                     <option value="PAGADO">PAGADO</option>
                   </select>
-                </div>        
-                <div class="col-md-4">
+                </td>
+                <td>      
                   <label>Observaci&oacute;n :</label>
-                  <textarea class="form-control input-sm" id="observacion" name="observacion" rows="5" id="comment" maxlength="200"></textarea>
-                </div>        
+                  <textarea  id="observacion" name="observacion" rows="5" id="comment" maxlength="200"></textarea>
+                </td>        
               </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Salir</button>
-            <button type="button" class="btn btn-primary" onclick="send_data();">Guardar</button>
-          </div>
-          
-        </form>
+
+            </tr>
+          </table>
+        </div>
       </div>
-    </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Salir</button>
+        <button type="button" class="btn btn-primary" onclick="send_data();">Guardar</button>
+      </div>
+
+    </form>
   </div>
+</div>
+</div>
 </body>
 </html>

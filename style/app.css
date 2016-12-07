@@ -1,18 +1,47 @@
 input,select,textarea {
-    width: auto;
-      height: auto;
-border-radius: 3px 3px 3px 3px;
--moz-border-radius: 3px 3px 3px 3px;
--webkit-border-radius: 3px 3px 3px 3px;
-border: 1px solid #c6bab8;
+	width: auto;
+	height: auto;
+	border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	-webkit-border-radius: 3px 3px 3px 3px;
+	border: 1px solid #c6bab8;
 }
 
 .text-sm{
-  width: 50px;
-    height: auto;  
+	width: 50px;
+	height: auto;  
 }
 
 .text-lg{
-  width: 225px;
-    height: auto;  
+	width: 225px;
+	height: auto;  
+}
+
+.text-col2{
+	width: 50px;
+	height: auto;  
+}
+.text-col3{
+	width: 75px;
+	height: auto;  
+}
+.text-col4{
+	width: 100px;
+	height: auto;  
+}
+.text-col6{
+	width: 150px;
+	height: auto;  
+}
+.text-col8{
+	width: 200px;
+	height: auto;  
+}
+.text-col10{
+	width: 250px;
+	height: auto;  
+}
+.text-col12{
+	width: 300px;
+	height: auto;  
 }
