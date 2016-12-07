@@ -137,7 +137,7 @@ class contabilidad {
             <div class="col-lg-4">   
                 <div class="form-group">                    
                     <label>Cuenta :</label>
-                    <input type="text" style="width:200px;" id="cod_veh" name="cod_veh" value="<?php echo $varveh; ?>" readonly="readonly" disabled="" placeholder="Cod." class="form-control"/>
+                    <input type="text" style="width:200px;" id="cod_veh" name="cod_veh" value="<?php echo $varveh; ?>" readonly="readonly" placeholder="Cod." />
                 </div>
             </div>
             <!--</p>-->
@@ -173,7 +173,7 @@ function vercuentacli($id_cli) {
         <!--<p style="font-size:13px; text-align: left">-->
         <div class="form-group">
             <label>Cuenta :</label>
-            <input type="text" style="width:200px;" id="cod_cli" name="cod_cli" value="<?php echo $varcli; ?>" readonly="readonly" readonly="readonly" placeholder="Cod." class="form-control"/>
+            <input type="text" style="width:200px;" id="cod_cli" name="cod_cli" value="<?php echo $varcli; ?>" readonly="readonly" placeholder="Cod." />
         </div>
         <!--</p>-->
         <?php

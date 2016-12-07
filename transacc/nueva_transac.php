@@ -68,55 +68,56 @@ $objcal = new Calendario();
         <div class="form-group">
             <div class="col-lg-4">
                 <label>Carpeta #:</label>
-                <input class="form-control" type="text" name="idtran_cab" value="<?php echo $numero ?>" style="width:100px;">
+                <input type="text" name="idtran_cab" value="<?php echo $numero ?>" style="width:100px;">
             </div>
         </div>
 
         <!--<input type="text" name="idtran_det_cab" value="<?php echo $numero ?>" hidden="">-->
         <div class="form-group">
-            <label>Tipo de Transacci&oacute;n:</label>&nbsp;
-            <?php
-            if (!isset($_REQUEST['tipo'])) {
-                ?>      
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="tipo" value="INGRESO" onselect="vaciar()" onclick="vaciar()" checked="checked">INGRESO 
-                    </label>
-
-                    <label>
-                        <input type="radio" name="tipo" value="EGRESO" onselect="cargaval()" onclick="cargaval(); mostrar()">EGRESO 
-                    </label>     
-                </div>
+            <div class="col-lg-4">
+                <label>Tipo de Transacci&oacute;n:</label>&nbsp;
                 <?php
-            } else {
-                if ($_REQUEST['tipo'] == 'INGRESO') {
-                    ?> 
+                if (!isset($_REQUEST['tipo'])) {
+                    ?>      
                     <div class="radio">
+                        <label>
+                            <input type="radio" name="tipo" value="INGRESO" onselect="vaciar()" onclick="vaciar()" checked="checked">INGRESO 
+                        </label>
 
                         <label>
-                            <input type="radio" name="tipo" value="INGRESO" checked="">INGRESO 
-                        </label>
-                        <label>
-                            <input type="radio" name="tipo" value="EGRESO" >EGRESO 
-                        </label>
-                    </div>
-                    <?php 
-                } else {
-                    ?>       
-                    <div class="radio">
-
-                        <label>
-                            <input type="radio" name="tipo" value="INGRESO" >INGRESO 
-                        </label>
-                        <label>
-                            <input type="radio" name="tipo" value="EGRESO" checked="">EGRESO 
-                        </label>
+                            <input type="radio" name="tipo" value="EGRESO" onselect="cargaval()" onclick="cargaval(); mostrar()">EGRESO 
+                        </label>     
                     </div>
                     <?php
-                }
-            }
-            ?> 
+                } else {
+                    if ($_REQUEST['tipo'] == 'INGRESO') {
+                        ?> 
+                        <div class="radio">
 
+                            <label>
+                                <input type="radio" name="tipo" value="INGRESO" checked="">INGRESO 
+                            </label>
+                            <label>
+                                <input type="radio" name="tipo" value="EGRESO" >EGRESO 
+                            </label>
+                        </div>
+                        <?php 
+                    } else {
+                        ?>       
+                        <div class="radio">
+
+                            <label>
+                                <input type="radio" name="tipo" value="INGRESO" >INGRESO 
+                            </label>
+                            <label>
+                                <input type="radio" name="tipo" value="EGRESO" checked="">EGRESO 
+                            </label>
+                        </div>
+                        <?php
+                    }
+                }
+                ?> 
+            </div>
         </div>
 
         <br><br>
@@ -130,7 +131,7 @@ $objcal = new Calendario();
             <div class="panel-heading">
                 Veh&iacute;culo
             </div>
-            <div class="col-lg-6">            
+            <div class="col-lg-3">            
                 <label>Ingrese la placa:</label>
                 <div class="form-group input-group">
                     <input type="text" list="tran_veh_placas" id="tran_veh_placas" name="tran_veh_placas" value="<?php
@@ -170,7 +171,7 @@ $objcal = new Calendario();
             <div class="panel-heading">
                 Cliente
             </div>
-            <div class="col-lg-6">      
+            <div class="col-lg-3">      
                 <label>Ingresar c&eacute;dula:&nbsp;</label>
                 <div class="form-group input-group">
                     <input type="text" id="tran_cli_ident" name="tran_cli_ident" value="<?php
@@ -229,120 +230,122 @@ $objcal = new Calendario();
                         <table>
                             <tr>                                
                                 <td colspan="5">
+                                 <div class="btn-group btn-group-xs" role="group" aria-label="...">
                                     <label for="btn_val"></label>
                                     <input type="button" name="btn_val" id="btn_val" onclick="cargaval()" value="GASTOS" class="btn btn-primary btn-sm">
-                                </td> 
-                            </tr>
-                            <tr>                       
-                                <td>
-                                    <!--<div class="col-lg-6">                                    -->
-                                    <input type="hidden" name="prec_compra" id="prec_compra" placeholder="Valor de compra" value="<?php
-                                    if (isset($_REQUEST['prec_compra'])) {
-                                        echo $_REQUEST['prec_compra'];
-                                    }
-                                    ?>">
-                                </td>
-                                <td>   
-                                    &nbsp;&nbsp;                                 
-                                    <div class="form-group">
-                                        <label for="tran_cab_precio">Valor veh&iacute;culo:</label>
-                                        <input type="text" name="tran_cab_precio" id="tran_cab_precio"
-                                        placeholder="0.00" value="<?php
-                                        if (isset($_REQUEST['tran_cab_precio'])) {
-                                            echo $_REQUEST['tran_cab_precio'];
-                                        }
-                                        ?>" onchange="totaliza();
-                                        calculo_ganancia()" min="0" class="form-control" >
-                                    </div> 
-                                </td>
-                                <td>
-                                    &nbsp;&nbsp;
-                                    <div class="form-group">
-                                        <label for="tran_cab_seguro">Seguro:</label>
-                                        <input type="text" name="tran_cab_seguro" id="tran_cab_seguro" readonly=""  placeholder="0.00" value="<?php
-                                        echo 0;
-                                        if (isset($_REQUEST['tran_cab_seguro'])) {
-                                            echo $_REQUEST['tran_cab_seguro'];
-                                        }
-                                        ?>" onchange="totaliza()" class="form-control" >  
-                                    </div>
-                                </td>
-                                <td>  
-                                    &nbsp;&nbsp;                                  
-                                    <div class="form-group">
-                                       <label for="tran_cab_gastos">Gastos:</label>
-                                       <input type="text" name="tran_cab_gastos" id="tran_cab_gastos" readonly="" placeholder="0.00" value="<?php
-                                       echo 0;
-                                       if (isset($_REQUEST['tran_cab_gastos'])) {
-                                        echo $_REQUEST['tran_cab_gastos'];
-                                    } else {
-                                        echo '';
-                                    }
-                                    ?>" onchange="totaliza()" class="form-control" >
                                 </div>
+                            </td> 
+                        </tr>
+                        <tr>                       
+                            <td>
+                                <!--<div class="col-lg-6">                                    -->
+                                <input type="hidden" name="prec_compra" id="prec_compra" placeholder="Valor de compra" value="<?php
+                                if (isset($_REQUEST['prec_compra'])) {
+                                    echo $_REQUEST['prec_compra'];
+                                }
+                                ?>">
                             </td>
-                            <td>    
-                                &nbsp;&nbsp;                            
+                            <td>   
+                                &nbsp;&nbsp;                                 
                                 <div class="form-group">
-                                    <label for="total">TOTAL : </label>
-                                    <input type="text" name="total" id="total" value="<?php
-                                    if (isset($_REQUEST['total'])) {
-                                        echo $_REQUEST['total'];
-                                    } else {
-                                        echo '';
+                                    <label for="tran_cab_precio">Valor veh&iacute;culo:</label>
+                                    <input type="text" name="tran_cab_precio" id="tran_cab_precio"
+                                    placeholder="0.00" value="<?php
+                                    if (isset($_REQUEST['tran_cab_precio'])) {
+                                        echo $_REQUEST['tran_cab_precio'];
                                     }
-                                    ?>" id="total" readonly="" class="form-control" >
+                                    ?>" onchange="totaliza();
+                                    calculo_ganancia()" min="0" >
+                                </div> 
+                            </td>
+                            <td>
+                                &nbsp;&nbsp;
+                                <div class="form-group">
+                                    <label for="tran_cab_seguro">Seguro:</label>
+                                    <input type="text" name="tran_cab_seguro" id="tran_cab_seguro" readonly=""  placeholder="0.00" value="<?php
+                                    echo 0;
+                                    if (isset($_REQUEST['tran_cab_seguro'])) {
+                                        echo $_REQUEST['tran_cab_seguro'];
+                                    }
+                                    ?>" onchange="totaliza()"  >  
                                 </div>
                             </td>
                             <td>  
-                                &nbsp;&nbsp;                              
-                                <div class="form-group" style="display: none;">
-                                    <label for="ganancia">Ganancia : </label>
-                                    <input type="text" id="ganancia" name="ganancia" value="<?php
-                                    if (isset($_REQUEST['ganancia'])) {
-                                        echo $_REQUEST['ganancia'];
-                                    }
-                                    ?>" readonly="" class="form-control" />
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                    <!--</p>-->
-                    <!--</div>-->
-                </div>
+                                &nbsp;&nbsp;                                  
+                                <div class="form-group">
+                                   <label for="tran_cab_gastos">Gastos:</label>
+                                   <input type="text" name="tran_cab_gastos" id="tran_cab_gastos" readonly="" placeholder="0.00" value="<?php
+                                   echo 0;
+                                   if (isset($_REQUEST['tran_cab_gastos'])) {
+                                    echo $_REQUEST['tran_cab_gastos'];
+                                } else {
+                                    echo '';
+                                }
+                                ?>" onchange="totaliza()"  >
+                            </div>
+                        </td>
+                        <td>    
+                            &nbsp;&nbsp;                            
+                            <div class="form-group">
+                                <label for="total">TOTAL : </label>
+                                <input type="text" name="total" id="total" value="<?php
+                                if (isset($_REQUEST['total'])) {
+                                    echo $_REQUEST['total'];
+                                } else {
+                                    echo '';
+                                }
+                                ?>" id="total" readonly=""  >
+                            </div>
+                        </td>
+                        <td>  
+                            &nbsp;&nbsp;                              
+                            <div class="form-group" style="display: none;">
+                                <label for="ganancia">Ganancia : </label>
+                                <input type="text" id="ganancia" name="ganancia" value="<?php
+                                if (isset($_REQUEST['ganancia'])) {
+                                    echo $_REQUEST['ganancia'];
+                                }
+                                ?>" readonly="" />
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <!--</p>-->
+                <!--</div>-->
             </div>
-
         </div>
 
-        <script type = "text/javascript" >
+    </div>
 
-            function tables() {
-                $(document).ready(function () {
-                    $('#dataTables-example').dataTable();
-                });
-            }
+    <script type = "text/javascript" >
 
-            function totaliza() {
-                var precio = document.getElementsByName("tran_cab_precio").item(0);
-                var upload = $("#val_veh").val();
-                var seguro = document.getElementsByName("tran_cab_seguro").item(0);
-                var gastos = document.getElementsByName("tran_cab_gastos").item(0);
-                var total = document.getElementsByName("total").item(0);
-                var p, s, g, t, pre;
-                p = parseFloat(precio.value);
-                pre = parseInt(precio.value);
-                var upvar = parseInt(upload);
-                if (pre < upvar) {
-                    respuesta = confirm("Esta seguro de realizar la venta por el precio menor a $" + upload);
-                    if (respuesta) {
-                        $("#tran_cab_precio").val(precio.toFixed(2).toString().replace(',', '.'));
-                    } else {
-                        $("#tran_cab_precio").val("0.00");
-                    }
-                }
-                if (seguro != '') {
-                    s = parseFloat(seguro.value);
+        function tables() {
+            $(document).ready(function () {
+                $('#dataTables-example').dataTable();
+            });
+        }
+
+        function totaliza() {
+            var precio = document.getElementsByName("tran_cab_precio").item(0);
+            var upload = $("#val_veh").val();
+            var seguro = document.getElementsByName("tran_cab_seguro").item(0);
+            var gastos = document.getElementsByName("tran_cab_gastos").item(0);
+            var total = document.getElementsByName("total").item(0);
+            var p, s, g, t, pre;
+            p = parseFloat(precio.value);
+            pre = parseInt(precio.value);
+            var upvar = parseInt(upload);
+            if (pre < upvar) {
+                respuesta = confirm("Esta seguro de realizar la venta por el precio menor a $" + upload);
+                if (respuesta) {
+                    $("#tran_cab_precio").val(precio.toFixed(2).toString().replace(',', '.'));
                 } else {
+                    $("#tran_cab_precio").val("0.00");
+                }
+            }
+            if (seguro != '') {
+                s = parseFloat(seguro.value);
+            } else {
                     //$("#tran_cab_seguro").val("");
                     //$("#tran_cab_seguro").val(seguro.toFixed(2).toString().replace(',', '.'));
                     seguro = 0;
@@ -718,7 +721,7 @@ $objcal = new Calendario();
                                         <tbody>
                                             <tr class="info">
                                                 <td class="center">
-                                                    <select name="pago" id="pago" style="width: 100px;font-size: 9px;" class="form-control">    
+                                                    <select name="pago" id="pago" style="width: 100px;font-size: 9px;" >    
                                                         <option value="0">Selecci&oacute;ne </option>
                                                         <option value="ENTRADA">ENTRADA</option>
                                                         <option value="ADICIONAL">ADICIONAL</option>
@@ -726,7 +729,7 @@ $objcal = new Calendario();
                                                     </select></p>
                                                 </td>
                                                 <td class="center">
-                                                    <select name="forma" id="forma" style="width: 100px;font-size: 9px;" class="form-control">    
+                                                    <select name="forma" id="forma" style="width: 100px;font-size: 9px;" >    
                                                         <option value="EFECTIVO">Selecci&oacute;ne</option>
                                                     </select>
                                                 </td>
@@ -737,7 +740,7 @@ $objcal = new Calendario();
 <!--<button type="button" data-toggle="modal" title="Seleccionar Vehículo" data-target="#myModal2" class="btn btn-outline btn-sm btn-info glyphicon glyphicon-search" onclick=""/>-->
 <!--</td>-->
 <td class="center">
-    <input type="text" id="dcto" name="dcto" onchange="contts();" style="font-size: 9px;" list="cta" autocomplete="off" class="form-control"/>
+<input type="text" id="dcto" name="dcto" class="text-lg" onchange="contts();" style="font-size: 9px;" list="cta" autocomplete="off" />
     <datalist id="cta">
         <optgroup label="bancos">
             <?php
@@ -817,14 +820,14 @@ mysqli_close($c);
 <!--<input type="text" id="dcto" name="dcto" style="width: 120px" list="cuentas" autocomplete="off">-->
 </td>
 <td class="center">
-    <input type="text" id="valor" name="valor" placeholder="0.00" style="font-size: 9px;" class="form-control">
+    <input type="text" id="valor" name="valor" class="text-sm" placeholder="0.00" style="font-size: 9px;" >
 </td>
 <td class="center" >
-    <input type="text" id="fecha_det" name="fecha_det" value="<?Php echo date("Y-m-d"); ?>" style="width: 80px;font-size: 9px;" readonly="readonly" class="form-control">
+    <input type="text" id="fecha_det" name="fecha_det" value="<?Php echo date("Y-m-d"); ?>" style="width: 80px;font-size: 9px;" readonly="readonly" >
 </td>
 <td class="center">
     <!--<input type="text" id="interes" name="interes" style="width: 50px" placeholder="0.00">-->
-    <select name="interes" id="interes" size="0" style="alignment-adjust: central;width: 70px; font-size: 9px;" class="form-control">
+    <select name="interes" id="interes" size="0" style="alignment-adjust: central;width: 70px; font-size: 9px;" >
         <?php
         $c = mysqli_connect('localhost', $_SESSION['user'], $_SESSION['pass'], 'cove_veh');
         $consulint = "select prm_int from soft_prm";
@@ -834,7 +837,7 @@ mysqli_close($c);
                 echo "<option value='" . $arreglorepalmtu['prm_int'] . "' selected>&nbsp;&nbsp;" . $arreglorepalmtu['prm_int'] . "</option>";
             } else {
                 ?>
-                <option class="form-control" value="<?php echo $arreglorepalmtu['prm_int'] ?>">
+                <option value="<?php echo $arreglorepalmtu['prm_int'] ?>">
                     <?php echo $arreglorepalmtu['prm_int'] ?></option>     
                     <?php
                 }
@@ -844,17 +847,17 @@ mysqli_close($c);
         </select>
     </td>
     <td class="center">
-        <input type="text" id="plazo" name="plazo" style="font-size: 9px;" placeholder="0" class="form-control">
+        <input type="text" id="plazo" name="plazo" style="font-size: 9px;" class="text-sm" placeholder="0" >
     </td>
     <td class="center">
-        <select id="lststd" id="lststd" name="lststd" width="60" class="form-control">
+        <select id="lststd" id="lststd" name="lststd" width="60" >
             <option value=""></option>
             <option value="PENDIENTE">PENDIENTE</option>
             <option value="PAGADO">PAGADO</option>
         </select>
     </td>
     <td class="center">
-        <input type="text" id="observacion" name="observacion" style="width: 150px" class="form-control"/>
+        <input type="text" id="observacion" name="observacion" style="width: 150px" />
     </td>
 </tr>
 </tbody>
@@ -863,8 +866,9 @@ mysqli_close($c);
 </div>
 </div>
 <br>
-<input type="submit" name="agregar_en" value="Agregar a Pagos" class="btn btn-primary btn-sm"/>
-
+<div class="btn-group btn-group-xs" role="group" aria-label="...">
+    <input type="submit"  name="agregar_en" value="Agregar a Pagos" class="btn btn-primary btn-sm"/>
+</div>
 <br><br>
 <div id="lstveh">
     <form name="form" id="form" action="" method="post">
@@ -889,7 +893,7 @@ mysqli_close($c);
             <tr>
                 <td>
                     <label>Venta por :&nbsp;</label>
-                    <input type="text" name="totalsumadb1" id="totalsumadb1" value="<?Php echo doubleval($t); ?>" disabled="" class="form-control"/>
+                    <input type="text" name="totalsumadb1" id="totalsumadb1" value="<?Php echo doubleval($t); ?>" disabled="" />
                 </td>
                 <?Php
                 $con = new mysqli("localhost", $_SESSION['user'], $_SESSION['pass'], 'cove_veh');
@@ -901,9 +905,9 @@ mysqli_close($c);
                     $ajustar = $t - $row['suma'];
                     ?>    
                     <td>
-                        <label>Justificados :&nbsp;</label><input type="text" name="totalsumadb2" id="totalsumadb2" value="<?Php echo doubleval($vl); ?>" disabled="" class="form-control"/>
+                        <label>Justificados :&nbsp;</label><input type="text" name="totalsumadb2" id="totalsumadb2" value="<?Php echo doubleval($vl); ?>" disabled="" />
                         <td>
-                            <label>Faltan  :&nbsp;</label><input type="text" name="poraj" value="<?Php echo doubleval($ajustar); ?>" disabled="" class="form-control"/>
+                            <label>Faltan  :&nbsp;</label><input type="text" name="poraj" value="<?Php echo doubleval($ajustar); ?>" disabled="" />
                             <?Php
                         }
                         $con->close();
@@ -915,11 +919,13 @@ mysqli_close($c);
     </div>  
 </fieldset>
 <br><br>
-<input type="submit" name="insertar_transac" onclick="return cvereficarvalores(this)" value="GRABA TRANSACCION" class="btn btn-success btn-sm">
-&nbsp;&nbsp;
-<input type="submit" name="resettemp" value="CANCELAR" class="btn btn-primary btn-sm">
-&nbsp;&nbsp;
-<input type="submit" name="transac" value="SALIR" class="btn btn-default btn-sm">
+<div class="btn-group btn-group-xs" role="group" aria-label="...">
+    <input type="submit" name="insertar_transac" onclick="return cvereficarvalores(this)" value="GRABA TRANSACCION" class="btn btn-success btn-sm">
+    &nbsp;&nbsp;
+    <input type="submit" name="resettemp" value="CANCELAR" class="btn btn-primary btn-sm">
+    &nbsp;&nbsp;
+    <input type="submit" name="transac" value="SALIR" class="btn btn-default btn-sm">
+</div>
 </form> 
 </div>
 </div>

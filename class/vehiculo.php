@@ -358,52 +358,52 @@ class Vehiculo {
                     <div class="col-lg-4">   
                         <div class="form-group">
                             <label>Marca:</label>
-                            <input type="text" name="veh_marca" value="<?php echo $veh_marca; ?>" disabled="" class="form-control" />                    
+                            <input type="text" name="veh_marca" value="<?php echo $veh_marca; ?>" readonly="readonly"  />                    
                         </div>
                         <div class="form-group">
                             <label>Tipo:</label>
-                            <input type="text" name="veh_tipo_des" value="<?php echo $veh_tipo_des; ?>" disabled="" class="form-control" />
+                            <input type="text" name="veh_tipo_des" value="<?php echo $veh_tipo_des; ?>" readonly="readonly"  />
                         </div>
                         <div class="form-group">
                             <label>Kilometraje:</label> 
-                            <input type="text" name="veh_km" value="<?php echo $veh_km; ?>" disabled="" class="form-control" />       
+                            <input type="text" name="veh_km" value="<?php echo $veh_km; ?>" readonly="readonly"  />       
                         </div>
                         <div class="form-group">
                             <label>Chasis:</label> 
-                            <input type="text" name="veh_chasis"  value="<?php echo $veh_chasis; ?>" disabled="" class="form-control"/>
+                            <input type="text" name="veh_chasis"  value="<?php echo $veh_chasis; ?>" readonly="readonly" />
                         </div>
                         <div class="form-group">                        
                             <label>Motor</label> 
-                            <input type="text" name="veh_motor"  value="<?php echo $veh_motor; ?>" disabled="" class="form-control"/>             
+                            <input type="text" name="veh_motor"  value="<?php echo $veh_motor; ?>" readonly="readonly" />             
                         </div>
                         <div class="form-group">                        
                             <label>Estado:</label> 
-                            <input type="text" name="estado" value="<?php echo $estado; ?>" disabled="" class="form-control" />   
+                            <input type="text" name="estado" value="<?php echo $estado; ?>" readonly="readonly"  />   
                         </div>
                         </div>
                         <div class="col-lg-3">
                             <div class="form-group">                                                
-                                <label>Modelo:</label> <input type="text" name="veh_modelo" value="<?php echo $veh_modelo; ?>"  disabled="" class="form-control"/>
+                                <label>Modelo:</label> <input type="text" name="veh_modelo" value="<?php echo $veh_modelo; ?>"  readonly="readonly" />
                             </div>
                             <div class="form-group">                                                    
                                 <label>A&ntilde;o:</label> 
-                                <input type="text" name="veh_anio" value="<?php echo $veh_anio; ?>" disabled="" class="form-control" />
+                                <input type="text" name="veh_anio" value="<?php echo $veh_anio; ?>" readonly="readonly"  />
                             </div>
                             <div class="form-group">                                                    
                                 <label>Color 1:</label> 
-                                <input type="text" name="veh_color1" value="<?php echo $veh_color1; ?>" disabled="" class="form-control" />
+                                <input type="text" name="veh_color1" value="<?php echo $veh_color1; ?>" readonly="readonly"  />
                             </div>
                             <div class="form-group">                                                    
                                 <label>Color 2</label> 
-                                <input type="text" name="veh_color2" value="<?php echo $veh_color2; ?>" disabled="" class="form-control" />    
+                                <input type="text" name="veh_color2" value="<?php echo $veh_color2; ?>" readonly="readonly"  />    
                             </div>
                             <div class="form-group">                                                    
                                 <label>Matriculado en:</label> 
-                                <input type="text" name="veh_mat_lugar" value="<?php echo $veh_mat_lugar; ?>" disabled="" class="form-control" />
+                                <input type="text" name="veh_mat_lugar" value="<?php echo $veh_mat_lugar; ?>" readonly="readonly"  />
                             </div>
                             <div class="form-group">                                                    
                                 <label>Por el a&ntilde;o:</label> 
-                                <input type="text" name="veh_mat_anio" value="<?php echo $veh_mat_anio; ?>" disabled="" class="form-control" />
+                                <input type="text" name="veh_mat_anio" value="<?php echo $veh_mat_anio; ?>" readonly="readonly"  />
                             </div>
 
                         </div>

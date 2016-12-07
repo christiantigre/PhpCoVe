@@ -185,36 +185,36 @@ class Cliente {
 
                 <!--    <label>C&eacute;cula:</label>&nbsp; <?php echo $idcli_ident ?> -->
                 <div class="form-group">
-                <label>Nombres:</label> <input type="text" name="cli_nombre" value="<?php echo $cli_nombre ?>" disabled="" class="form-control"/>
+                <label>Nombres:</label> <input type="text" name="cli_nombre" value="<?php echo $cli_nombre ?>" readonly="readonly" />
                 </div>
 
                 <div class="form-group">
-                    <label>Apellidos:</label> <input type="text" name="cli_apellidos" value="<?php echo $cli_apellido ?>" disabled="" class="form-control"/>
+                    <label>Apellidos:</label> <input type="text" name="cli_apellidos" value="<?php echo $cli_apellido ?>" readonly="readonly" />
                 </div>
 
                 <div class="form-group">
-                    <label>Tel&eacute;fonos:</label> <input type="text" name="cli_tel_fijos" value="<?php echo $cli_tel_fijos . ' ' . $cli_tel_cel ?>" disabled="" class="form-control"/>
+                    <label>Tel&eacute;fonos:</label> <input type="text" name="cli_tel_fijos" value="<?php echo $cli_tel_fijos . ' ' . $cli_tel_cel ?>" readonly="readonly" />
                 </div>
 
                 <div class="form-group">
                     <label>Direcci&oacute;n casa:</label> 
-                    <textarea name="cli_dir_casa" cols="55" rows="2" disabled="" class="form-control"><?php echo $cli_dir_casa ?></textarea>
+                    <textarea name="cli_dir_casa" cols="55" rows="2" readonly="readonly" ><?php echo $cli_dir_casa ?></textarea>
                 </div>                
 
                 <div class="form-group">
                     <label>Direcci&oacute;n trabajo:</label>
-                    <textarea name="cli_dir_casa" cols="55" rows="2" disabled="" class="form-control"><?php echo $cli_dir_tra ?></textarea>
+                    <textarea name="cli_dir_casa" cols="55" rows="2" readonly="readonly" ><?php echo $cli_dir_tra ?></textarea>
                 </div>
                 <div class="form-group">
-                    <label>Correo Electr&oacute;nico:</label><input type="text" name="cli_correo" value="<?php echo $cli_correo ?>" disabled="" class="form-control"/>
-                </div>
-
-                <div class="form-group">
-                    <label>Ciudad:</label><input type="text" name="cli_ciudad" value="<?php echo $cli_ciudad ?>" disabled="" class="form-control"/>
+                    <label>Correo Electr&oacute;nico:</label><input type="text" name="cli_correo" value="<?php echo $cli_correo ?>" readonly="readonly" />
                 </div>
 
                 <div class="form-group">
-                    <label>Estado civil:</label><input type="text" name="cli_est_civ" value="<?php echo $cli_est_civ ?>" disabled="" class="form-control"/>
+                    <label>Ciudad:</label><input type="text" name="cli_ciudad" value="<?php echo $cli_ciudad ?>" readonly="readonly" />
+                </div>
+
+                <div class="form-group">
+                    <label>Estado civil:</label><input type="text" name="cli_est_civ" value="<?php echo $cli_est_civ ?>" readonly="readonly" />
                 </div>
 
                 <!--</p>-->
@@ -223,21 +223,21 @@ class Cliente {
 
 
                 <div class="form-group">
-                    <label>Conyuge:</label><input type="text" name="cli_conyuge" value="<?php echo $cli_conyuge ?>" disabled="" class="form-control"/>
+                    <label>Conyuge:</label><input type="text" name="cli_conyuge" value="<?php echo $cli_conyuge ?>" readonly="readonly" />
                 </div>    
                 <div class="form-group">
                     <label>C&eacute;dula Conyuge:</label>
-                    <input type="text" name="ced_conyuge" value="<?php echo $ced_conyuge ?>" disabled="" class="form-control"/>                
+                    <input type="text" name="ced_conyuge" value="<?php echo $ced_conyuge ?>" readonly="readonly" />                
                 </div>
                 <div class="form-group">                
-                    <label>Referencia:</label> <input type="text" name="cli_nom_ref" value="<?php echo $cli_nom_ref ?>" disabled="" class="form-control"/>
+                    <label>Referencia:</label> <input type="text" name="cli_nom_ref" value="<?php echo $cli_nom_ref ?>" readonly="readonly" />
                 </div>
                 <div class="form-group">
                     <label>Direcci&oacute;n:</label> 
-                    <textarea name="cli_dir_ref" cols="55" rows="2" disabled="" class="form-control"><?php echo $cli_dir_ref ?></textarea>
+                    <textarea name="cli_dir_ref" cols="55" rows="2" readonly="readonly" ><?php echo $cli_dir_ref ?></textarea>
                 </div>
                 <div class="form-group">
-                    <label>Tel&eacute;fono:</label> <input type="text" name="cli_tel_ref" value="<?php echo $cli_tel_ref ?>" disabled="" class="form-control"/>
+                    <label>Tel&eacute;fono:</label> <input type="text" name="cli_tel_ref" value="<?php echo $cli_tel_ref ?>" readonly="readonly" />
                 </div>
                 
             </div>
